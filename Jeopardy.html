@@ -1,0 +1,1446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Ensuring UTF-8 encoding for foreign characters -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Gemara Makkos Jeopardy</title>
+  <style>
+    /* General Styles */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: var(--background-color, #1a1a1a);
+      color: var(--text-color, #fff);
+      margin: 0;
+      padding: 0;
+    }
+    /* Game Board Styles */
+    #game-board {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      grid-template-rows: repeat(5, 80px);
+      gap: 2px;
+      width: 100%;
+      max-width: 1000px;
+      margin: 20px auto;
+    }
+    .question {
+      background-color: var(--grid-cell-color, #0047ab);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.5em;
+      cursor: pointer;
+      text-align: center;
+      color: var(--text-color, #fff);
+    }
+    .question.answered {
+      background-color: var(--background-color, #1a1a1a);
+      color: var(--background-color, #1a1a1a);
+      cursor: default;
+    }
+    /* Scoreboard Styles */
+    .scoreboard {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #333;
+      padding: 10px;
+      position: relative;
+    }
+    .score, .turn-indicator {
+      font-size: 1.5em;
+    }
+    /* Modals */
+    .modal, .result-modal, .end-game-modal, .settings-modal, .game-clock-modal {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.9);
+      justify-content: center;
+      align-items: center;
+      color: white;
+      z-index: 1000;
+    }
+    .modal-content, .result-modal-content, .end-game-modal-content, .settings-modal-content, .game-clock-modal-content {
+      background: #222;
+      padding: 20px;
+      text-align: center;
+      border-radius: 8px;
+      max-width: 800px;
+      width: 90%;
+    }
+    .options button, .controls button, .start-screen button, .instruction-screen button, #start-timer-button {
+      margin: 5px;
+      padding: 10px 20px;
+      font-size: 1em;
+      cursor: pointer;
+      border: none;
+      border-radius: 5px;
+      background-color: var(--button-color, #f3c300);
+      color: #000;
+    }
+    .start-screen, .instruction-screen {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: var(--text-color, #fff);
+      margin: 20px;
+    }
+    .start-screen input {
+      margin: 5px;
+      padding: 10px;
+      font-size: 1em;
+      width: 200px;
+    }
+    /* Controls */
+    .controls {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 20px;
+      position: relative;
+    }
+    /* Timer Display */
+    #timer-display {
+      font-size: 1.5em;
+      margin: 10px 0;
+      color: var(--question-text-color, #fff);
+    }
+    /* Correct and Incorrect Buttons */
+    .correct-button {
+      background-color: green;
+      color: white;
+      width: 150px;
+    }
+    .incorrect-button {
+      background-color: red;
+      color: white;
+      width: 150px;
+    }
+    /* Gear Icon */
+    .gear-button {
+      background: none;
+      border: none;
+      cursor: pointer;
+      position: absolute;
+      bottom: 10px;
+      right: 10px;
+    }
+    .gear-icon {
+      width: 30px;
+      height: 30px;
+      fill: var(--text-color, #fff);
+    }
+    /* Settings Form */
+    .settings-form label {
+      display: block;
+      margin: 10px 0 5px;
+    }
+    .settings-form input[type="color"], .settings-form input[type="number"], .settings-form input[type="time"] {
+      width: 100%;
+      height: 40px;
+      border: none;
+      cursor: pointer;
+    }
+    .settings-form input[type="checkbox"] {
+      margin-right: 5px;
+    }
+    .settings-form .checkbox-group {
+      text-align: left;
+      margin: 10px 0;
+    }
+    .settings-form .number-input-group {
+      margin: 10px 0;
+      display: none;
+    }
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .category, .question {
+        font-size: 1em;
+      }
+      .score, .turn-indicator {
+        font-size: 1.2em;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Instruction Screen -->
+  <div class="instruction-screen" id="instruction-screen">
+    <h2>How to Play Jeopardy</h2>
+    <p>Welcome to Jeopardy! This game is designed to help you learn and review material in a fun and interactive way.</p>
+    <h3>Game Rules:</h3>
+    <ul>
+      <li>The game is played between two teams.</li>
+      <li>Teams take turns selecting questions from the game board.</li>
+      <li>Each question has a point value. Correct answers earn points; incorrect answers deduct points based on the round.</li>
+      <li>If you get a question wrong in round one, half the value of the question will be deducted from your score. In round 2 however, you will lose the value of the question you get wrong. Round 3 you will lose double the value of the question if you get it wrong.</li>
+      <li>If a team answers incorrectly, the other team gets a chance to answer.</li>
+      <li>If a team's score reaches -$500 or lower, their score resets to $0.</li>
+      <li>Once all questions are answered or the game is ended early, the team with the higher score wins!</li>
+    </ul>
+    <button onclick="goToStartScreen()">Start</button>
+  </div>
+
+  <!-- Team Name Screen -->
+  <div class="start-screen" id="start-screen" style="display: none;">
+    <button class="gear-button" onclick="openSettings()">
+      <!-- Gear Icon -->
+      <svg class="gear-icon" viewBox="0 0 24 24">
+        <path d="M12 15.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7zm7.07-6.02l1.43-1.43-1.41-1.41-1.43 1.43A7.975 7.975 0 0 0 13 4.93V3h-2v1.93a7.975 7.975 0 0 0-3.66 1.64L5.93 5.07 4.5 6.5l1.43 1.43A7.975 7.975 0 0 0 4.93 11H3v2h1.93a7.975 7.975 0 0 0 1.64 3.66L5.07 18.07l1.41 1.41 1.43-1.43A7.975 7.975 0 0 0 11 19.07V21h2v-1.93a7.975 7.975 0 0 0 3.66-1.64l1.43 1.43 1.41-1.41-1.43-1.43A7.975 7.975 0 0 0 19.07 13H21v-2h-1.93a7.975 7.975 0 0 0-1.64-3.66zM12 17a5 5 0 1 1 0-10 5 5 0 0 1 0 10z"/>
+      </svg>
+    </button>
+    <h2>Enter Team Names and Upload Question Bank</h2>
+    <input type="text" id="team1-name" placeholder="Team 1 Name" />
+    <input type="text" id="team2-name" placeholder="Team 2 Name" />
+    <input type="file" id="csv-file" accept=".csv" />
+    <button id="start-game-button" onclick="startGame()" disabled>Start Game</button>
+  </div>
+
+  <div class="scoreboard" style="display: none;" id="scoreboard">
+    <div class="score" id="team1-score">Team 1: $0</div>
+    <div class="turn-indicator" id="turn-indicator">Turn: Team 1</div>
+    <div class="score" id="team2-score">Team 2: $0</div>
+  </div>
+
+  <div class="board" id="game-board" style="display: none;"></div>
+
+  <div class="controls" style="display: none;" id="controls">
+    <button onclick="endGameEarly()">End Game</button>
+    <button id="next-round-button" onclick="goToNextRound()" style="display: none;">Next Round</button>
+    <button class="gear-button" onclick="openSettings()">
+      <!-- Gear Icon -->
+      <svg class="gear-icon" viewBox="0 0 24 24">
+        <path d="M12 15.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7zm7.07-6.02l1.43-1.43-1.41-1.41-1.43 1.43A7.975 7.975 0 0 0 13 4.93V3h-2v1.93a7.975 7.975 0 0 0-3.66 1.64L5.93 5.07 4.5 6.5l1.43 1.43A7.975 7.975 0 0 0 4.93 11H3v2h1.93a7.975 7.975 0 0 0 1.64 3.66L5.07 18.07l1.41 1.41 1.43-1.43A7.975 7.975 0 0 0 11 19.07V21h2v-1.93a7.975 7.975 0 0 0 3.66-1.64l1.43 1.43 1.41-1.41-1.43-1.43A7.975 7.975 0 0 0 19.07 13H21v-2h-1.93a7.975 7.975 0 0 0-1.64-3.66zM12 17a5 5 0 1 1 0-10 5 5 0 0 1 0 10z"/>
+      </svg>
+    </button>
+  </div>
+
+  <!-- Modal for Question Display -->
+  <div class="modal" id="modal">
+    <div class="modal-content">
+      <h3 id="current-team"></h3>
+      <h2 id="question-text"></h2>
+      <div id="timer-display"></div>
+      <button id="start-timer-button" onclick="startTimer()">Start Timer</button>
+      <div class="options" id="options"></div>
+    </div>
+  </div>
+
+  <!-- Result Modal -->
+  <div class="result-modal" id="result-modal">
+    <div class="result-modal-content">
+      <p id="result-message"></p>
+      <button onclick="closeResultModal()">Close</button>
+    </div>
+  </div>
+
+  <!-- End Game Modal -->
+  <div class="end-game-modal" id="end-game-modal">
+    <div class="end-game-modal-content">
+      <h2 id="end-game-message"></h2>
+      <button onclick="playNewGame()">Play Again</button>
+    </div>
+  </div>
+
+  <!-- Game Clock Modal -->
+  <div class="game-clock-modal" id="game-clock-modal">
+    <div class="game-clock-modal-content">
+      <h2 id="game-clock-modal-title">Game Clock Time Up</h2>
+      <p>What would you like to do?</p>
+      <button onclick="addTime(5)">Add 5 Minutes</button>
+      <button onclick="showCustomTimeInput()">Add Custom Time</button>
+      <div id="custom-time-input" style="display: none;">
+        <input type="number" id="custom-time-minutes" placeholder="Minutes" min="1">
+        <button onclick="addCustomTime()">Add Time</button>
+      </div>
+      <button onclick="turnOffGameClock()">Turn Off Timer</button>
+      <button onclick="endGame()">End Game</button>
+    </div>
+  </div>
+
+  <!-- Settings Modal -->
+  <div class="settings-modal" id="settings-modal">
+    <div class="settings-modal-content">
+      <h2>Game Settings</h2>
+      <form class="settings-form" onsubmit="saveSettings(event)">
+        <label for="background-color-picker">Background Color:</label>
+        <input type="color" id="background-color-picker" value="#1a1a1a">
+        
+        <label for="grid-cell-color-picker">Grid Cell Color:</label>
+        <input type="color" id="grid-cell-color-picker" value="#0047ab">
+        
+        <label for="button-color-picker">Button Color:</label>
+        <input type="color" id="button-color-picker" value="#f3c300">
+        
+        <label for="text-color-picker">Text Color:</label>
+        <input type="color" id="text-color-picker" value="#ffffff">
+        
+        <label for="question-text-color-picker">Question Text Color:</label>
+        <input type="color" id="question-text-color-picker" value="#ffffff">
+        
+        <div class="checkbox-group">
+          <label><input type="checkbox" id="use-rounds-checkbox" checked> Enable Rounds</label>
+        </div>
+
+        <div class="checkbox-group">
+          <label><input type="checkbox" id="random-bonus-checkbox"> Random Bonus Value</label>
+        </div>
+
+        <div class="number-input-group" id="bonus-settings">
+          <label for="bonus-points-input">Bonus Points:</label>
+          <input type="number" id="bonus-points-input" value="100" min="1">
+          <label for="bonus-chance-input">Chance of Bonus (%):</label>
+          <input type="number" id="bonus-chance-input" value="10" min="1" max="100">
+        </div>
+
+        <!-- Stopwatch Setting -->
+        <div class="checkbox-group">
+          <label><input type="checkbox" id="enable-stopwatch-checkbox"> Enable Stopwatch</label>
+        </div>
+
+        <!-- Game Clock Setting -->
+        <div class="checkbox-group">
+          <label><input type="checkbox" id="enable-gameclock-checkbox"> Enable Game Clock</label>
+        </div>
+        <div class="number-input-group" id="gameclock-settings">
+          <label for="gameclock-minutes-input">Game Clock Duration (minutes):</label>
+          <input type="number" id="gameclock-minutes-input" value="60" min="1">
+          <div class="checkbox-group">
+            <label><input type="checkbox" id="warn-five-minutes-checkbox"> Warn when 5 minutes left</label>
+          </div>
+        </div>
+
+        <!-- End Time Setting -->
+        <div class="checkbox-group">
+          <label><input type="checkbox" id="enable-endtime-checkbox"> Set End Time</label>
+        </div>
+        <div class="number-input-group" id="endtime-settings">
+          <label for="endtime-input">End Time:</label>
+          <input type="time" id="endtime-input">
+          <div class="checkbox-group">
+            <label><input type="checkbox" id="warn-five-minutes-endtime-checkbox"> Warn when 5 minutes left</label>
+          </div>
+        </div>
+
+        <button type="submit">Save Settings</button>
+      </form>
+
+      <!-- Display Stopwatch Time -->
+      <div id="stopwatch-display" style="display: none;">
+        <h3>Game Stopwatch:</h3>
+        <p id="stopwatch-time">00:00:00</p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    let team1Score = 0;
+    let team2Score = 0;
+    let currentPlayer = 1;
+    let team1Name = "Team 1";
+    let team2Name = "Team 2";
+    let secondChance = false;
+    let totalQuestions = 25; // Will be updated after parsing CSV
+    let remainingQuestions = totalQuestions;
+    let questionBank = []; // Will be populated after parsing CSV
+    let selectedQuestions = {}; // Will hold the selected questions for the current round
+    let usedQuestions = []; // To keep track of used questions
+    let currentRound = 1;
+    let maxRounds = 3;
+
+    const settings = {
+      useRounds: true,
+      colors: {
+        backgroundColor: '#1a1a1a',
+        gridCellColor: '#0047ab',
+        buttonColor: '#f3c300',
+        textColor: '#ffffff',
+        questionTextColor: '#ffffff'
+      },
+      randomBonus: false,
+      bonusPoints: 100,
+      bonusChance: 10,
+      enableStopwatch: false,
+      enableGameClock: false,
+      gameClockMinutes: 60,
+      warnFiveMinutes: false,
+      enableEndTime: false,
+      endTime: null,
+      warnFiveMinutesEndTime: false
+    };
+
+    let timerInterval = null;
+    let timeRemaining = 0;
+    let answerStartTime = null;
+
+    // Stopwatch variables
+    let stopwatchInterval = null;
+    let stopwatchTime = 0; // in milliseconds
+    let stopwatchRunning = false;
+
+    // Game Clock variables
+    let gameClockInterval = null;
+    let gameClockTimeRemaining = 0; // in milliseconds
+    let gameClockRunning = false;
+
+    // End Time variables
+    let endTimeInterval = null;
+    let endTimeRunning = false;
+    let endTimeWarned = false;
+
+    function goToStartScreen() {
+      document.getElementById('instruction-screen').style.display = 'none';
+      document.getElementById('start-screen').style.display = 'flex';
+    }
+
+    document.getElementById('csv-file').addEventListener('change', handleFileUpload);
+
+    function handleFileUpload(event) {
+      const file = event.target.files[0];
+      if (!file) {
+        alert('No file selected');
+        return;
+      }
+
+      const reader = new FileReader();
+      reader.onload = function(e) {
+        const contents = e.target.result;
+        parseCSV(contents);
+        document.getElementById('start-game-button').disabled = false;
+      };
+      reader.readAsText(file, 'UTF-8'); // Ensure UTF-8 encoding
+    }
+
+    function parseCSV(contents) {
+      const lines = contents.split('\n');
+      // Skip headers if present
+      const headers = lines[0].split(',');
+      let dataStartIndex = 0;
+      if (headers[0].trim().toLowerCase() === 'question') {
+        dataStartIndex = 1;
+      }
+      const data = lines.slice(dataStartIndex);
+
+      // Initialize questionBank as an array
+      questionBank = [];
+
+      data.forEach((line) => {
+        if (line.trim() === '') return; // Skip empty lines
+        const fields = parseCSVLine(line);
+
+        // Map the fields
+        const question = fields[0];
+        const choice1 = fields[1];
+        const choice2 = fields[2];
+        const choice3 = fields[3];
+        const choice4 = fields[4];
+        const answer = fields[5]; // Should be 'Choice1', 'Choice2', etc.
+        const value = parseInt(fields[6], 10); // Read the 'Value' field
+        const bonusValue = parseInt(fields[7], 10) || 0;
+
+        // Read the timer value
+        let timer = null;
+        if (fields.length > 8 && fields[8].trim() !== '') {
+          timer = parseInt(fields[8], 10);
+          if (isNaN(timer)) {
+            console.error('Invalid timer value for question:', question);
+            alert('Error: Invalid timer value for question: ' + question);
+            timer = null; // Default to null if invalid
+          }
+        }
+
+        // Read the 'Multiple Choice' field
+        let multipleChoice = true; // default to true
+        if (fields.length > 9 && fields[9].trim() !== '') {
+          const mcValue = fields[9].trim().toLowerCase();
+          if (mcValue === 'no') {
+            multipleChoice = false;
+          } else {
+            multipleChoice = true;
+          }
+        }
+
+        if (![100, 200, 300, 400, 500].includes(value)) {
+          console.error('Invalid value for question:', question);
+          alert('Error: Invalid value for question: ' + question);
+          return;
+        }
+
+        // Build the question object
+        const questionObj = {
+          question: question,
+          options: [choice1, choice2, choice3, choice4],
+          correctIndex: null,
+          value: value,
+          bonusValue: bonusValue,
+          timer: timer, // Include timer in the question object
+          multipleChoice: multipleChoice // Include multipleChoice flag
+        };
+
+        // Determine the correct index based on the answer key
+        const choiceMap = {
+          'Choice1': 0,
+          'Choice2': 1,
+          'Choice3': 2,
+          'Choice4': 3,
+          '1': 0,
+          '2': 1,
+          '3': 2,
+          '4': 3
+        };
+
+        const answerKey = answer.trim();
+        const correctIndex = choiceMap[answerKey];
+
+        if (correctIndex === undefined && multipleChoice) {
+          console.error('Invalid answer key for question:', question);
+          alert('Error: Invalid answer key for question: ' + question);
+          return;
+        } else {
+          questionObj.correctIndex = correctIndex;
+        }
+
+        // Add the question to the questionBank
+        questionBank.push(questionObj);
+      });
+    }
+
+    // Function to parse CSV lines, handling commas inside quotes
+    function parseCSVLine(text) {
+      const result = [];
+      let current = '';
+      let inQuotes = false;
+
+      for (let i = 0; i < text.length; i++) {
+        const c = text[i];
+
+        if (inQuotes) {
+          if (c === '"') {
+            if (text[i + 1] === '"') {
+              current += '"';
+              i++;
+            } else {
+              inQuotes = false;
+            }
+          } else {
+            current += c;
+          }
+        } else {
+          if (c === ',') {
+            result.push(current);
+            current = '';
+          } else if (c === '"') {
+            inQuotes = true;
+          } else {
+            current += c;
+          }
+        }
+      }
+      result.push(current);
+      return result;
+    }
+
+    function startGame() {
+      if (!questionBank || questionBank.length === 0) {
+        alert('Please upload a valid CSV file with questions.');
+        return;
+      }
+
+      currentRound = 1; // Initialize round
+      usedQuestions = []; // Reset used questions
+
+      team1Name = document.getElementById("team1-name").value || "Team 1";
+      team2Name = document.getElementById("team2-name").value || "Team 2";
+
+      document.getElementById("team1-score").innerText = `${team1Name}: $${team1Score}`;
+      document.getElementById("team2-score").innerText = `${team2Name}: $${team2Score}`;
+      document.getElementById("turn-indicator").innerText = `Turn: ${team1Name}`;
+
+      document.getElementById("start-screen").style.display = "none";
+      document.getElementById("game-board").style.display = "grid";
+      document.getElementById("scoreboard").style.display = "flex";
+      document.getElementById("controls").style.display = "flex";
+
+      applySettings(); // Apply settings before starting the game
+      // Initialize the first round
+      initializeRound();
+    }
+
+    function initializeRound() {
+      // Prepare questions for the current round
+      selectedQuestions = getQuestionsForRound();
+
+      // Assign random bonuses if enabled
+      if (settings.randomBonus) {
+        assignRandomBonuses();
+      }
+
+      // Update totalQuestions and remainingQuestions
+      totalQuestions = Object.values(selectedQuestions).reduce((sum, arr) => sum + arr.length, 0);
+      remainingQuestions = totalQuestions;
+
+      generateGameBoard();
+
+      // Update Next Round button visibility
+      updateNextRoundButton();
+    }
+
+    function assignRandomBonuses() {
+      const allQuestions = Object.values(selectedQuestions).flat();
+      allQuestions.forEach(questionObj => {
+        const randomNumber = Math.random() * 100; // Random number between 0 and 100
+        if (randomNumber < settings.bonusChance) {
+          questionObj.bonusValue = (questionObj.bonusValue || 0) + settings.bonusPoints;
+        }
+      });
+    }
+
+    function getQuestionsForRound() {
+      const pointValues = [100, 200, 300, 400, 500];
+      const selected = {
+        100: [],
+        200: [],
+        300: [],
+        400: [],
+        500: []
+      };
+
+      const unusedQuestions = questionBank.filter(q => !usedQuestions.includes(q));
+
+      pointValues.forEach(value => {
+        const questions = unusedQuestions.filter(q => q.value === value);
+        if (questions.length > 5) {
+          // Randomly select 5 questions
+          selected[value] = getRandomQuestions(questions, 5);
+        } else {
+          selected[value] = questions.slice();
+        }
+
+        // Add selected questions to usedQuestions
+        usedQuestions.push(...selected[value]);
+      });
+
+      return selected;
+    }
+
+    function getRandomQuestions(array, n) {
+      const result = [];
+      const clonedArray = array.slice(); // Clone the array
+      for (let i = 0; i < n && clonedArray.length > 0; i++) {
+        const randomIndex = Math.floor(Math.random() * clonedArray.length);
+        result.push(clonedArray.splice(randomIndex, 1)[0]);
+      }
+      return result;
+    }
+
+    function generateGameBoard() {
+      const gameBoard = document.getElementById('game-board');
+
+      // Clear previous board
+      gameBoard.innerHTML = '';
+
+      const pointValues = [100, 200, 300, 400, 500];
+
+      // Create question cells
+      for (let row = 0; row < 5; row++) {
+        const value = pointValues[row];
+        const questions = selectedQuestions[value];
+        for (let col = 0; col < 5; col++) {
+          const questionObj = questions[col];
+          const questionDiv = document.createElement("div");
+          questionDiv.classList.add("question");
+
+          if (questionObj) {
+            questionDiv.dataset.value = questionObj.value;
+            questionDiv.onclick = () => selectQuestion(questionDiv, questionObj);
+            questionDiv.innerText = `$${questionObj.value}`;
+          } else {
+            // If no question, make the cell inactive
+            questionDiv.classList.add("answered");
+            questionDiv.innerText = '';
+          }
+          gameBoard.appendChild(questionDiv);
+        }
+      }
+    }
+
+    function selectQuestion(element, questionObj) {
+      if (element.classList.contains("answered")) return;  // Prevent selecting answered questions
+
+      // Mark the question as answered immediately
+      element.classList.add("answered");
+      element.innerText = '';
+      remainingQuestions--;
+
+      document.getElementById('current-team').innerText = `Question for ${currentPlayer === 1 ? team1Name : team2Name}`;
+      document.getElementById('question-text').innerText = questionObj.question;
+      document.getElementById('question-text').style.color = settings.colors.questionTextColor; // Apply question text color
+      document.getElementById('modal').style.display = 'flex';
+      document.getElementById('modal').dataset.value = questionObj.value;
+      document.getElementById('modal').dataset.bonusValue = questionObj.bonusValue || 0; // Store bonus value
+      document.getElementById('modal').dataset.correctIndex = questionObj.correctIndex;
+      document.getElementById('modal').dataset.questionObj = JSON.stringify(questionObj);
+
+      const optionsContainer = document.getElementById('options');
+      optionsContainer.innerHTML = ''; // Clear any previous options
+
+      // Do not display options yet
+
+      // Show Start Timer button
+      document.getElementById('start-timer-button').style.display = 'inline-block';
+
+      // Clear timer display
+      document.getElementById('timer-display').innerText = '';
+
+      // Reset any previous timer
+      if (timerInterval) {
+        clearInterval(timerInterval);
+        timerInterval = null;
+      }
+
+      // Record the time when the question is shown
+      answerStartTime = Date.now();
+
+      // Start the stopwatch if enabled and not already running
+      if (settings.enableStopwatch && !stopwatchRunning) {
+        startStopwatch();
+      }
+
+      // Start the game clock if enabled and not already running
+      if (settings.enableGameClock && !gameClockRunning) {
+        startGameClock();
+      }
+
+      // Start the end time check if enabled and not already running
+      if (settings.enableEndTime && !endTimeRunning) {
+        startEndTimeCheck();
+      }
+    }
+
+    function startTimer() {
+      // Hide Start Timer button
+      document.getElementById('start-timer-button').style.display = 'none';
+
+      // Get the question object
+      const questionObj = JSON.parse(document.getElementById('modal').dataset.questionObj);
+
+      // Determine timeRemaining
+      if (questionObj.timer && !isNaN(questionObj.timer)) {
+        timeRemaining = questionObj.timer;
+      } else {
+        // Use default based on question value
+        const value = parseInt(document.getElementById('modal').dataset.value);
+        const timePerValue = {
+          100: 10,
+          200: 15,
+          300: 20,
+          400: 25,
+          500: 30
+        };
+        timeRemaining = timePerValue[value];
+      }
+
+      // Display the options
+      const optionsContainer = document.getElementById('options');
+      optionsContainer.innerHTML = '';
+
+      if (questionObj.multipleChoice) {
+        // If multiple-choice, display options as buttons
+        questionObj.options.forEach((option, index) => {
+          const button = document.createElement('button');
+          button.innerText = option;
+          button.onclick = () => checkAnswer(index);
+          optionsContainer.appendChild(button);
+        });
+      } else {
+        // If not multiple-choice, display 'Correct' and 'Incorrect' buttons
+        const correctButton = document.createElement('button');
+        correctButton.innerText = 'Correct';
+        correctButton.classList.add('correct-button');
+        correctButton.onclick = () => checkAnswer('correct');
+        optionsContainer.appendChild(correctButton);
+
+        const incorrectButton = document.createElement('button');
+        incorrectButton.innerText = 'Incorrect';
+        incorrectButton.classList.add('incorrect-button');
+        incorrectButton.onclick = () => checkAnswer('incorrect');
+        optionsContainer.appendChild(incorrectButton);
+      }
+
+      // Start the timer
+      document.getElementById('timer-display').innerText = `Time Remaining: ${timeRemaining} seconds`;
+
+      timerInterval = setInterval(() => {
+        timeRemaining--;
+        if (timeRemaining > 0) {
+          document.getElementById('timer-display').innerText = `Time Remaining: ${timeRemaining} seconds`;
+        } else {
+          // Time is up
+          clearInterval(timerInterval);
+          timerInterval = null;
+          document.getElementById('timer-display').innerText = `Time's up!`;
+          // Disable the options
+          disableOptions();
+          // Proceed as if the user answered incorrectly
+          timeUpHandler();
+        }
+      }, 1000);
+    }
+
+    function disableOptions() {
+      const optionsContainer = document.getElementById('options');
+      const buttons = optionsContainer.getElementsByTagName('button');
+      for (let button of buttons) {
+        button.disabled = true;
+      }
+    }
+
+    function checkAnswer(selectedIndex) {
+      // Stop the timer
+      if (timerInterval) {
+        clearInterval(timerInterval);
+        timerInterval = null;
+      }
+
+      const correctIndex = parseInt(document.getElementById('modal').dataset.correctIndex);
+      const value = parseInt(document.getElementById('modal').dataset.value);
+      const bonusValue = parseInt(document.getElementById('modal').dataset.bonusValue) || 0; // Get bonus value
+      const totalPoints = value + bonusValue; // Total points earned
+      const currentTeamName = currentPlayer === 1 ? team1Name : team2Name;
+      let resultMessage;
+
+      // Get the question object to check if multiple-choice
+      const questionObj = JSON.parse(document.getElementById('modal').dataset.questionObj);
+
+      let isCorrect;
+
+      if (questionObj.multipleChoice) {
+        // Handle multiple-choice
+        isCorrect = (selectedIndex === correctIndex);
+      } else {
+        // Handle non-multiple-choice
+        if (selectedIndex === 'correct') {
+          isCorrect = true;
+        } else if (selectedIndex === 'incorrect') {
+          isCorrect = false;
+        } else {
+          // Should not happen, but handle gracefully
+          console.error('Invalid selection in non-multiple-choice question.');
+          return;
+        }
+      }
+
+      if (isCorrect) {
+        if (currentPlayer === 1) {
+          team1Score += totalPoints;
+        } else {
+          team2Score += totalPoints;
+        }
+
+        // Adjust the result message based on bonus value
+        if (bonusValue > 0) {
+          resultMessage = `Correct! +$${totalPoints} (${value} + Bonus ${bonusValue}) for ${currentTeamName}.`;
+        } else {
+          resultMessage = `Correct! +$${value} for ${currentTeamName}.`;
+        }
+
+        secondChance = false; // Reset second chance
+        closeModal();
+        showResult(resultMessage);
+        updateTurnIndicator();
+        checkEndGame();
+      } else {
+        let penalty;
+        // Adjust penalty based on current round
+        if (currentRound === 1) {
+          penalty = Math.floor(value / 2);
+        } else if (currentRound === 2) {
+          penalty = value;
+        } else if (currentRound === 3) {
+          penalty = value * 2;
+        }
+
+        if (currentPlayer === 1) {
+          team1Score -= penalty;
+          if (team1Score <= -500) team1Score = 0;
+        } else {
+          team2Score -= penalty;
+          if (team2Score <= -500) team2Score = 0;
+        }
+        resultMessage = `Incorrect! -$${penalty} for ${currentTeamName}.`;
+
+        if (!secondChance) {
+          secondChance = true;
+          currentPlayer = currentPlayer === 1 ? 2 : 1;
+          resultMessage += ` Passing to ${currentPlayer === 1 ? team1Name : team2Name}.`;
+          showResult(resultMessage);
+          updateScore();
+          updateTurnIndicator();
+        } else {
+          secondChance = false;
+          closeModal();
+          showResult(resultMessage);
+          updateTurnIndicator();
+          checkEndGame();
+        }
+      }
+      updateScore();
+    }
+
+    function timeUpHandler() {
+      const value = parseInt(document.getElementById('modal').dataset.value);
+      const currentTeamName = currentPlayer === 1 ? team1Name : team2Name;
+      let resultMessage;
+
+      let penalty;
+      // Adjust penalty based on current round
+      if (currentRound === 1) {
+        penalty = Math.floor(value / 2);
+      } else if (currentRound === 2) {
+        penalty = value;
+      } else if (currentRound === 3) {
+        penalty = value * 2;
+      }
+
+      if (currentPlayer === 1) {
+        team1Score -= penalty;
+        if (team1Score <= -500) team1Score = 0;
+      } else {
+        team2Score -= penalty;
+        if (team2Score <= -500) team2Score = 0;
+      }
+      resultMessage = `Time's up! -$${penalty} for ${currentTeamName}.`;
+
+      if (!secondChance) {
+        secondChance = true;
+        currentPlayer = currentPlayer === 1 ? 2 : 1;
+        resultMessage += ` Passing to ${currentPlayer === 1 ? team1Name : team2Name}.`;
+        showResult(resultMessage);
+        updateScore();
+        updateTurnIndicator();
+      } else {
+        secondChance = false;
+        closeModal();
+        showResult(resultMessage);
+        updateTurnIndicator();
+        checkEndGame();
+      }
+      updateScore();
+    }
+
+    function checkEndGame() {
+      if (remainingQuestions <= 0) {
+        if (settings.useRounds && canProceedToNextRound()) {
+          showNextRoundPrompt();
+        } else {
+          endGame();
+        }
+      }
+    }
+
+    function endGameEarly() {
+      remainingQuestions = 0;
+      document.querySelectorAll('.question').forEach(element => {
+        element.classList.add('answered');
+        element.innerText = '';
+      });
+      checkEndGame();
+    }
+
+    function canProceedToNextRound() {
+      const unusedQuestions = questionBank.filter(q => !usedQuestions.includes(q));
+      return currentRound < maxRounds && unusedQuestions.length >= 25 && settings.useRounds;
+    }
+
+    function updateNextRoundButton() {
+      const nextRoundButton = document.getElementById('next-round-button');
+      if (currentRound < maxRounds && canProceedToNextRound()) {
+        nextRoundButton.style.display = 'inline-block';
+      } else {
+        nextRoundButton.style.display = 'none';
+      }
+    }
+
+    function goToNextRound() {
+      if (canProceedToNextRound()) {
+        currentRound++;
+        initializeRound();
+        updateRoundIndicator();
+      } else {
+        alert('Not enough questions for the next round or maximum rounds reached.');
+      }
+    }
+
+    function showNextRoundPrompt() {
+      if (canProceedToNextRound()) {
+        const proceed = confirm('Do you want to proceed to the next round?');
+        if (proceed) {
+          currentRound++;
+          initializeRound();
+          updateRoundIndicator();
+        } else {
+          endGame();
+        }
+      } else {
+        endGame();
+      }
+    }
+
+    function updateRoundIndicator() {
+      const currentTeamName = currentPlayer === 1 ? team1Name : team2Name;
+      if (settings.useRounds) {
+        document.getElementById("turn-indicator").innerText = `Turn: ${currentTeamName} (Round ${currentRound})`;
+      } else {
+        document.getElementById("turn-indicator").innerText = `Turn: ${currentTeamName}`;
+      }
+    }
+
+    function playNewGame() {
+      team1Score = 0;
+      team2Score = 0;
+      currentPlayer = 1;
+      secondChance = false;
+      remainingQuestions = totalQuestions;
+      document.getElementById("game-board").innerHTML = "";
+      document.getElementById("team1-name").value = "";
+      document.getElementById("team2-name").value = "";
+      document.getElementById("start-screen").style.display = "none";
+      document.getElementById("instruction-screen").style.display = "flex";
+      document.getElementById("scoreboard").style.display = "none";
+      document.getElementById("controls").style.display = "none";
+      updateScore();
+
+      // Reset stopwatch, game clock, and end time
+      resetStopwatch();
+      resetGameClock();
+      resetEndTimeCheck();
+    }
+
+    function endGame() {
+      let message;
+      if (team1Score > team2Score) {
+        message = `${team1Name} has won with a score of $${team1Score}!`;
+      } else if (team2Score > team1Score) {
+        message = `${team2Name} has won with a score of $${team2Score}!`;
+      } else {
+        message = `It's a tie! Both teams have a score of $${team1Score}!`;
+      }
+      document.getElementById("end-game-message").innerText = message;
+      document.getElementById("end-game-modal").style.display = "flex";
+
+      // Stop stopwatch, game clock, and end time checks
+      stopStopwatch();
+      stopGameClock();
+      stopEndTimeCheck();
+    }
+
+    function showResult(message) {
+      document.getElementById('result-message').innerText = message;
+      document.getElementById('result-modal').style.display = 'flex';
+    }
+
+    function closeResultModal() {
+      document.getElementById('result-modal').style.display = 'none';
+      // If second chance is active, prompt the next team
+      if (secondChance) {
+        document.getElementById('current-team').innerText = `Question for ${currentPlayer === 1 ? team1Name : team2Name}`;
+        document.getElementById('modal').style.display = 'flex';
+        // Reset the timer display and show the Start Timer button
+        document.getElementById('timer-display').innerText = '';
+        document.getElementById('start-timer-button').style.display = 'inline-block';
+        // Clear options
+        document.getElementById('options').innerHTML = '';
+        // Reset any previous timer
+        if (timerInterval) {
+          clearInterval(timerInterval);
+          timerInterval = null;
+        }
+        // The other team gets the full time again
+      }
+    }
+
+    function closeModal() {
+      document.getElementById('modal').style.display = 'none';
+      // Stop the timer if still running
+      if (timerInterval) {
+        clearInterval(timerInterval);
+        timerInterval = null;
+      }
+    }
+
+    function updateScore() {
+      document.getElementById("team1-score").innerText = `${team1Name}: $${team1Score}`;
+      document.getElementById("team2-score").innerText = `${team2Name}: $${team2Score}`;
+    }
+
+    function updateTurnIndicator() {
+      const currentTeamName = currentPlayer === 1 ? team1Name : team2Name;
+      if (settings.useRounds) {
+        document.getElementById("turn-indicator").innerText = `Turn: ${currentTeamName} (Round ${currentRound})`;
+      } else {
+        document.getElementById("turn-indicator").innerText = `Turn: ${currentTeamName}`;
+      }
+    }
+
+    // Stopwatch Functions
+    function startStopwatch() {
+      if (!stopwatchRunning) {
+        stopwatchRunning = true;
+        const startTime = Date.now() - stopwatchTime;
+        stopwatchInterval = setInterval(() => {
+          stopwatchTime = Date.now() - startTime;
+          updateStopwatchDisplay();
+        }, 1000);
+      }
+    }
+
+    function stopStopwatch() {
+      if (stopwatchRunning) {
+        clearInterval(stopwatchInterval);
+        stopwatchRunning = false;
+      }
+    }
+
+    function resetStopwatch() {
+      stopStopwatch();
+      stopwatchTime = 0;
+      updateStopwatchDisplay();
+    }
+
+    function updateStopwatchDisplay() {
+      const hours = Math.floor(stopwatchTime / 3600000);
+      const minutes = Math.floor((stopwatchTime % 3600000) / 60000);
+      const seconds = Math.floor((stopwatchTime % 60000) / 1000);
+      document.getElementById('stopwatch-time').innerText =
+        `${hours.toString().padStart(2, '0')}:` +
+        `${minutes.toString().padStart(2, '0')}:` +
+        `${seconds.toString().padStart(2, '0')}`;
+    }
+
+    // Game Clock Functions
+    function startGameClock() {
+      if (!gameClockRunning) {
+        gameClockRunning = true;
+        gameClockTimeRemaining = settings.gameClockMinutes * 60000; // Convert minutes to milliseconds
+        const startTime = Date.now();
+        gameClockWarned = false; // Reset warning flag
+        gameClockInterval = setInterval(() => {
+          const elapsed = Date.now() - startTime;
+          gameClockTimeRemaining = settings.gameClockMinutes * 60000 - elapsed;
+
+          if (gameClockTimeRemaining <= 0) {
+            clearInterval(gameClockInterval);
+            gameClockRunning = false;
+            gameClockTimeRemaining = 0;
+            handleGameClockEnd();
+          } else {
+            if (settings.warnFiveMinutes && gameClockTimeRemaining <= 300000 && !gameClockWarned) {
+              gameClockWarned = true;
+              alert('Warning: Only 5 minutes left on the game clock!');
+            }
+          }
+        }, 1000);
+      }
+    }
+
+    let gameClockWarned = false;
+
+    function stopGameClock() {
+      if (gameClockRunning) {
+        clearInterval(gameClockInterval);
+        gameClockRunning = false;
+      }
+    }
+
+    function resetGameClock() {
+      stopGameClock();
+      gameClockTimeRemaining = 0;
+      gameClockWarned = false;
+    }
+
+    function handleGameClockEnd() {
+      // Wait until the current answer is over (unless it's being passed over to another team)
+      if (!secondChance) {
+        // Show the Game Clock Modal after the current answer
+        setTimeout(() => {
+          document.getElementById('game-clock-modal-title').innerText = 'Game Clock Time Up';
+          document.getElementById('game-clock-modal').style.display = 'flex';
+        }, 1000);
+      } else {
+        // If it's being passed over, wait until the next answer
+        // This will be handled naturally in the flow of the game
+      }
+    }
+
+    function addTime(minutes) {
+      settings.gameClockMinutes += minutes;
+      gameClockWarned = false; // Reset warning
+      startGameClock(); // Restart the clock
+      document.getElementById('game-clock-modal').style.display = 'none';
+    }
+
+    function showCustomTimeInput() {
+      document.getElementById('custom-time-input').style.display = 'block';
+    }
+
+    function addCustomTime() {
+      const minutes = parseInt(document.getElementById('custom-time-minutes').value, 10);
+      if (isNaN(minutes) || minutes <= 0) {
+        alert('Please enter a valid number of minutes.');
+        return;
+      }
+      addTime(minutes);
+      document.getElementById('custom-time-input').style.display = 'none';
+      document.getElementById('custom-time-minutes').value = '';
+    }
+
+    function turnOffGameClock() {
+      settings.enableGameClock = false;
+      stopGameClock();
+      document.getElementById('game-clock-modal').style.display = 'none';
+    }
+
+    // End Time Functions
+    function startEndTimeCheck() {
+      if (!endTimeRunning) {
+        endTimeRunning = true;
+        const now = new Date();
+        const endTimeParts = settings.endTime.split(':');
+        const endTimeDate = new Date();
+        endTimeDate.setHours(parseInt(endTimeParts[0], 10), parseInt(endTimeParts[1], 10), 0, 0);
+
+        // If the end time has already passed, set it to the next day
+        if (endTimeDate <= now) {
+          endTimeDate.setDate(endTimeDate.getDate() + 1);
+        }
+
+        const timeUntilEnd = endTimeDate - now;
+
+        endTimeWarned = false; // Reset warning flag
+
+        endTimeInterval = setInterval(() => {
+          const remaining = endTimeDate - new Date();
+
+          if (remaining <= 0) {
+            clearInterval(endTimeInterval);
+            endTimeRunning = false;
+            handleEndTimeReached();
+          } else if (settings.warnFiveMinutesEndTime && remaining <= 300000 && !endTimeWarned) {
+            endTimeWarned = true;
+            alert('Warning: Only 5 minutes left before the end time!');
+          }
+        }, 1000);
+      }
+    }
+
+    function stopEndTimeCheck() {
+      if (endTimeRunning) {
+        clearInterval(endTimeInterval);
+        endTimeRunning = false;
+      }
+    }
+
+    function resetEndTimeCheck() {
+      stopEndTimeCheck();
+      endTimeWarned = false;
+    }
+
+    function handleEndTimeReached() {
+      // Wait until the current answer is over (unless it's being passed over to another team)
+      if (!secondChance) {
+        // Show the End Time Modal after the current answer
+        setTimeout(() => {
+          document.getElementById('game-clock-modal-title').innerText = 'End Time Reached';
+          document.getElementById('game-clock-modal').style.display = 'flex';
+        }, 1000);
+      } else {
+        // If it's being passed over, wait until the next answer
+        // This will be handled naturally in the flow of the game
+      }
+    }
+
+    // Settings Functions
+    function openSettings() {
+      // Pause stopwatch, game clock, and end time checks
+      if (settings.enableStopwatch) {
+        stopStopwatch();
+      }
+      if (settings.enableGameClock) {
+        stopGameClock();
+      }
+      if (settings.enableEndTime) {
+        stopEndTimeCheck();
+      }
+
+      // Populate the settings form with current values
+      document.getElementById('background-color-picker').value = settings.colors.backgroundColor;
+      document.getElementById('grid-cell-color-picker').value = settings.colors.gridCellColor;
+      document.getElementById('button-color-picker').value = settings.colors.buttonColor;
+      document.getElementById('text-color-picker').value = settings.colors.textColor;
+      document.getElementById('question-text-color-picker').value = settings.colors.questionTextColor;
+      document.getElementById('use-rounds-checkbox').checked = settings.useRounds;
+      document.getElementById('random-bonus-checkbox').checked = settings.randomBonus;
+      document.getElementById('enable-stopwatch-checkbox').checked = settings.enableStopwatch;
+      document.getElementById('enable-gameclock-checkbox').checked = settings.enableGameClock;
+      document.getElementById('gameclock-minutes-input').value = settings.gameClockMinutes;
+      document.getElementById('warn-five-minutes-checkbox').checked = settings.warnFiveMinutes;
+      document.getElementById('enable-endtime-checkbox').checked = settings.enableEndTime;
+      document.getElementById('endtime-input').value = settings.endTime || '';
+      document.getElementById('warn-five-minutes-endtime-checkbox').checked = settings.warnFiveMinutesEndTime;
+
+      // Show or hide bonus settings
+      toggleBonusSettings();
+
+      if (settings.randomBonus) {
+        document.getElementById('bonus-points-input').value = settings.bonusPoints;
+        document.getElementById('bonus-chance-input').value = settings.bonusChance;
+      }
+
+      // Show or hide game clock settings
+      toggleGameClockSettings();
+      toggleEndTimeSettings();
+
+      // Display stopwatch time if enabled
+      if (settings.enableStopwatch) {
+        document.getElementById('stopwatch-display').style.display = 'block';
+        updateStopwatchDisplay();
+      } else {
+        document.getElementById('stopwatch-display').style.display = 'none';
+      }
+
+      document.getElementById('settings-modal').style.display = 'flex';
+    }
+
+    function closeSettings() {
+      document.getElementById('settings-modal').style.display = 'none';
+
+      // Resume stopwatch, game clock, and end time checks
+      if (settings.enableStopwatch && !stopwatchRunning) {
+        startStopwatch();
+      }
+      if (settings.enableGameClock && !gameClockRunning) {
+        startGameClock();
+      }
+      if (settings.enableEndTime && !endTimeRunning) {
+        startEndTimeCheck();
+      }
+    }
+
+    function toggleBonusSettings() {
+      const bonusSettings = document.getElementById('bonus-settings');
+      if (document.getElementById('random-bonus-checkbox').checked) {
+        bonusSettings.style.display = 'block';
+      } else {
+        bonusSettings.style.display = 'none';
+      }
+    }
+
+    function toggleGameClockSettings() {
+      const gameClockSettings = document.getElementById('gameclock-settings');
+      if (document.getElementById('enable-gameclock-checkbox').checked) {
+        gameClockSettings.style.display = 'block';
+        // Disable End Time if Game Clock is enabled
+        document.getElementById('enable-endtime-checkbox').checked = false;
+        settings.enableEndTime = false;
+        toggleEndTimeSettings();
+      } else {
+        gameClockSettings.style.display = 'none';
+      }
+    }
+
+    function toggleEndTimeSettings() {
+      const endTimeSettings = document.getElementById('endtime-settings');
+      if (document.getElementById('enable-endtime-checkbox').checked) {
+        endTimeSettings.style.display = 'block';
+        // Disable Game Clock if End Time is enabled
+        document.getElementById('enable-gameclock-checkbox').checked = false;
+        settings.enableGameClock = false;
+        toggleGameClockSettings();
+      } else {
+        endTimeSettings.style.display = 'none';
+      }
+    }
+
+    document.getElementById('random-bonus-checkbox').addEventListener('change', toggleBonusSettings);
+    document.getElementById('enable-gameclock-checkbox').addEventListener('change', toggleGameClockSettings);
+    document.getElementById('enable-endtime-checkbox').addEventListener('change', toggleEndTimeSettings);
+
+    function saveSettings(event) {
+      event.preventDefault();
+      // Update settings object with new values
+      settings.colors.backgroundColor = document.getElementById('background-color-picker').value;
+      settings.colors.gridCellColor = document.getElementById('grid-cell-color-picker').value;
+      settings.colors.buttonColor = document.getElementById('button-color-picker').value;
+      settings.colors.textColor = document.getElementById('text-color-picker').value;
+      settings.colors.questionTextColor = document.getElementById('question-text-color-picker').value;
+      settings.useRounds = document.getElementById('use-rounds-checkbox').checked;
+      settings.randomBonus = document.getElementById('random-bonus-checkbox').checked;
+      settings.enableStopwatch = document.getElementById('enable-stopwatch-checkbox').checked;
+      settings.enableGameClock = document.getElementById('enable-gameclock-checkbox').checked;
+      settings.gameClockMinutes = parseInt(document.getElementById('gameclock-minutes-input').value, 10) || 60;
+      settings.warnFiveMinutes = document.getElementById('warn-five-minutes-checkbox').checked;
+      settings.enableEndTime = document.getElementById('enable-endtime-checkbox').checked;
+      settings.endTime = document.getElementById('endtime-input').value || null;
+      settings.warnFiveMinutesEndTime = document.getElementById('warn-five-minutes-endtime-checkbox').checked;
+
+      if (settings.randomBonus) {
+        settings.bonusPoints = parseInt(document.getElementById('bonus-points-input').value, 10) || 0;
+        settings.bonusChance = parseInt(document.getElementById('bonus-chance-input').value, 10) || 0;
+      } else {
+        settings.bonusPoints = 0;
+        settings.bonusChance = 0;
+      }
+
+      // Apply settings
+      applySettings();
+
+      // Close settings modal
+      closeSettings();
+    }
+
+    function applySettings() {
+      // Apply color settings using CSS variables
+      document.documentElement.style.setProperty('--background-color', settings.colors.backgroundColor);
+      document.documentElement.style.setProperty('--grid-cell-color', settings.colors.gridCellColor);
+      document.documentElement.style.setProperty('--button-color', settings.colors.buttonColor);
+      document.documentElement.style.setProperty('--text-color', settings.colors.textColor);
+      document.documentElement.style.setProperty('--question-text-color', settings.colors.questionTextColor);
+
+      // Update maxRounds based on useRounds
+      if (settings.useRounds) {
+        maxRounds = 3;
+      } else {
+        maxRounds = 1;
+        currentRound = 1; // Reset to round 1 if rounds are disabled
+      }
+
+      // Update the game if it's already started
+      if (document.getElementById("game-board").style.display === "grid") {
+        updateNextRoundButton();
+        updateTurnIndicator();
+      }
+    }
+
+    // Close modals on outside click
+    window.onclick = function(event) {
+      if (event.target == document.getElementById('modal')) closeModal();
+      if (event.target == document.getElementById('result-modal')) closeResultModal();
+      if (event.target == document.getElementById('end-game-modal')) {
+        document.getElementById('end-game-modal').style.display = 'none';
+        playNewGame();
+      }
+      if (event.target == document.getElementById('settings-modal')) {
+        closeSettings();
+      }
+      if (event.target == document.getElementById('game-clock-modal')) {
+        document.getElementById('game-clock-modal').style.display = 'none';
+      }
+    };
+  </script>
+</body>
+</html>
