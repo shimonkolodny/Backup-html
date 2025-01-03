@@ -1,9 +1,5 @@
 {
-  "users": [
-    {
-      "username": "v",
-      "password": "f"
-    }
-  ],
-  "games": []
+  "users": [],
+  "games": [],
+  "questions": []
 }
