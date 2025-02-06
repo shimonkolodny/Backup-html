@@ -59,24 +59,24 @@
   {
     "player": "kolodny",
     "gameTime": "2025-02-06T01:48:48.398Z",
-    "gamePoints": 0,
+    "gamePoints": -200,
     "details": [
       {
         "question": "Go",
         "response": "Yes",
-        "correct": null,
+        "correct": true,
         "value": 100
       },
       {
         "question": "Go",
         "response": "No",
-        "correct": null,
+        "correct": true,
         "value": 100
       },
       {
         "question": "Go",
         "response": "No",
-        "correct": null,
+        "correct": false,
         "value": 400
       }
     ]
