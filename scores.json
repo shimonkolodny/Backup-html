@@ -1,1 +1,59 @@
-[]
+[
+  {
+    "player": "kolodny",
+    "gameTime": "2025-02-06T01:30:37.073Z",
+    "gamePoints": 1500,
+    "details": [
+      {
+        "question": "Go",
+        "correct": true,
+        "value": 100
+      },
+      {
+        "question": "Go",
+        "correct": true,
+        "value": 100
+      },
+      {
+        "question": "Go",
+        "correct": true,
+        "value": 100
+      },
+      {
+        "question": "Go",
+        "correct": true,
+        "value": 100
+      },
+      {
+        "question": "Go",
+        "correct": true,
+        "value": 100
+      },
+      {
+        "question": "Go",
+        "correct": true,
+        "value": 200
+      },
+      {
+        "question": "Go",
+        "correct": true,
+        "value": 200
+      },
+      {
+        "question": "Go",
+        "correct": true,
+        "value": 200
+      },
+      {
+        "question": "Go",
+        "correct": true,
+        "value": 200
+      },
+      {
+        "question": "Go",
+        "correct": true,
+        "value": 200
+      }
+    ]
+  }
+]
