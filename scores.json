@@ -129,5 +129,18 @@
         "value": 500
       }
     ]
+  },
+  {
+    "player": "kolodny",
+    "gameTime": "2025-02-06T01:52:56.851Z",
+    "gamePoints": 0,
+    "details": [
+      {
+        "question": "Go",
+        "response": "No",
+        "correct": null,
+        "value": 100
+      }
+    ]
   }
 ]
