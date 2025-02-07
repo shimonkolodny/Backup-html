@@ -177,150 +177,150 @@
   {
     "player": "kolodny",
     "gameTime": "2025-02-07T18:51:03.295Z",
-    "gamePoints": 0,
+    "gamePoints": 7400,
     "details": [
       {
         "question": "Go",
         "response": "Yes",
-        "correct": null,
+        "correct": true,
         "value": 100
       },
       {
         "question": "Go",
         "response": "Yes",
-        "correct": null,
+        "correct": true,
         "value": 100
       },
       {
         "question": "Go",
         "response": "Yes",
-        "correct": null,
+        "correct": true,
         "value": 100
       },
       {
         "question": "Go",
         "response": "Yes",
-        "correct": null,
+        "correct": true,
         "value": 100
       },
       {
         "question": "Go",
         "response": "Yes",
-        "correct": null,
+        "correct": true,
         "value": 200
       },
       {
         "question": "Go",
         "response": "Yes",
-        "correct": null,
+        "correct": true,
         "value": 200
       },
       {
         "question": "Go",
         "response": "Yes",
-        "correct": null,
+        "correct": true,
         "value": 200
       },
       {
         "question": "Go",
         "response": "Yes",
-        "correct": null,
+        "correct": true,
         "value": 200
       },
       {
         "question": "Go",
         "response": "Yes",
-        "correct": null,
+        "correct": true,
         "value": 200
       },
       {
         "question": "Go",
         "response": "Yes",
-        "correct": null,
+        "correct": true,
         "value": 300
       },
       {
         "question": "Go",
         "response": "Yes",
-        "correct": null,
+        "correct": true,
         "value": 300
       },
       {
         "question": "Go",
         "response": "Yes",
-        "correct": null,
+        "correct": true,
         "value": 300
       },
       {
         "question": "Go",
         "response": "Yes",
-        "correct": null,
+        "correct": true,
         "value": 400
       },
       {
         "question": "Go",
         "response": "Yes",
-        "correct": null,
+        "correct": true,
         "value": 300
       },
       {
         "question": "Go",
         "response": "Yes",
-        "correct": null,
+        "correct": true,
         "value": 300
       },
       {
         "question": "Go",
         "response": "Yes",
-        "correct": null,
+        "correct": true,
         "value": 400
       },
       {
         "question": "Go",
         "response": "Yes",
-        "correct": null,
+        "correct": true,
         "value": 400
       },
       {
         "question": "Go",
         "response": "Yes",
-        "correct": null,
+        "correct": true,
         "value": 400
       },
       {
         "question": "Go",
         "response": "Yes",
-        "correct": null,
+        "correct": true,
         "value": 400
       },
       {
         "question": "Go",
         "response": "Yes",
-        "correct": null,
+        "correct": true,
         "value": 500
       },
       {
         "question": "Go",
         "response": "Yes",
-        "correct": null,
+        "correct": true,
         "value": 500
       },
       {
         "question": "Go",
         "response": "Yes",
-        "correct": null,
+        "correct": true,
         "value": 500
       },
       {
         "question": "Go",
         "response": "Yes",
-        "correct": null,
+        "correct": true,
         "value": 500
       },
       {
         "question": "Go",
         "response": "Yes",
-        "correct": null,
+        "correct": true,
         "value": 500
       }
     ]
