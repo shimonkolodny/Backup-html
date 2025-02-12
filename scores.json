@@ -177,7 +177,7 @@
   {
     "player": "kolodny",
     "gameTime": "2025-02-07T18:51:03.295Z",
-    "gamePoints": 2000000000000,
+    "gamePoints": -9.9999999998e+22,
     "details": [
       {
         "question": "Go",
