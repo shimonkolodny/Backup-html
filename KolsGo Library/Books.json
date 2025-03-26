@@ -1,1 +1,8 @@
-[]
+[
+  {
+    "isbn": "1118451040299",
+    "name": "Book",
+    "author": "Kolodny",
+    "status": "available"
+  }
+]
