@@ -1,1 +1,11 @@
-[]
+[
+  {
+    "name": "Shimon Kolodny",
+    "email": "shimonkolodny@gmail.com",
+    "phone": "9294645413",
+    "class": "7K",
+    "barcode": "495",
+    "notes": "",
+    "checkedOutBooks": []
+  }
+]
