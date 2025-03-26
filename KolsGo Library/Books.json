@@ -3,6 +3,7 @@
     "isbn": "1118451040299",
     "name": "Book",
     "author": "Kolodny",
-    "status": "available"
+    "status": "checked out",
+    "dueDate": "2025-04-09T02:41:39.339Z"
   }
 ]
