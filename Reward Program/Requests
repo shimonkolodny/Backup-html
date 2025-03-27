@@ -6,6 +6,7 @@
     "programs": {
       "Program": "12"
     },
-    "status": "pending"
+    "status": "accepted",
+    "seenByChild": false
   }
 ]
