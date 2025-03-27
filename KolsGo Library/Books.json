@@ -7,5 +7,13 @@
     "status": "available",
     "dueDate": "",
     "renewalsLeft": 3
+  },
+  {
+    "isbn": "1118451040299",
+    "name": "Book",
+    "author": "Kolodny",
+    "barcode": "3",
+    "status": "available",
+    "dueDate": ""
   }
 ]
