@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Parent Reward Dashboard</title>
+
+  <!-- Inline CSS -->
+  <style>
+    /********************************************
+     *           BASIC PAGE & CONTAINER
+     ********************************************/
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f9f9f9;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .container {
+      background: #ffffff;
+      border-radius: 20px;
+      padding: 30px;
+      width: 750px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    h1 {
+      margin-bottom: 10px;
+    }
+
+    /********************************************
+     *           TOP BAR / BUTTONS
+     ********************************************/
+    .top-buttons {
+      margin-top: 5px;
+      margin-bottom: 10px;
+      display: flex;
+      gap: 10px;
+    }
+    .top-buttons button {
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      padding: 10px 16px;
+      border-radius: 20px;
+      cursor: pointer;
+    }
+    .top-buttons button:hover {
+      background-color: #0056b3;
+    }
+
+    /********************************************
+     *               CALENDAR
+     ********************************************/
+    #calendar-parent {
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+      gap: 10px;
+      margin-top: 20px;
+    }
+    .day {
+      background-color: #e0f7fa;
+      border-radius: 12px;
+      padding: 20px;
+      cursor: pointer;
+      text-align: center;
+    }
+    .blinking {
+      background-color: #ff5252 !important;
+      animation: blink 1s infinite;
+    }
+    @keyframes blink {
+      50% {
+        background-color: #ff8080;
+      }
+    }
+
+    /********************************************
+     *               MODALS
+     ********************************************/
+    .modal {
+      position: fixed;
+      background-color: rgba(0,0,0,0.4);
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .hidden {
+      display: none;
+    }
+    .modal-content {
+      background: white;
+      padding: 20px;
+      border-radius: 20px;
+      width: 450px;
+      max-height: 80vh;
+      overflow-y: auto;
+      position: relative;
+    }
+    .close {
+      position: absolute;
+      right: 15px;
+      top: 10px;
+      font-size: 18px;
+      cursor: pointer;
+    }
+
+    /********************************************
+     *           REQUESTS VIEW (PARENT)
+     ********************************************/
+    .request-item {
+      border: 1px solid #ccc;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 10px;
+    }
+    .request-actions {
+      margin-top: 10px;
+    }
+    .request-actions button {
+      margin-right: 10px;
+      border-radius: 20px;
+      border: none;
+      padding: 8px 12px;
+      cursor: pointer;
+    }
+
+    /********************************************
+     *           ADD PROGRAM MODAL
+     ********************************************/
+    #add-program-modal .modal-content label {
+      display: block;
+      margin-top: 10px;
+    }
+    input[type="text"], input[type="date"] {
+      width: 100%;
+      padding: 5px 8px;
+      border-radius: 10px;
+      border: 1px solid #ccc;
+    }
+
+    /********************************************
+     *           ALL REQUESTS MODAL
+     ********************************************/
+    #all-requests-list .request-item {
+      border: 1px solid #ccc;
+      padding: 10px;
+      border-radius: 10px;
+      margin-bottom: 10px;
+    }
+
+    /********************************************
+     *           MANAGE PROGRAMS MODAL
+     ********************************************/
+    #manage-programs-modal .program-item {
+      border: 1px solid #ccc;
+      padding: 10px;
+      border-radius: 10px;
+      margin-bottom: 10px;
+    }
+    #manage-programs-modal .program-actions button {
+      margin-right: 5px;
+      border-radius: 20px;
+      border: none;
+      padding: 6px 10px;
+      cursor: pointer;
+    }
+
+    /********************************************
+     *          MANAGE STORE (PRIZES)
+     ********************************************/
+    #manage-store-modal .prize-item {
+      border: 1px solid #ccc;
+      padding: 10px;
+      border-radius: 10px;
+      margin-bottom: 10px;
+    }
+    #manage-store-modal .prize-actions button {
+      margin-right: 5px;
+      border-radius: 20px;
+      border: none;
+      padding: 6px 10px;
+      cursor: pointer;
+    }
+    .add-prize-form label {
+      display: block;
+      margin-top: 10px;
+    }
+    .add-prize-form input {
+      width: 100%;
+      margin-bottom: 10px;
+      border-radius: 10px;
+      border: 1px solid #ccc;
+      padding: 5px 8px;
+    }
+
+    /********************************************
+     *         CREDIT DISPLAY (PARENT)
+     ********************************************/
+    .credit-display {
+      font-weight: bold;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Parent Reward Management</h1>
+
+    <!-- Top Buttons: Add Program, View All Requests, Manage Programs, Manage Store -->
+    <div class="top-buttons">
+      <button id="add-program-btn">Add Program</button>
+      <button id="view-all-requests-btn">All Requests</button>
+      <button id="manage-programs-btn">Manage Programs</button>
+      <button id="manage-store-btn">Manage Store</button>
+    </div>
+
+    <div class="credit-display" id="parent-credit-display">Child Credits: 0 (=$0.00)</div>
+
+    <!-- Parent Calendar -->
+    <div id="calendar-parent"></div>
+  </div>
+
+  <!-- Add Program Modal -->
+  <div id="add-program-modal" class="modal hidden">
+    <div class="modal-content">
+      <span class="close" id="close-add-program-modal">&times;</span>
+      <h2>Add New Program</h2>
+      <label for="program-name">Program Name:</label>
+      <input type="text" id="program-name" />
+      <label for="start-date">Start Date:</label>
+      <input type="date" id="start-date" />
+      <label for="end-date">End Date:</label>
+      <input type="date" id="end-date" />
+      <label for="reward">Reward (Optional):</label>
+      <input type="text" id="reward" />
+      <button id="save-program">Save Program</button>
+    </div>
+  </div>
+
+  <!-- View Requests Modal (for a single day) -->
+  <div id="view-requests-modal" class="modal hidden">
+    <div class="modal-content">
+      <span class="close" id="close-view-requests-modal">&times;</span>
+      <h2>Requests for <span id="requests-date"></span></h2>
+      <div id="request-list"><!-- Requests for selected day --></div>
+    </div>
+  </div>
+
+  <!-- View All Requests Modal -->
+  <div id="all-requests-modal" class="modal hidden">
+    <div class="modal-content">
+      <span class="close" id="close-all-requests-modal">&times;</span>
+      <h2>All Requests</h2>
+      <div id="all-requests-list"><!-- All requests go here --></div>
+    </div>
+  </div>
+
+  <!-- Manage Programs Modal -->
+  <div id="manage-programs-modal" class="modal hidden">
+    <div class="modal-content">
+      <span class="close" id="close-manage-programs-modal">&times;</span>
+      <h2>Manage Programs</h2>
+      <div id="programs-list"><!-- List of programs here --></div>
+    </div>
+  </div>
+
+  <!-- Manage Store Modal (Prizes) -->
+  <div id="manage-store-modal" class="modal hidden">
+    <div class="modal-content">
+      <span class="close" id="close-manage-store-modal">&times;</span>
+      <h2>Manage Store Items</h2>
+      <div id="prizes-list"><!-- Existing prizes here --></div>
+      <div class="add-prize-form">
+        <h3>Add New Prize</h3>
+        <label for="prize-name">Name:</label>
+        <input type="text" id="prize-name" />
+        <label for="prize-cost">Cost (credits):</label>
+        <input type="number" id="prize-cost" min="1" />
+        <button id="add-prize-btn">Add Prize</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Inline JavaScript -->
+  <script>
+    /********************************************
+     *        CONFIGURATION & CONSTANTS
+     ********************************************/
+    const GITHUB_USERNAME = "shimonkolodny";
+    const GITHUB_REPO = "Backup-html";
+    const API_TOKEN = "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";
+
+    // File paths on GitHub
+    const REQUESTS_PATH = "Reward Program/Requests";
+    const PROGRAMS_PATH = "Reward Program/Programs";
+    const CREDIT_PATH   = "Reward Program/Credit.json";
+    const PRIZES_PATH   = "Reward Program/Prizes.json";
+
+    // Construct the API endpoints
+    const REQUESTS_URL = `https://api.github.com/repos/${GITHUB_USERNAME}/${GITHUB_REPO}/contents/${REQUESTS_PATH}`;
+    const PROGRAMS_URL = `https://api.github.com/repos/${GITHUB_USERNAME}/${GITHUB_REPO}/contents/${PROGRAMS_PATH}`;
+    const CREDIT_URL   = `https://api.github.com/repos/${GITHUB_USERNAME}/${GITHUB_REPO}/contents/${CREDIT_PATH}`;
+    const PRIZES_URL   = `https://api.github.com/repos/${GITHUB_USERNAME}/${GITHUB_REPO}/contents/${PRIZES_PATH}`;
+
+    /********************************************
+     *                STATE
+     ********************************************/
+    let allRequests = [];    // All requests from GitHub
+    let programs = [];       // All programs from GitHub
+    let prizes = [];         // All store items
+    let childCredits = 0;    // The child's current credit balance
+    let selectedDay = null;
+    let selectedRequests = [];
+
+    /********************************************
+     *           GITHUB API HELPERS
+     ********************************************/
+    // 1) Fetch existing content (JSON)
+    async function fetchGithubFile(fileUrl) {
+      try {
+        const response = await fetch(fileUrl, {
+          method: "GET",
+          headers: {
+            Authorization: `token ${API_TOKEN}`,
+            Accept: "application/vnd.github.v3+json",
+          }
+        });
+        if (!response.ok) {
+          throw new Error(`Error fetching ${fileUrl}. Status: ${response.status}`);
+        }
+        const data = await response.json();
+        // Data content is base64-encoded
+        const decodedContent = atob(data.content);
+        return {
+          sha: data.sha,
+          content: JSON.parse(decodedContent),
+        };
+      } catch (error) {
+        console.error(error);
+        return { sha: null, content: [] };
+      }
+    }
+
+    // 2) Update (PUT) a file on GitHub
+    async function updateGithubFile(fileUrl, newContent, sha, commitMsg="Parent Update") {
+      const base64Content = btoa(JSON.stringify(newContent, null, 2));
+
+      const body = {
+        message: commitMsg,
+        content: base64Content,
+        sha: sha
+      };
+
+      try {
+        const response = await fetch(fileUrl, {
+          method: "PUT",
+          headers: {
+            Authorization: `token ${API_TOKEN}`,
+            Accept: "application/vnd.github.v3+json",
+          },
+          body: JSON.stringify(body),
+        });
+        if (!response.ok) {
+          throw new Error(`Error updating file at ${fileUrl}. Status: ${response.status}`);
+        }
+        return await response.json();
+      } catch (error) {
+        console.error(error);
+      }
+    }
+
+    /********************************************
+     *   LOAD REQUESTS, PROGRAMS, CREDIT, PRIZES
+     ********************************************/
+    async function loadRequestsAndPrograms() {
+      const requestsData = await fetchGithubFile(REQUESTS_URL);
+      allRequests = requestsData.content;
+
+      const programsData = await fetchGithubFile(PROGRAMS_URL);
+      programs = programsData.content;
+
+      const creditData = await fetchGithubFile(CREDIT_URL);
+      if (creditData.content.childCredits !== undefined) {
+        childCredits = creditData.content.childCredits;
+      }
+
+      const prizesData = await fetchGithubFile(PRIZES_URL);
+      prizes = prizesData.content;
+
+      updateCreditDisplay();
+    }
+
+    /********************************************
+     *         UPDATE CHILD'S CREDIT LABEL
+     ********************************************/
+    function updateCreditDisplay() {
+      const creditDisplay = document.getElementById("parent-credit-display");
+      creditDisplay.textContent = `Child Credits: ${childCredits} (=$${(childCredits/100).toFixed(2)})`;
+    }
+
+    /********************************************
+     *        GENERATE PARENT CALENDAR
+     ********************************************/
+    function generateCalendarParent() {
+      const calendarParent = document.getElementById("calendar-parent");
+      calendarParent.innerHTML = ""; // Clear existing
+      const date = new Date();
+      const currentMonth = date.getMonth() + 1;
+      const currentYear = date.getFullYear();
+      const daysInMonth = new Date(currentYear, currentMonth, 0).getDate();
+
+      for (let day = 1; day <= daysInMonth; day++) {
+        const dayDiv = document.createElement("div");
+        dayDiv.classList.add("day");
+        dayDiv.innerText = day;
+
+        // Check if there's a pending request for this day (type = program)
+        if (hasPendingRequest(day, currentMonth, currentYear)) {
+          dayDiv.classList.add("blinking");
+        }
+
+        dayDiv.addEventListener("click", () => {
+          selectedDay = day;
+          openRequestsModal(day, currentMonth, currentYear);
+        });
+
+        calendarParent.appendChild(dayDiv);
+      }
+    }
+
+    function hasPendingRequest(day, month, year) {
+      return allRequests.some(req =>
+        req.type === "program" &&
+        req.day === day &&
+        req.month === month &&
+        req.year === year &&
+        req.status === "pending"
+      );
+    }
+
+    /********************************************
+     *    OPEN REQUESTS MODAL FOR A SELECTED DAY
+     ********************************************/
+    function openRequestsModal(day, month, year) {
+      const modal = document.getElementById("view-requests-modal");
+      const requestsDate = document.getElementById("requests-date");
+      requestsDate.innerText = `${day}/${month}/${year}`;
+
+      const requestList = document.getElementById("request-list");
+      requestList.innerHTML = "";
+
+      // Filter for program-type requests on that day
+      selectedRequests = allRequests.filter(req =>
+        req.type === "program" &&
+        req.day === day &&
+        req.month === month &&
+        req.year === year
+      );
+
+      if (selectedRequests.length === 0) {
+        requestList.innerHTML = "<p>No requests for this day.</p>";
+      } else {
+        selectedRequests.forEach(req => {
+          const itemDiv = document.createElement("div");
+          itemDiv.classList.add("request-item");
+
+          let programsText = "";
+          for (let [programName, reward] of Object.entries(req.programs)) {
+            programsText += `<p><strong>${programName}</strong> - Requested Reward: ${reward}</p>`;
+          }
+
+          itemDiv.innerHTML = `
+            <p><strong>Status:</strong> ${req.status}</p>
+            ${programsText}
+          `;
+
+          if (req.status === "pending") {
+            const actionsDiv = document.createElement("div");
+            actionsDiv.classList.add("request-actions");
+
+            const acceptBtn = document.createElement("button");
+            acceptBtn.innerText = "Accept";
+            acceptBtn.style.backgroundColor = "#28a745";
+            acceptBtn.style.color = "#fff";
+            acceptBtn.onclick = () => updateRequestStatus(req, "accepted");
+
+            const denyBtn = document.createElement("button");
+            denyBtn.innerText = "Deny";
+            denyBtn.style.backgroundColor = "#dc3545";
+            denyBtn.style.color = "#fff";
+            denyBtn.onclick = () => updateRequestStatus(req, "denied");
+
+            actionsDiv.appendChild(acceptBtn);
+            actionsDiv.appendChild(denyBtn);
+            itemDiv.appendChild(actionsDiv);
+          }
+
+          requestList.appendChild(itemDiv);
+        });
+      }
+
+      modal.classList.remove("hidden");
+    }
+
+    /********************************************
+     *    UPDATE REQUEST STATUS (ACCEPT / DENY)
+     ********************************************/
+    async function updateRequestStatus(requestObj, newStatus) {
+      requestObj.status = newStatus;
+      requestObj.seenByChild = false; // so child gets a notification
+
+      // If this is a "credit" request and accepted, add credits
+      if (requestObj.type === "credit" && newStatus === "accepted") {
+        childCredits += requestObj.creditsRequested;
+        await saveCreditsToGithub();
+      }
+
+      // If this is a "store" request and accepted, deduct credits
+      if (requestObj.type === "store" && newStatus === "accepted") {
+        // Check if child has enough credits
+        if (childCredits >= requestObj.cost) {
+          childCredits -= requestObj.cost;
+          await saveCreditsToGithub();
+        } else {
+          // Not enough credits => automatically deny? or partial approach?
+          alert("Child does not have enough credits. Denying the request.");
+          requestObj.status = "denied";
+        }
+      }
+
+      // We'll update the file on GitHub
+      const { sha, content } = await fetchGithubFile(REQUESTS_URL);
+
+      // Find matching request in content
+      const foundIndex = content.findIndex(r => matchRequest(r, requestObj));
+      if (foundIndex !== -1) {
+        content[foundIndex] = requestObj;
+      }
+
+      await updateGithubFile(REQUESTS_URL, content, sha, `Request ${newStatus}`);
+
+      alert(`Request ${newStatus}!`);
+      closeModal("view-requests-modal");
+
+      // Reload and refresh
+      await loadRequestsAndPrograms();
+      resetCalendar();
+    }
+
+    // Matching function to find the same request object
+    function matchRequest(r1, r2) {
+      return JSON.stringify(r1) === JSON.stringify(r2);
+    }
+
+    async function saveCreditsToGithub() {
+      // Update the child's credits in Credit.json
+      const { sha, content } = await fetchGithubFile(CREDIT_URL);
+      content.childCredits = childCredits;
+
+      await updateGithubFile(CREDIT_URL, content, sha, "Update child credits");
+      updateCreditDisplay();
+    }
+
+    function resetCalendar() {
+      generateCalendarParent();
+    }
+
+    /********************************************
+     *       VIEW ALL REQUESTS (Parent)
+     ********************************************/
+    function openAllRequestsModal() {
+      const modal = document.getElementById("all-requests-modal");
+      const container = document.getElementById("all-requests-list");
+      container.innerHTML = "";
+
+      if (allRequests.length === 0) {
+        container.innerHTML = "<p>No requests found.</p>";
+      } else {
+        allRequests.forEach(req => {
+          const itemDiv = document.createElement("div");
+          itemDiv.classList.add("request-item");
+
+          let details = "";
+          if (req.type === "program") {
+            details += `<p>Day: ${req.day}/${req.month}/${req.year}</p>`;
+            for (let [pName, reward] of Object.entries(req.programs)) {
+              details += `<p>${pName} - Reward: ${reward}</p>`;
+            }
+          } else if (req.type === "store") {
+            details += `<p>Item: ${req.itemName} (Cost: ${req.cost} credits)</p>`;
+          } else if (req.type === "credit") {
+            details += `<p>Requested +${req.creditsRequested} credits</p>`;
+            details += `<p>Reason: ${req.reason || "N/A"}</p>`;
+          }
+
+          itemDiv.innerHTML = `
+            <p><strong>Type:</strong> ${req.type}</p>
+            <p><strong>Status:</strong> ${req.status}</p>
+            ${details}
+          `;
+
+          if (req.status === "pending") {
+            const actionsDiv = document.createElement("div");
+            actionsDiv.classList.add("request-actions");
+
+            const acceptBtn = document.createElement("button");
+            acceptBtn.innerText = "Accept";
+            acceptBtn.style.backgroundColor = "#28a745";
+            acceptBtn.style.color = "#fff";
+            acceptBtn.onclick = () => updateRequestStatus(req, "accepted");
+
+            const denyBtn = document.createElement("button");
+            denyBtn.innerText = "Deny";
+            denyBtn.style.backgroundColor = "#dc3545";
+            denyBtn.style.color = "#fff";
+            denyBtn.onclick = () => updateRequestStatus(req, "denied");
+
+            actionsDiv.appendChild(acceptBtn);
+            actionsDiv.appendChild(denyBtn);
+            itemDiv.appendChild(actionsDiv);
+          }
+
+          container.appendChild(itemDiv);
+        });
+      }
+
+      modal.classList.remove("hidden");
+    }
+
+    /********************************************
+     *           ADD NEW PROGRAM
+     ********************************************/
+    function openAddProgramModal() {
+      document.getElementById("add-program-modal").classList.remove("hidden");
+    }
+
+    async function saveProgram() {
+      const programName = document.getElementById("program-name").value.trim();
+      const startDate = document.getElementById("start-date").value;
+      const endDate = document.getElementById("end-date").value;
+      const reward = document.getElementById("reward").value.trim();
+
+      if (!programName || !startDate || !endDate) {
+        alert("Please fill out name, start date, and end date.");
+        return;
+      }
+
+      // Create program object
+      const newProgram = {
+        name: programName,
+        startDate: startDate,
+        endDate: endDate,
+        reward: reward || null
+      };
+
+      const { sha, content: existingPrograms } = await fetchGithubFile(PROGRAMS_URL);
+      existingPrograms.push(newProgram);
+
+      await updateGithubFile(PROGRAMS_URL, existingPrograms, sha, "Parent added a program");
+      alert("Program added successfully!");
+
+      closeModal("add-program-modal");
+      await loadRequestsAndPrograms();
+    }
+
+    /********************************************
+     *    MANAGE PROGRAMS: LIST, DELETE
+     ********************************************/
+    function openManageProgramsModal() {
+      const modal = document.getElementById("manage-programs-modal");
+      const listContainer = document.getElementById("programs-list");
+      listContainer.innerHTML = "";
+
+      if (programs.length === 0) {
+        listContainer.innerHTML = "<p>No programs available.</p>";
+      } else {
+        programs.forEach((p, idx) => {
+          const itemDiv = document.createElement("div");
+          itemDiv.classList.add("program-item");
+
+          itemDiv.innerHTML = `
+            <p><strong>Name:</strong> ${p.name}</p>
+            <p><strong>Start:</strong> ${p.startDate} | <strong>End:</strong> ${p.endDate}</p>
+            <p><strong>Reward:</strong> ${p.reward ? p.reward : "None"}</p>
+            <div class="program-actions">
+              <button id="delete-program-${idx}" style="background-color:#dc3545; color:#fff;">Delete</button>
+            </div>
+          `;
+
+          // "Delete" event
+          setTimeout(() => {
+            document.getElementById(`delete-program-${idx}`).onclick = () => {
+              deleteProgram(p);
+            };
+          }, 0);
+
+          listContainer.appendChild(itemDiv);
+        });
+      }
+
+      modal.classList.remove("hidden");
+    }
+
+    async function deleteProgram(programObj) {
+      if (!confirm(`Delete program "${programObj.name}"?`)) return;
+
+      const { sha, content: existingPrograms } = await fetchGithubFile(PROGRAMS_URL);
+      const newPrograms = existingPrograms.filter(p =>
+        !(p.name === programObj.name && p.startDate === programObj.startDate && p.endDate === programObj.endDate)
+      );
+      await updateGithubFile(PROGRAMS_URL, newPrograms, sha, `Delete program ${programObj.name}`);
+
+      alert("Program deleted successfully!");
+      closeModal("manage-programs-modal");
+      await loadRequestsAndPrograms();
+    }
+
+    /********************************************
+     *         MANAGE STORE (PRIZES)
+     ********************************************/
+    function openManageStoreModal() {
+      const modal = document.getElementById("manage-store-modal");
+      const prizesList = document.getElementById("prizes-list");
+      prizesList.innerHTML = "";
+
+      if (prizes.length === 0) {
+        prizesList.innerHTML = "<p>No prizes in store yet.</p>";
+      } else {
+        prizes.forEach((prize, idx) => {
+          const itemDiv = document.createElement("div");
+          itemDiv.classList.add("prize-item");
+          itemDiv.innerHTML = `
+            <p><strong>Name:</strong> ${prize.name}</p>
+            <p><strong>Cost:</strong> ${prize.cost} credits ($${(prize.cost/100).toFixed(2)})</p>
+            <div class="prize-actions">
+              <button id="delete-prize-${idx}" style="background-color:#dc3545; color:#fff;">Delete</button>
+            </div>
+          `;
+
+          setTimeout(() => {
+            document.getElementById(`delete-prize-${idx}`).onclick = () => {
+              deletePrize(prize);
+            };
+          }, 0);
+
+          prizesList.appendChild(itemDiv);
+        });
+      }
+
+      modal.classList.remove("hidden");
+    }
+
+    async function deletePrize(prizeObj) {
+      if (!confirm(`Delete prize "${prizeObj.name}"?`)) return;
+
+      const { sha, content: existingPrizes } = await fetchGithubFile(PRIZES_URL);
+      const newPrizes = existingPrizes.filter(p => !(p.name === prizeObj.name && p.cost === prizeObj.cost));
+      await updateGithubFile(PRIZES_URL, newPrizes, sha, `Delete prize ${prizeObj.name}`);
+
+      alert("Prize deleted successfully!");
+      closeModal("manage-store-modal");
+      await loadRequestsAndPrograms();
+    }
+
+    async function addPrize() {
+      const prizeName = document.getElementById("prize-name").value.trim();
+      const prizeCost = parseInt(document.getElementById("prize-cost").value, 10);
+
+      if (!prizeName || !prizeCost || prizeCost <= 0) {
+        alert("Please provide valid name and cost.");
+        return;
+      }
+
+      const newPrize = { name: prizeName, cost: prizeCost };
+
+      const { sha, content: existingPrizes } = await fetchGithubFile(PRIZES_URL);
+      existingPrizes.push(newPrize);
+
+      await updateGithubFile(PRIZES_URL, existingPrizes, sha, `Add new prize: ${prizeName}`);
+
+      alert("Prize added successfully!");
+      document.getElementById("prize-name").value = "";
+      document.getElementById("prize-cost").value = "";
+      await loadRequestsAndPrograms();
+      openManageStoreModal(); // Refresh list
+    }
+
+    /********************************************
+     *         CLOSE A GIVEN MODAL
+     ********************************************/
+    function closeModal(modalId) {
+      document.getElementById(modalId).classList.add("hidden");
+    }
+
+    /********************************************
+     *          EVENT LISTENERS & INIT
+     ********************************************/
+    document.addEventListener("DOMContentLoaded", async () => {
+      // Load data
+      await loadRequestsAndPrograms();
+      // Generate calendar
+      generateCalendarParent();
+
+      // Buttons
+      document.getElementById("add-program-btn").onclick = openAddProgramModal;
+      document.getElementById("view-all-requests-btn").onclick = openAllRequestsModal;
+      document.getElementById("manage-programs-btn").onclick = openManageProgramsModal;
+      document.getElementById("manage-store-btn").onclick = openManageStoreModal;
+
+      // Close Modals
+      document.getElementById("close-add-program-modal").onclick = () => closeModal("add-program-modal");
+      document.getElementById("close-view-requests-modal").onclick = () => closeModal("view-requests-modal");
+      document.getElementById("close-all-requests-modal").onclick = () => closeModal("all-requests-modal");
+      document.getElementById("close-manage-programs-modal").onclick = () => closeModal("manage-programs-modal");
+      document.getElementById("close-manage-store-modal").onclick = () => closeModal("manage-store-modal");
+
+      // Save Program
+      document.getElementById("save-program").onclick = saveProgram;
+
+      // Add Prize
+      document.getElementById("add-prize-btn").onclick = addPrize;
+    });
+  </script>
+</body>
+</html>
