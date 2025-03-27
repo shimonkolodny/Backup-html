@@ -6,7 +6,9 @@
     "class": "7K",
     "barcode": "1118451040299",
     "notes": "Helped set up the system.",
-    "checkedOutBooks": []
+    "checkedOutBooks": [
+      "1118451040299"
+    ]
   },
   {
     "name": "Frishman, Chaia",
