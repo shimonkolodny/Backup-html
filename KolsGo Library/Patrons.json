@@ -1,1 +1,3719 @@
-[]
+[
+  {
+    "name": "Kolodny, Shimon",
+    "email": "shimonkolodny@gmail.com",
+    "phone": "9294645413",
+    "class": "7K",
+    "barcode": "1118451040299",
+    "notes": "Helped set up the system.",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Frishman, Chaia",
+    "email": "cfrishman@darchei.org",
+    "phone": "7184064308",
+    "class": "",
+    "barcode": "Chaiaf",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Assil, Rafael Chaim",
+    "email": "Rebeccaassil81@gmail.com",
+    "phone": "(516) 829-0871",
+    "class": "7C",
+    "barcode": "1118451040301",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Benedek, Yakov",
+    "email": "chayalafogel@gmail.com",
+    "phone": "(845) 521-4242",
+    "class": "7C",
+    "barcode": "1118451040302",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Bernson, Yazzi",
+    "email": "bernson.sara@gmail.com",
+    "phone": "(818) 458-4709",
+    "class": "7C",
+    "barcode": "1118451040303",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Birnbaum, Zev",
+    "email": "sara.rosenb@gmail.com",
+    "phone": "(718) 530-3869",
+    "class": "7C",
+    "barcode": "1118451040304",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Cohen, Aharon Yochanan",
+    "email": "rachelncohen@gmail.com",
+    "phone": "(646) 897-3548",
+    "class": "7C",
+    "barcode": "1118451040305",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Gluck, Alexander",
+    "email": "chaygluck@gmail.com",
+    "phone": "(917) 626-8612",
+    "class": "7C",
+    "barcode": "1118451040306",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Goldman, Nosson",
+    "email": "mimigoldman1@gmail.com",
+    "phone": "(917) 674-9410",
+    "class": "7C",
+    "barcode": "1118451040307",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Goldstein, Akiva",
+    "email": "alizzzad@gmail.com",
+    "phone": "(516) 569-3929",
+    "class": "7C",
+    "barcode": "1118451040308",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Gordon, Eliyahu",
+    "email": "sugarchani@aol.com",
+    "phone": "(516) 295-1985",
+    "class": "7C",
+    "barcode": "1118451040309",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Gordon, Yehuda",
+    "email": "rachelgordon82@gmail.com",
+    "phone": "(516) 295-1182",
+    "class": "7C",
+    "barcode": "1118451040310",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Herzog, Nachum",
+    "email": "shevyherzog@gmail.com",
+    "phone": "(917) 270-4141",
+    "class": "7C",
+    "barcode": "1118451040311",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Kirschner, Netanel",
+    "email": "michelekirschner@gmail.com",
+    "phone": "(516) 612-3686",
+    "class": "7C",
+    "barcode": "1118451040312",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Kirzner, Aaron",
+    "email": "selbaz718@gmail.com",
+    "phone": "(718) 490-2371",
+    "class": "7C",
+    "barcode": "1118451040313",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Kitay, Eliezer",
+    "email": "ilyt1@aol.com",
+    "phone": "(516) 528-6799",
+    "class": "7C",
+    "barcode": "1118451040314",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Klein, Ami",
+    "email": "hindysinger@gmail.com",
+    "phone": "(917) 648-1923",
+    "class": "7C",
+    "barcode": "1118451040315",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Klein, Yehuda",
+    "email": "hindysinger@gmail.com",
+    "phone": "(917) 648-1923",
+    "class": "7C",
+    "barcode": "1118451040316",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Kotkes, Chaim",
+    "email": "lkotkes@gmail.com",
+    "phone": "(516) 295-2068",
+    "class": "7C",
+    "barcode": "1118451040317",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "La Brie, Zecharia",
+    "email": "alichtman00@gmail.com",
+    "phone": "(516) 510-2996",
+    "class": "7C",
+    "barcode": "1118451040318",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Luban, Ezriel",
+    "email": "devoriluban@me.com",
+    "phone": "(516) 837-8596",
+    "class": "7C",
+    "barcode": "1118451040319",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Alpert, Mordechai",
+    "email": "alpertfam@gmail.com",
+    "phone": "(718) 327-2358",
+    "class": "7F",
+    "barcode": "1118451040320",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Bauman, Zev Tuvia",
+    "email": "tziviabauman@gmail.com",
+    "phone": "(646) 823-7178",
+    "class": "7F",
+    "barcode": "1118451040321",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Bender, Lipa",
+    "email": "sbender@bbyschool.org",
+    "phone": "(718) 327-3816",
+    "class": "7F",
+    "barcode": "1118451040322",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Blinder, Elimelech",
+    "email": "ryblinder@gmail.com",
+    "phone": "(516) 578-5514",
+    "class": "7F",
+    "barcode": "1118451040323",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Bloom, Mordechai",
+    "email": "chbloom100@gmail.com",
+    "phone": "(718) 327-0764",
+    "class": "7F",
+    "barcode": "1118451040324",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Buls, Menachem",
+    "email": "dbulsclan@gmail.com",
+    "phone": "(718) 471-7280",
+    "class": "7F",
+    "barcode": "1118451040325",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Cohen, Yedidya",
+    "email": "naomicohen99@gmail.com",
+    "phone": "(516) 374-1779",
+    "class": "7F",
+    "barcode": "1118451040326",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Eckstein, Moshe",
+    "email": "adinaeckstein1@gmail.com",
+    "phone": "(917) 626-0388",
+    "class": "7F",
+    "barcode": "1118451040327",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Eisgrau, Chaim Yehuda",
+    "email": "keisgrau@gmail.com",
+    "phone": "(347) 246-7107",
+    "class": "7F",
+    "barcode": "1118451040328",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Engel, Eliyahu",
+    "email": "naomizengel@gmail.com",
+    "phone": "(718) 868-0583",
+    "class": "7F",
+    "barcode": "1118451040329",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Genuth, Avraham",
+    "email": "rickiadler@yahoo.com",
+    "phone": "(718) 337-1070",
+    "class": "7F",
+    "barcode": "1118451040330",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Goldberg, Bentzion",
+    "email": "ygcubed@gmail.com",
+    "phone": "(516) 374-8695",
+    "class": "7F",
+    "barcode": "1118451040331",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Goodman, Shlomo",
+    "email": "shulagood@gmail.com",
+    "phone": "(718) 327-1795",
+    "class": "7F",
+    "barcode": "1118451040332",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Greenfield, Meir",
+    "email": "hennig86@gmail.com",
+    "phone": "(516) 284-9033",
+    "class": "7F",
+    "barcode": "1118451040333",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Gross, Ahron",
+    "email": "shanam518@gmail.com",
+    "phone": "(917) 771-5759",
+    "class": "7F",
+    "barcode": "1118451040334",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Kamin, Zalmen Ber",
+    "email": "rykamin@yahoo.com",
+    "phone": "(718) 327-8159",
+    "class": "7F",
+    "barcode": "1118451040335",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Keilson, Saadya",
+    "email": "tkeilson@gmail.com",
+    "phone": "(347) 874-4535",
+    "class": "7F",
+    "barcode": "1118451040336",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Keilson, Yitzchok Yaakov",
+    "email": "ihkeilson@gmail.com",
+    "phone": "(718) 471-6293",
+    "class": "7F",
+    "barcode": "1118451040337",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Lipshitz, Naftali",
+    "email": "yaakovjay@gmail.com",
+    "phone": "(516) 295-2234",
+    "class": "7F",
+    "barcode": "1118451040338",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Massouda, Yehoshua",
+    "email": "mra01385@yahoo.com",
+    "phone": "(718) 441-2392",
+    "class": "7F",
+    "barcode": "1118451040339",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Noy, Yosef Shalom",
+    "email": "peninanoy@gmail.com",
+    "phone": "(203) 707-3821",
+    "class": "7F",
+    "barcode": "1118451040340",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Polakoff, Nesanel Zev",
+    "email": "tova.polakoff@gmail.com",
+    "phone": "(201) 696-6558",
+    "class": "7F",
+    "barcode": "1118451040341",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Posnick, Avraham Shlomo",
+    "email": "rikkiposnick@gmail.com",
+    "phone": "(718) 471-6369",
+    "class": "7F",
+    "barcode": "1118451040342",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Rosenberg, Dovid",
+    "email": "estherg.rosenberg@gmail.com",
+    "phone": "(516) 941-8723",
+    "class": "7F",
+    "barcode": "1118451040343",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Rosenberg, Mordechai",
+    "email": "",
+    "phone": "(718) 471-2919",
+    "class": "7F",
+    "barcode": "1118451040344",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Rostker, Binyamin",
+    "email": "ba60chaim@yahoo.com",
+    "phone": "(718) 753-2728",
+    "class": "7F",
+    "barcode": "1118451040345",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Schachter, Yosef Shalom",
+    "email": "rina.schachter@gmail.com",
+    "phone": "(516) 612-7332",
+    "class": "7F",
+    "barcode": "1118451040346",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Scharf, Mordechai",
+    "email": "aliza10@aol.com",
+    "phone": "(516) 295-1228",
+    "class": "7F",
+    "barcode": "1118451040347",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Schiowitz, Yisroel",
+    "email": "mishy211@aol.com",
+    "phone": "(516) 612-4070",
+    "class": "7F",
+    "barcode": "1118451040348",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Sebrow, Boruch Matisyahu",
+    "email": "gsebrow@gmail.com",
+    "phone": "(718) 337-4965",
+    "class": "7F",
+    "barcode": "1118451040349",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Shanin, Binyamin",
+    "email": "SR0508@aol.com",
+    "phone": "(516) 564-3589",
+    "class": "7F",
+    "barcode": "1118451040350",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Skolnick, Yisroel",
+    "email": "brachasharfman@gmail.com",
+    "phone": "(718) 564-3043",
+    "class": "7F",
+    "barcode": "1118451040351",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Weiss, Baruch",
+    "email": "",
+    "phone": "(718) 327-9061",
+    "class": "7F",
+    "barcode": "1118451040352",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Wolf, Hillel",
+    "email": "wolfadina@gmail.com",
+    "phone": "(516) 295-0399",
+    "class": "7F",
+    "barcode": "1118451040353",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Ackerman, Moshe",
+    "email": "julieackerman4@gmail.com",
+    "phone": "(516) 371-0606",
+    "class": "7G",
+    "barcode": "1118451040354",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Bayen, Yosef Chaim",
+    "email": "chama6@gmail.com",
+    "phone": "(347) 831-8537",
+    "class": "7G",
+    "barcode": "1118451040355",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Bazov, Yitzchak",
+    "email": "adinabazov@gmail.com",
+    "phone": "(646) 379-1815",
+    "class": "7G",
+    "barcode": "1118451040356",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Berger, Pinny",
+    "email": "adbergs@gmail.com",
+    "phone": "(845) 659-5108",
+    "class": "7G",
+    "barcode": "1118451040357",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Davidov, Asher",
+    "email": "davidovester@yahoo.com",
+    "phone": "(347) 382-0730",
+    "class": "7G",
+    "barcode": "1118451040358",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Flaum, Yosef",
+    "email": "BatshevaFlaum@gmail.com",
+    "phone": "(516) 424-4285",
+    "class": "7G",
+    "barcode": "1118451040359",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Gold, Moshe Shlomo",
+    "email": "judithselevan@hotmail.com",
+    "phone": "(347) 743-6138",
+    "class": "7G",
+    "barcode": "1118451040360",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Gurwitz, Chaim Aharon",
+    "email": "shoshy911@gmail.com",
+    "phone": "(516) 928-9593",
+    "class": "7G",
+    "barcode": "1118451040361",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Halpert, Avi",
+    "email": "shana.halpert@gmail.com",
+    "phone": "(718) 258-2761",
+    "class": "7G",
+    "barcode": "1118451040362",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Lantsman, Abba Yaakov",
+    "email": "shalvig@gmail.com",
+    "phone": "(516) 239-4052",
+    "class": "7G",
+    "barcode": "1118451040363",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Mann, Yisroel Shmaya",
+    "email": "dassieglaser@yahoo.com",
+    "phone": "(929) 278-0535",
+    "class": "7G",
+    "barcode": "1118451040364",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Mayer, Yekusiel Shmuel",
+    "email": "mmayerdpt@gmail.com",
+    "phone": "(516) 239-2006",
+    "class": "7G",
+    "barcode": "1118451040365",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Neuman, Yishai",
+    "email": "sarabara51188@gmail.com",
+    "phone": "(516) 578-6605",
+    "class": "7G",
+    "barcode": "1118451040366",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Nitekman, Yisroel Meir",
+    "email": "chanal.dahan@gmail.com",
+    "phone": "(917) 202-0827",
+    "class": "7G",
+    "barcode": "1118451040367",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Pfeffer, Yitzchak Dov",
+    "email": "tova.pfeffer@pwc.com",
+    "phone": "(310) 717-2773",
+    "class": "7G",
+    "barcode": "1118451040368",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Rabinowitz, Yonah",
+    "email": "afterglow17@hotmail.com",
+    "phone": "(516) 695-7695",
+    "class": "7G",
+    "barcode": "1118451040369",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Rosenholtz, Aryeh Leib",
+    "email": "Rrosenholtzlcsw@gmail.com",
+    "phone": "(347) 246-6964",
+    "class": "7G",
+    "barcode": "1118451040370",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Rostker, Elchanan",
+    "email": "ba60chaim@yahoo.com",
+    "phone": "(718) 753-2728",
+    "class": "7G",
+    "barcode": "1118451040371",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Rothman, Akiva Aryeh",
+    "email": "danarothman518@gmail.com",
+    "phone": "(718) 471-9837",
+    "class": "7G",
+    "barcode": "1118451040372",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Schreiber, Nachshon",
+    "email": "lhirshaut@yahoo.com",
+    "phone": "(516) 547-3482",
+    "class": "7G",
+    "barcode": "1118451040373",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Simha, Yisroel Meir",
+    "email": "mmessner1@verizon.net",
+    "phone": "(718) 327-5670",
+    "class": "7G",
+    "barcode": "1118451040374",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Sonnenblick, Pinchas",
+    "email": "devorahsonnenblick@yahoo.com",
+    "phone": "(561) 322-9454",
+    "class": "7G",
+    "barcode": "1118451040375",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Wise, Shlomo",
+    "email": "yochwise@yahoo.com.sg",
+    "phone": "(516)400-9357",
+    "class": "7G",
+    "barcode": "1118451040376",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Zimmerman, Refael",
+    "email": "jdzimmerman40@gmail.com",
+    "phone": "(917) 572-1748",
+    "class": "7G",
+    "barcode": "1118451040377",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Chechkov, Mordechai",
+    "email": "nat4me2@yahoo.com",
+    "phone": "(917) 960-1666",
+    "class": "7H",
+    "barcode": "1118451040378",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Cohen, Avinoam",
+    "email": "cohen.pazit@gmail.com",
+    "phone": "(516) 812-7605",
+    "class": "7H",
+    "barcode": "1118451040379",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Cohen, Avraham Baruch",
+    "email": "Soricohen2804@gmail.com",
+    "phone": "(718) 471-7432",
+    "class": "7H",
+    "barcode": "1118451040380",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Czeladnicki, Kalman",
+    "email": "cczeladnicki@hasccenter.org",
+    "phone": "(718) 327-8417",
+    "class": "7H",
+    "barcode": "1118451040381",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Fisher, Yehuda Meir",
+    "email": "nin26a@aol.com",
+    "phone": "(551) 486-0145",
+    "class": "7H",
+    "barcode": "1118451040382",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Freidus, Shlomo",
+    "email": "mirirbn@gmail.com",
+    "phone": "(516) 284-9285",
+    "class": "7H",
+    "barcode": "1118451040383",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Gantz, Mishael Mordechai",
+    "email": "danit.gantz@gmail.com",
+    "phone": "(718) 717-7721",
+    "class": "7H",
+    "barcode": "1118451040384",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Halpert, Simcha",
+    "email": "shana.halpert@gmail.com",
+    "phone": "(718) 258-2761",
+    "class": "7H",
+    "barcode": "1118451040385",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Hoffman, Yehoshua",
+    "email": "chayhoffman@yahoo.com",
+    "phone": "(347) 813-3613",
+    "class": "7H",
+    "barcode": "1118451040386",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Kuritsky, Yaakov",
+    "email": "mrs_ku@yahoo.com",
+    "phone": "(516) 554-8177",
+    "class": "7H",
+    "barcode": "1118451040387",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Mirzakandov, Eliezer",
+    "email": "nurselisa787@yahoo.com",
+    "phone": "(718) 701-4404",
+    "class": "7H",
+    "barcode": "1118451040388",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Orner, Moshe",
+    "email": "chumi.orner@gmail.com",
+    "phone": "(347) 893-3611",
+    "class": "7H",
+    "barcode": "1118451040389",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Rackman, Nachum Uri",
+    "email": "robynfenster@gmail.com",
+    "phone": "(516) 295-0517",
+    "class": "7H",
+    "barcode": "1118451040390",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Richter, Naftali",
+    "email": "srichter@centershealthcare.org",
+    "phone": "(917) 399-6949",
+    "class": "7H",
+    "barcode": "1118451040391",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Rosenzweig, Aryeh",
+    "email": "layro410@yahoo.com",
+    "phone": "(347) 452-2638",
+    "class": "7H",
+    "barcode": "1118451040392",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Rubinoff, Shalom",
+    "email": "batelrubin90@gmail.com",
+    "phone": "(516) 439-1580",
+    "class": "7H",
+    "barcode": "1118451040393",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Scheininger, Aharon",
+    "email": "Lscheininger1@gmail.com",
+    "phone": "(516) 812-9547",
+    "class": "7H",
+    "barcode": "1118451040394",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Wechter, Shmuel",
+    "email": "estiwechter@gmail.com",
+    "phone": "(516) 371-1412",
+    "class": "7H",
+    "barcode": "1118451040395",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Wisotsky, Avrumi",
+    "email": "frimgross@gmail.com",
+    "phone": "(917) 881-0476",
+    "class": "7H",
+    "barcode": "1118451040396",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Yonaiev, Yehoshua",
+    "email": "smny19@yahoo.com",
+    "phone": "(347) 684-2772",
+    "class": "7H",
+    "barcode": "1118451040397",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Barasch, Yehuda Nachman",
+    "email": "shoshanabarasch@gmail.com",
+    "phone": "(718) 868-1851",
+    "class": "7K",
+    "barcode": "1118451040398",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Blumenthal, Herschel",
+    "email": "infinitel8ght@gmail.com",
+    "phone": "(347) 417-2794",
+    "class": "7K",
+    "barcode": "1118451040399",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Engelson, Shalom",
+    "email": "dskcpa1@aol.com",
+    "phone": "(718) 377-1610",
+    "class": "7K",
+    "barcode": "1118451040400",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Farokhpour, Eliyahu Yosef",
+    "email": "kamelia_brkh@yahoo.com",
+    "phone": "(347) 785-2484",
+    "class": "7K",
+    "barcode": "1118451040401",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Feldstein, Yerachmiel Menachem",
+    "email": "",
+    "phone": "(732) 804-9701",
+    "class": "7K",
+    "barcode": "1118451040402",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Fink, Eli",
+    "email": "batsheva.fink@gmail.com",
+    "phone": "(718) 471-8664",
+    "class": "7K",
+    "barcode": "1118451040403",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Fleisher, Yaakov",
+    "email": "joshtorah1@gmail.com",
+    "phone": "(718) 327-1516",
+    "class": "7K",
+    "barcode": "1118451040404",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Goldberg, Sholom",
+    "email": "cgoldberg987@gmail.com",
+    "phone": "(848) 525-1999",
+    "class": "7K",
+    "barcode": "1118451040405",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Gropper, Aryeh",
+    "email": "Avagropper11@gmail.com",
+    "phone": "(917) 589-0899",
+    "class": "7K",
+    "barcode": "1118451040406",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Hauben, Yisroel Lipa",
+    "email": "chanahauben@gmail.com",
+    "phone": "(917) 355-0742",
+    "class": "7K",
+    "barcode": "1118451040407",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Hauer, Meir",
+    "email": "lyavne@darchei.org",
+    "phone": "(718) 868-1467",
+    "class": "7K",
+    "barcode": "1118451040408",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Herman, Zevi",
+    "email": "marinherman@gmail.com",
+    "phone": "(516) 509-3174",
+    "class": "7K",
+    "barcode": "1118451040409",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Horowitz, Moshe Chaim",
+    "email": "horowitzjc@yahoo.com",
+    "phone": "(718) 327-0599",
+    "class": "7K",
+    "barcode": "1118451040410",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Post, Hillel",
+    "email": "postluwish@gmail.com",
+    "phone": "(718) 337-6999",
+    "class": "7K",
+    "barcode": "1118451040412",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Rabbani, Shemuel",
+    "email": "chanelhadassa@gmail.com",
+    "phone": "(845) 213-0888",
+    "class": "7K",
+    "barcode": "1118451040413",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Reisman, Moshe",
+    "email": "yossigitty1733@gmail.com",
+    "phone": "(718) 471-0748",
+    "class": "7K",
+    "barcode": "1118451040414",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Rodkin, Eliezer",
+    "email": "yrrodkin@gmail.com",
+    "phone": "(718) 675-6770",
+    "class": "7K",
+    "barcode": "1118451040415",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Rosen, Nosson Tzvi",
+    "email": "mrosen@darchei.org",
+    "phone": "(917) 324-6128",
+    "class": "7K",
+    "barcode": "1118451040416",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Rosner, Chesky",
+    "email": "faigyr@yahoo.com",
+    "phone": "(718) 337-1319",
+    "class": "7K",
+    "barcode": "1118451040417",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Rothman, Mordechai",
+    "email": "",
+    "phone": "(718) 471-2012",
+    "class": "7K",
+    "barcode": "1118451040418",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Sachmechi, Elrad Refael",
+    "email": "inbal_dror@hotmail.com",
+    "phone": "(516) 487-6883",
+    "class": "7K",
+    "barcode": "1118451040419",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Spetner, Shlomo",
+    "email": "chayaspetner@gmail.com",
+    "phone": "(718) 471-2814",
+    "class": "7K",
+    "barcode": "1118451040420",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Thumim, Eliezer",
+    "email": "ronitthumim@gmail.com",
+    "phone": "(718) 471-5020",
+    "class": "7K",
+    "barcode": "1118451040421",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Trenk, Yitzchok",
+    "email": "miriammukler@gmail.com",
+    "phone": "(718) 868-2553",
+    "class": "7K",
+    "barcode": "1118451040422",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Weissman, Yaakov Tzvi",
+    "email": "",
+    "phone": "(718) 868-4680",
+    "class": "7K",
+    "barcode": "1118451040423",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Halpern, Yaakov",
+    "email": "rhalpern39@gmail.com",
+    "phone": "(516) 612-7588",
+    "class": "7M",
+    "barcode": "1118451040424",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Kotkes, Yona",
+    "email": "lkotkes@gmail.com",
+    "phone": "(516) 295-2068",
+    "class": "7M",
+    "barcode": "1118451040425",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Lowy, Shlomo",
+    "email": "dlowy1@gmail.com",
+    "phone": "(516) 239-2061",
+    "class": "7M",
+    "barcode": "1118451040426",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Mintz, Eliezer",
+    "email": "ariella89@gmail.com",
+    "phone": "(917) 658-8058",
+    "class": "7M",
+    "barcode": "1118451040427",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Moskowitz, Ariel",
+    "email": "vgutkind@gmail.com",
+    "phone": "(917) 704-9149",
+    "class": "7M",
+    "barcode": "1118451040428",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Moskowitz, Yakov",
+    "email": "avamoskowitz@yahoo.com",
+    "phone": "(516) 569-9140",
+    "class": "7M",
+    "barcode": "1118451040429",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Muller, Eliyahu",
+    "email": "rochellebodner@gmail.com",
+    "phone": "(516) 400-9566",
+    "class": "7M",
+    "barcode": "1118451040430",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Pollak, Efraim",
+    "email": "ttepler@gmail.com",
+    "phone": "(845) 596-6344",
+    "class": "7M",
+    "barcode": "1118451040431",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Rabinowitz, Michoel",
+    "email": "mirabinowitz@yahoo.com",
+    "phone": "(516) 295-2059",
+    "class": "7M",
+    "barcode": "1118451040432",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Reisz, Gavriel",
+    "email": "rivareisz@gmail.com",
+    "phone": "(347) 940-1727",
+    "class": "7M",
+    "barcode": "1118451040433",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Sorotzkin, Eliezer",
+    "email": "ypollack1@gmail.com",
+    "phone": "(646) 239-7073",
+    "class": "7M",
+    "barcode": "1118451040434",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Teichman, Moshe",
+    "email": "rach1922@yahoo.com",
+    "phone": "(718) 471-4865",
+    "class": "7M",
+    "barcode": "1118451040435",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Walden, Dovid",
+    "email": "rochelwalden@gmail.com",
+    "phone": "(718) 490-1582",
+    "class": "7M",
+    "barcode": "1118451040436",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Weinstein, Dovid",
+    "email": "mweinstein312@icloud.com",
+    "phone": "(917) 671-6470",
+    "class": "7M",
+    "barcode": "1118451040437",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Weinstein, Hillel",
+    "email": "fayept@yahoo.com",
+    "phone": "(347) 463-6429",
+    "class": "7M",
+    "barcode": "1118451040438",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Yifat, Eliyahu",
+    "email": "miriamyifat@gmail.com",
+    "phone": "(917) 757-4984",
+    "class": "7M",
+    "barcode": "1118451040439",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Yudin, Yehudah",
+    "email": "hindy.yudin@gmail.com",
+    "phone": "(516) 568-5540",
+    "class": "7M",
+    "barcode": "1118451040440",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Adams, Dovid Ber",
+    "email": "mosheerica11@icloud.com",
+    "phone": "(718) 868-1898",
+    "class": "7S",
+    "barcode": "1118451040441",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Babad, Yosef",
+    "email": "missutons@yahoo.com",
+    "phone": "(718) 868-0482",
+    "class": "7S",
+    "barcode": "1118451040442",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Blobstein, Azriel",
+    "email": "ruchamablobstein@gmail.com",
+    "phone": "(516) 400-9623",
+    "class": "7S",
+    "barcode": "1118451040443",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Blumenkrantz, Avraham",
+    "email": "meohron21@aol.com",
+    "phone": "(718) 327-1592",
+    "class": "7S",
+    "barcode": "1118451040444",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Bornstein, Avraham Zevi",
+    "email": "mbornstein1111@gmail.com",
+    "phone": "(516) 837-9536",
+    "class": "7S",
+    "barcode": "1118451040445",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Cohen, Binyamin",
+    "email": "yaelcohen@gmail.com",
+    "phone": "(516) 374-1908",
+    "class": "7S",
+    "barcode": "1118451040446",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Diamond, Sholom",
+    "email": "shaindydiamond@gmail.com",
+    "phone": "(516) 612-7296",
+    "class": "7S",
+    "barcode": "1118451040447",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Edelstein, Zev",
+    "email": "rjanxs@yahoo.com",
+    "phone": "(718) 471-4715",
+    "class": "7S",
+    "barcode": "1118451040448",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Graber, Yisrael Dovid",
+    "email": "tzev95@gmail.com",
+    "phone": "(516) 792-6598",
+    "class": "7S",
+    "barcode": "1118451040449",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Herzka, Shloimy",
+    "email": "yaherzka@hotmail.com",
+    "phone": "(718) 471-4234",
+    "class": "7S",
+    "barcode": "1118451040450",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Holzberg, Dovi",
+    "email": "qteg@aol.com",
+    "phone": "(718) 471-4707",
+    "class": "7S",
+    "barcode": "1118451040451",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Hoschander, Zev",
+    "email": "sashi@wolfsongroup.com",
+    "phone": "(718) 868-4072",
+    "class": "7S",
+    "barcode": "1118451040452",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Jeidel, Cheskel",
+    "email": "emjeidel@gmail.com",
+    "phone": "(347) 423-2732",
+    "class": "7S",
+    "barcode": "1118451040453",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Katz, Eli",
+    "email": "tzviandgoldie@yahoo.com",
+    "phone": "(718) 327-3075",
+    "class": "7S",
+    "barcode": "1118451040454",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Langer, Nechemia",
+    "email": "rachellelanger@gmail.com",
+    "phone": "(516) 341-2763",
+    "class": "7S",
+    "barcode": "1118451040455",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Levine, Yakov",
+    "email": "shalpern488@hotmail.com",
+    "phone": "(516) 220-0616",
+    "class": "7S",
+    "barcode": "1118451040456",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Marciano, Yishai",
+    "email": "mymarciano@gmail.com",
+    "phone": "(516) 426-7414",
+    "class": "7S",
+    "barcode": "1118451040457",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Medetsky, Chaim Moshe",
+    "email": "yentah19@aol.com",
+    "phone": "(516) 792-6348",
+    "class": "7S",
+    "barcode": "1118451040458",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Novak, Shlomo",
+    "email": "enovak109@gmail.com",
+    "phone": "(516) 295-4480",
+    "class": "7S",
+    "barcode": "1118451040459",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Pultman, Yosef",
+    "email": "ilanapultman@verizon.net",
+    "phone": "(516) 569-0980",
+    "class": "7S",
+    "barcode": "1118451040460",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Rosenberg, Shlomo",
+    "email": "",
+    "phone": "(718) 471-5467",
+    "class": "7S",
+    "barcode": "1118451040461",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Schattner, Eliyahu",
+    "email": "michalizelinger23@gmail.com",
+    "phone": "(718) 327-3120",
+    "class": "7S",
+    "barcode": "1118451040462",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Schattner, Yakov",
+    "email": "c6000e@aol.com",
+    "phone": "(516) 341-1428",
+    "class": "7S",
+    "barcode": "1118451040463",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Schreiber, Sruly",
+    "email": "dorischreiber@gmail.com",
+    "phone": "(516) 295-4260",
+    "class": "7S",
+    "barcode": "1118451040464",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Schulman, Eliezer",
+    "email": "chanischulman@gmail.com",
+    "phone": "(323) 873-7583",
+    "class": "7S",
+    "barcode": "1118451040465",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Schuss, Eliyahu",
+    "email": "morahdeenie@gmail.com",
+    "phone": "(516) 295-1780",
+    "class": "7S",
+    "barcode": "1118451040466",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Schwab, Yisrael",
+    "email": "alizaschwab@gmail.com",
+    "phone": "(516) 640-0882",
+    "class": "7S",
+    "barcode": "1118451040467",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Silberstein, Shmuli",
+    "email": "rsilberstein87@yahoo.com",
+    "phone": "(917) 858-9499",
+    "class": "7S",
+    "barcode": "1118451040468",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Silverman, Yisrael Noach",
+    "email": "snmsilverman@gmail.com",
+    "phone": "(347) 752-9979",
+    "class": "7S",
+    "barcode": "1118451040469",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Taylor, Simcha",
+    "email": "leannetaylor87@gmail.com",
+    "phone": "(617) 735-7926",
+    "class": "7S",
+    "barcode": "1118451040470",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Walkin, Yosef",
+    "email": "nechamawalkin@gmail.com",
+    "phone": "(718) 337-0720",
+    "class": "7S",
+    "barcode": "1118451040471",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Weinberg, Ari",
+    "email": "yedaweinberg@gmail.com",
+    "phone": "(917) 474-5999",
+    "class": "7S",
+    "barcode": "1118451040472",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Zauderer, Meyer",
+    "email": "bayla@wolfsonfamily.com",
+    "phone": "(718) 327-0458",
+    "class": "7S",
+    "barcode": "1118451040473",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Zlotnick, Nesanel",
+    "email": "shirazlotnick@gmail.com",
+    "phone": "(718) 327-0027",
+    "class": "7S",
+    "barcode": "1118451040474",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Ament, Yosef Shalom",
+    "email": "amentleah@gmail.com",
+    "phone": "(718) 868-0332",
+    "class": "6B",
+    "barcode": "1118451040475",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Appelbaum, Yisroel",
+    "email": "malkaaslp@gmail.com",
+    "phone": "(347) 545-2757",
+    "class": "6B",
+    "barcode": "1118451040476",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Bender, Dov",
+    "email": "rlbender123@gmail.com",
+    "phone": "(718) 327-5656",
+    "class": "6B",
+    "barcode": "1118451040477",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Bloom, Menachem",
+    "email": "shifibloom@gmail.com",
+    "phone": "(718) 327-0312",
+    "class": "6B",
+    "barcode": "1118451040478",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Bondi, Chesky",
+    "email": "esbondi@gmail.com",
+    "phone": "(516) 778-2047",
+    "class": "6B",
+    "barcode": "1118451040479",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Cohen, Eliezer",
+    "email": "matischavie@gmail.com",
+    "phone": "(347) 260-4914",
+    "class": "6B",
+    "barcode": "1118451040480",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Drillman, Eliezer",
+    "email": "chiennahs@gmail.com",
+    "phone": "(917) 200-3588",
+    "class": "6B",
+    "barcode": "1118451040481",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Friedman, Chaim Meir",
+    "email": "janafriedman4@gmail.com",
+    "phone": "(516) 284-7603",
+    "class": "6B",
+    "barcode": "1118451040482",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Goldstein, Dovid",
+    "email": "mirineuman107@gmail.com",
+    "phone": "(347) 263-0090",
+    "class": "6B",
+    "barcode": "1118451040483",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Gorin, Sholom",
+    "email": "goldychh@yahoo.com",
+    "phone": "(718) 868-1216",
+    "class": "6B",
+    "barcode": "1118451040484",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Gropper, Elazar",
+    "email": "Avagropper11@gmail.com",
+    "phone": "(917) 589-0899",
+    "class": "6B",
+    "barcode": "1118451040485",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Hoffman, Nosson Yosef",
+    "email": "morahstrass@gmail.com",
+    "phone": "(646) 315-0945",
+    "class": "6B",
+    "barcode": "1118451040486",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Horowitz, Efraim",
+    "email": "perfectposes@gmail.com",
+    "phone": "(718) 327-4674",
+    "class": "6B",
+    "barcode": "1118451040487",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Hulkower, Chaim",
+    "email": "judyhulkowerlcsw@gmail.com",
+    "phone": "(516) 596-7292",
+    "class": "6B",
+    "barcode": "1118451040488",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Kenig, Binyamin",
+    "email": "peninakenig@gmail.com",
+    "phone": "(347) 752-9551",
+    "class": "6B",
+    "barcode": "1118451040489",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Lang, Eli",
+    "email": "RivkyBender@gmail.com",
+    "phone": "(718) 513-1541",
+    "class": "6B",
+    "barcode": "1118451040490",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Langer, Moshe Chaim",
+    "email": "ilanit.langer@yahoo.com",
+    "phone": "(718) 868-2038",
+    "class": "6B",
+    "barcode": "1118451040491",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Miller, Berel",
+    "email": "mirimiller3@yahoo.com",
+    "phone": "(718) 327-5153",
+    "class": "6B",
+    "barcode": "1118451040492",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Pilevsky, Yeshaya",
+    "email": "ilanazp@gmail.com",
+    "phone": "(718) 327-0991",
+    "class": "6B",
+    "barcode": "1118451040493",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Sauber, Baruch",
+    "email": "fraydabraun@yahoo.com",
+    "phone": "(347) 831-3561",
+    "class": "6B",
+    "barcode": "1118451040494",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Schwadel, Elchonon",
+    "email": "aschwadel@gmail.com",
+    "phone": "(917) 678-4121",
+    "class": "6B",
+    "barcode": "1118451040495",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Seplowitz, Yosef Shmuel",
+    "email": "saraseplowitz@gmail.com",
+    "phone": "(646) 464-2115",
+    "class": "6B",
+    "barcode": "1118451040496",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Weinberger, Chaim",
+    "email": "pweinberger1@gmail.com",
+    "phone": "(516) 239-5258",
+    "class": "6B",
+    "barcode": "1118451040497",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Weinreb, Dovy",
+    "email": "hindy.rosner@gmail.com",
+    "phone": "(347) 309-2677",
+    "class": "6B",
+    "barcode": "1118451040498",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Wiener, Menachem",
+    "email": "csj8877@gmail.com",
+    "phone": "(917) 515-4351",
+    "class": "6B",
+    "barcode": "1118451040499",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Young, Yosef Shlomo",
+    "email": "kayligerson@gmail.com",
+    "phone": "(516) 242-7548",
+    "class": "6B",
+    "barcode": "1118451040500",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Zeidel, Shmuel Yehuda",
+    "email": "duvnav@gmail.com",
+    "phone": "(718) 471-2427",
+    "class": "6B",
+    "barcode": "1118451040501",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Zidele, Moshe",
+    "email": "gilazidele@gmail.com",
+    "phone": "(718) 734-8931",
+    "class": "6B",
+    "barcode": "1118451040502",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Baum, Ahron",
+    "email": "Shifrabaum@gmail.com",
+    "phone": "(646) 457-2565",
+    "class": "6D",
+    "barcode": "1118451040503",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Berman, Yehoshua Zelig",
+    "email": "rachmill18@gmail.com",
+    "phone": "(917) 753-4781",
+    "class": "6D",
+    "barcode": "1118451040504",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Bodner, Aaron",
+    "email": "marsb10@gmail.com",
+    "phone": "(516) 371-4242",
+    "class": "6D",
+    "barcode": "1118451040505",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Feld, Moshe",
+    "email": "tirtz10@gmail.com",
+    "phone": "(516) 400-9002",
+    "class": "6D",
+    "barcode": "1118451040506",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Fireworker, Yisroel Moshe",
+    "email": "ahuvalf@gmail.com",
+    "phone": "(516) 374-0189",
+    "class": "6D",
+    "barcode": "1118451040507",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Frenkel, Ari",
+    "email": "klehmann88@gmail.com",
+    "phone": "(516) 295-3670",
+    "class": "6D",
+    "barcode": "1118451040508",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Frisch, Don Yitzchok",
+    "email": "pwn613@gmail.com",
+    "phone": "(516) 427-1221",
+    "class": "6D",
+    "barcode": "1118451040509",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Hertz, Shlomo",
+    "email": "chaviehertz@gmail.com",
+    "phone": "(917) 359-0368",
+    "class": "6D",
+    "barcode": "1118451040510",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Hirt, Yosef",
+    "email": "chans776@aol.com",
+    "phone": "(516) 239-1237",
+    "class": "6D",
+    "barcode": "1118451040511",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Hofstatter, Yirmy",
+    "email": "simahofstatter@gmail.com",
+    "phone": "(917) 533-7295",
+    "class": "6D",
+    "barcode": "1118451040512",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Horowitz, Noam",
+    "email": "alizamorsel@gmail.com",
+    "phone": "(718) 986-8694",
+    "class": "6D",
+    "barcode": "1118451040513",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Jacobowitz, Pesach",
+    "email": "elizjay@gmail.com",
+    "phone": "(516) 371-9772",
+    "class": "6D",
+    "barcode": "1118451040514",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Jacobs, Ahron Yitzchak",
+    "email": "rivkiejacobs@gmail.com",
+    "phone": "(718) 490-4538",
+    "class": "6D",
+    "barcode": "1118451040515",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Krieser, Abie",
+    "email": "shaindykrieser@yahoo.com",
+    "phone": "(718) 258-0879",
+    "class": "6D",
+    "barcode": "1118451040516",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Lewittes, Chaim Shlomo",
+    "email": "slewittes@gmail.com",
+    "phone": "(516) 596-7116",
+    "class": "6D",
+    "barcode": "1118451040517",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Lichtman, Pinchas",
+    "email": "sora.lichtman@gmail.com",
+    "phone": "(516) 612-7672",
+    "class": "6D",
+    "barcode": "1118451040518",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Lowinger, Yaakov",
+    "email": "fayelowinger@gmail.com",
+    "phone": "(516) 371-1385",
+    "class": "6D",
+    "barcode": "1118451040519",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Mann, Yehuda Shimshon",
+    "email": "dassieglaser@yahoo.com",
+    "phone": "(929) 278-0535",
+    "class": "6D",
+    "barcode": "1118451040520",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Markowitz, Yaakov",
+    "email": "esthermmarkowitz@yahoo.com",
+    "phone": "(718) 510-4968",
+    "class": "6D",
+    "barcode": "1118451040521",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Mashieh, Eliyahu",
+    "email": "shulifarokh@gmail.com",
+    "phone": "(917) 363-0765",
+    "class": "6D",
+    "barcode": "1118451040522",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Pollak, Yosef",
+    "email": "ypollak123@gmail.com",
+    "phone": "(917) 575-7740",
+    "class": "6D",
+    "barcode": "1118451040523",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Rosenman, Moshe",
+    "email": "leahrosenman@gmail.com",
+    "phone": "(917) 687-2777",
+    "class": "6D",
+    "barcode": "1118451040524",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Sharfman, Nosson",
+    "email": "sharona.sharfman@gmail.com",
+    "phone": "(516) 596-7951",
+    "class": "6D",
+    "barcode": "1118451040525",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Shimonov, Yochanan",
+    "email": "mazalmargarita19@gmail.com",
+    "phone": "(248) 798-1695",
+    "class": "6D",
+    "barcode": "1118451040526",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Sokol, Matti",
+    "email": "devorahsokol@gmail.com",
+    "phone": "(718) 869-2174",
+    "class": "6D",
+    "barcode": "1118451040527",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Weber, Azriel",
+    "email": "talia.weber@yahoo.com",
+    "phone": "(516) 295-2523",
+    "class": "6D",
+    "barcode": "1118451040528",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Zlotnick, Mendy",
+    "email": "shoshm35@yahoo.com",
+    "phone": "(646) 270-8242",
+    "class": "6D",
+    "barcode": "1118451040529",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Assil, Aharon Asher",
+    "email": "Rebeccaassil81@gmail.com",
+    "phone": "(516) 829-0871",
+    "class": "6E",
+    "barcode": "1118451040530",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Bazov, Yishai",
+    "email": "simi.bazov@gmail.com",
+    "phone": "(917) 685-1324",
+    "class": "6E",
+    "barcode": "1118451040531",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Chaitovsky, Daniel",
+    "email": "ayalaw7@gmail.com",
+    "phone": "(718) 309-0113",
+    "class": "6E",
+    "barcode": "1118451040532",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Chopp, Menachem",
+    "email": "miriamchopp@gmail.com",
+    "phone": "(516) 650-1605",
+    "class": "6E",
+    "barcode": "1118451040533",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Cohen, Ezra",
+    "email": "elanacohen606@yahoo.com",
+    "phone": "(516) 582-4637",
+    "class": "6E",
+    "barcode": "1118451040534",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Davidov, Yehuda",
+    "email": "davidovester@yahoo.com",
+    "phone": "(347) 382-0730",
+    "class": "6E",
+    "barcode": "1118451040535",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Edelman, Effy",
+    "email": "s-mushell@hotmail.com",
+    "phone": "(646) 641-5197",
+    "class": "6E",
+    "barcode": "1118451040536",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Fest, Zalmy",
+    "email": "yaffakatz84@hotmail.com",
+    "phone": "(347) 410-2786",
+    "class": "6E",
+    "barcode": "1118451040537",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Francis, Yosef Dovid",
+    "email": "avivafrancis@gmail.com",
+    "phone": "(516) 984-6219",
+    "class": "6E",
+    "barcode": "1118451040538",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Friedman, Yehoshua Elazar",
+    "email": "chaniefriedman@gmail.com",
+    "phone": "(718) 930-0576",
+    "class": "6E",
+    "barcode": "1118451040539",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Fuchs, Daniel",
+    "email": "shifster1818@aol.com",
+    "phone": "(347) 587-9609",
+    "class": "6E",
+    "barcode": "1118451040540",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Fundo, Levi",
+    "email": "alizzyy@gmail.com",
+    "phone": "(917) 640-3883",
+    "class": "6E",
+    "barcode": "1118451040541",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Ginsberg, Daniel",
+    "email": "tahlif@yahoo.com",
+    "phone": "(516) 792-3308",
+    "class": "6E",
+    "barcode": "1118451040542",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Goldman, Moshe Binyomin",
+    "email": "estherteitelman@gmail.com",
+    "phone": "(718) 576-9276",
+    "class": "6E",
+    "barcode": "1118451040543",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Gorlin, Yehuda",
+    "email": "cgorlin18@gmail.com",
+    "phone": "(516) 295-3846",
+    "class": "6E",
+    "barcode": "1118451040544",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Heimowitz, Ariel",
+    "email": "ataraheimowitz@gmail.com",
+    "phone": "(516) 287-8665",
+    "class": "6E",
+    "barcode": "1118451040545",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Manos, Yonatan",
+    "email": "rinamanos@gmail.com",
+    "phone": "(718) 559-2055",
+    "class": "6E",
+    "barcode": "1118451040546",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Miller, Dovid",
+    "email": "mimidmiller@gmail.com",
+    "phone": "(516) 395-4576",
+    "class": "6E",
+    "barcode": "1118451040547",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Nathan, Shauly",
+    "email": "mnathan6@gmail.com",
+    "phone": "(516) 295-2839",
+    "class": "6E",
+    "barcode": "1118451040548",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Niyazov, Yehuda",
+    "email": "juliyasmiley@yahoo.com",
+    "phone": "(646) 236-0328",
+    "class": "6E",
+    "barcode": "1118451040549",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Perl, Avigdor",
+    "email": "ataraperl@yahoo.com",
+    "phone": "(516) 792-6893",
+    "class": "6E",
+    "barcode": "1118451040550",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Sokel, Yitzy",
+    "email": "sokelmom@yahoo.com",
+    "phone": "(516) 569-8121",
+    "class": "6E",
+    "barcode": "1118451040551",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Bachon, Avraham Yechezkel",
+    "email": "bachonleah@yahoo.com",
+    "phone": "(718) 337-3848",
+    "class": "6F",
+    "barcode": "1118451040552",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Bald, Shaul",
+    "email": "navabald@gmail.com",
+    "phone": "(718) 471-1828",
+    "class": "6F",
+    "barcode": "1118451040553",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Balsam, Akiva",
+    "email": "jymmayer@gmail.com",
+    "phone": "(718) 594-7188",
+    "class": "6F",
+    "barcode": "1118451040554",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Benoliel, Dovid",
+    "email": "Brachibenoliel@gmail.com",
+    "phone": "(718) 327-1769",
+    "class": "6F",
+    "barcode": "1118451040555",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Berger, Dovid",
+    "email": "micbenner@gmail.com",
+    "phone": "(416) 294-9232",
+    "class": "6F",
+    "barcode": "1118451040556",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Feit, Aryeh",
+    "email": "sfeit18@gmail.com",
+    "phone": "(516) 569-3695",
+    "class": "6F",
+    "barcode": "1118451040557",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Feldstein, Avrumi",
+    "email": "",
+    "phone": "(732) 804-9701",
+    "class": "6F",
+    "barcode": "1118451040558",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Fried, Yehoshua Asher",
+    "email": "meirafried@gmail.com",
+    "phone": "(516) 295-0590",
+    "class": "6F",
+    "barcode": "1118451040559",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Fried, Zev Hillel",
+    "email": "deenamf@gmail.com",
+    "phone": "(248) 935-0452",
+    "class": "6F",
+    "barcode": "1118451040560",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Gibber, Zev",
+    "email": "ggibber@thejnet.com",
+    "phone": "(718) 868-1444",
+    "class": "6F",
+    "barcode": "1118451040561",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Gifter, Mendel",
+    "email": "rivkygifter@gmail.com",
+    "phone": "(718) 868-0176",
+    "class": "6F",
+    "barcode": "1118451040562",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Goldberger, Dovid",
+    "email": "chaniegoldberger@gmail.com",
+    "phone": "(718) 471-1028",
+    "class": "6F",
+    "barcode": "1118451040563",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Indich, Shlomo",
+    "email": "indich613@gmail.com",
+    "phone": "(718) 327-0518",
+    "class": "6F",
+    "barcode": "1118451040564",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Karr, Shalom Noach",
+    "email": "ALR7908@gmail.com",
+    "phone": "(718) 327-0178",
+    "class": "6F",
+    "barcode": "1118451040565",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Keilson, Eli",
+    "email": "pkeilson@gmail.com",
+    "phone": "(718) 471-6796",
+    "class": "6F",
+    "barcode": "1118451040566",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Klein, Avraham",
+    "email": "simaklein1@gmail.com",
+    "phone": "(718) 868-4303",
+    "class": "6F",
+    "barcode": "1118451040567",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Koslowitz, Eliyahu",
+    "email": "liebanr@gmail.com",
+    "phone": "(732) 503-5629",
+    "class": "6F",
+    "barcode": "1118451040568",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Kraus, Chezky",
+    "email": "sarakraus24@gmail.com",
+    "phone": "(718) 471-7257",
+    "class": "6F",
+    "barcode": "1118451040569",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Levitin, Nochum Isser",
+    "email": "naomilevitin@gmail.com",
+    "phone": "(718) 471-7331",
+    "class": "6F",
+    "barcode": "1118451040570",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Lipshitz, Yehuda",
+    "email": "yaakovjay@gmail.com",
+    "phone": "(516) 295-2234",
+    "class": "6F",
+    "barcode": "1118451040571",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Madris, Bentzi",
+    "email": "smadris@gmail.com",
+    "phone": "(718) 471-1480",
+    "class": "6F",
+    "barcode": "1118451040572",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Mark, Eliyahu Kalman",
+    "email": "mark.leeba@gmail.com",
+    "phone": "(917) 745-6423",
+    "class": "6F",
+    "barcode": "1118451040573",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Rice, Yehoshua",
+    "email": "tamara.rice85@gmail.com",
+    "phone": "(201) 803-3055",
+    "class": "6F",
+    "barcode": "1118451040574",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Rosenberg, Elimelech Gavriel",
+    "email": "estherg.rosenberg@gmail.com",
+    "phone": "(516) 941-8723",
+    "class": "6F",
+    "barcode": "1118451040575",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Rubin, Noach Tzvi",
+    "email": "erubin@achiezer.org",
+    "phone": "(516) 792-1726",
+    "class": "6F",
+    "barcode": "1118451040576",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Sadighpour, David",
+    "email": "anetsadigh@gmail.com",
+    "phone": "(917) 968-2761",
+    "class": "6F",
+    "barcode": "1118451040577",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Sandler, Moshe Mordechai",
+    "email": "rchlsndlr@gmail.com",
+    "phone": "(718) 327-2148",
+    "class": "6F",
+    "barcode": "1118451040578",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Schwed, Zevi",
+    "email": "rooch16@gmail.com",
+    "phone": "(718) 306-2340",
+    "class": "6F",
+    "barcode": "1118451040579",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Slochowsky, Avraham Dovid",
+    "email": "rachelsloch@gmail.com",
+    "phone": "(516) 780-2536",
+    "class": "6F",
+    "barcode": "1118451040580",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Soclof, Chaim",
+    "email": "yehudissoclof@gmail.com",
+    "phone": "(929) 609-5479",
+    "class": "6F",
+    "barcode": "1118451040581",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Weinstein, Nachman",
+    "email": "",
+    "phone": "(718) 868-0175",
+    "class": "6F",
+    "barcode": "1118451040582",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Abraham, Hillel",
+    "email": "rma615@gmail.com",
+    "phone": "(347) 417-4240",
+    "class": "6G",
+    "barcode": "1118451040583",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Babakhanov, Moshe Tuvia",
+    "email": "irenearonov@aol.com",
+    "phone": "(917) 225-1277",
+    "class": "6G",
+    "barcode": "1118451040584",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Belsky, Binyamin",
+    "email": "shaindybromberg@gmail.com",
+    "phone": "(718) 887-1222",
+    "class": "6G",
+    "barcode": "1118451040585",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Berg, Moshe",
+    "email": "leahbrg@gmail.com",
+    "phone": "(516) 374-8531",
+    "class": "6G",
+    "barcode": "1118451040586",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Farkas, Yehuda",
+    "email": "miriamari@gmail.com",
+    "phone": "(845) 271-9191",
+    "class": "6G",
+    "barcode": "1118451040587",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Frischman, Meir",
+    "email": "michal.schwab@gmail.com",
+    "phone": "(917) 484-1274",
+    "class": "6G",
+    "barcode": "1118451040588",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Khaimov, Eliyahu Rachamin",
+    "email": "rachelkhaimov9@gmail.com",
+    "phone": "(718) 471-0742",
+    "class": "6G",
+    "barcode": "1118451040589",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Markowitz, Shmuel",
+    "email": "tils357@gmail.com",
+    "phone": "(323) 632-9696",
+    "class": "6G",
+    "barcode": "1118451040590",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Muller, Chesky",
+    "email": "mmuller3210@yahoo.com",
+    "phone": "(516) 557-6401",
+    "class": "6G",
+    "barcode": "1118451040591",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Nelkenbaum, Alex",
+    "email": "ahschlachter@gmail.com",
+    "phone": "(646) 369-6398",
+    "class": "6G",
+    "barcode": "1118451040592",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Nisanov, Yishai",
+    "email": "jennifer.nisanov@gmail.com",
+    "phone": "(917) 334-1306",
+    "class": "6G",
+    "barcode": "1118451040593",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Rabinowitz, Akiva",
+    "email": "mirabinowitz@yahoo.com",
+    "phone": "(516) 295-2059",
+    "class": "6G",
+    "barcode": "1118451040594",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Rubin, Azriel",
+    "email": "ytratner1@gmail.com",
+    "phone": "(718) 338-7434",
+    "class": "6G",
+    "barcode": "1118451040595",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Sahiholamal, Binyamin Meir",
+    "email": "tami.sahih@gmail.com",
+    "phone": "(516) 295-1236",
+    "class": "6G",
+    "barcode": "1118451040596",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Schwadel, Yehuda",
+    "email": "sgreenberg2027@gmail.com",
+    "phone": "(516) 881-7374",
+    "class": "6G",
+    "barcode": "1118451040597",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Sipzner, Dovid",
+    "email": "goldcab@aol.com",
+    "phone": "(516) 374-1378",
+    "class": "6G",
+    "barcode": "1118451040598",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Weinberg, Eliezer",
+    "email": "tzipporahweinberg@yahoo.com",
+    "phone": "(516) 400-9528",
+    "class": "6G",
+    "barcode": "1118451040599",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Weinberger, Shmaya",
+    "email": "cindyweinberger1@gmail.com",
+    "phone": "(917) 623-6237",
+    "class": "6G",
+    "barcode": "1118451040600",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Arieli, Yosef",
+    "email": "315Arieli@gmail.com",
+    "phone": "(347) 733-3035",
+    "class": "6K",
+    "barcode": "1118451040601",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Cohen, Akiva Shmaya",
+    "email": "atarafuchs@gmail.com",
+    "phone": "(516) 374-2709",
+    "class": "6K",
+    "barcode": "1118451040602",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Davidowitz, Avi",
+    "email": "sayywat@aol.com",
+    "phone": "(718) 541-1091",
+    "class": "6K",
+    "barcode": "1118451040603",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Drebin, Shlomo Yehuda",
+    "email": "sadbkd@aol.com",
+    "phone": "(323) 304-4801",
+    "class": "6K",
+    "barcode": "1118451040604",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Fink, Gavriel",
+    "email": "rachelf118@gmail.com",
+    "phone": "(516) 242-6653",
+    "class": "6K",
+    "barcode": "1118451040605",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Goldberg, Ari",
+    "email": "lorig511@gmail.com",
+    "phone": "(516) 569-0309",
+    "class": "6K",
+    "barcode": "1118451040606",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Grunfeld, Naftali",
+    "email": "yrzgrunfeld@yahoo.com",
+    "phone": "(718) 327-0111",
+    "class": "6K",
+    "barcode": "1118451040607",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Honig, Ezra",
+    "email": "liathonig@gmail.com",
+    "phone": "(917) 755-7928",
+    "class": "6K",
+    "barcode": "1118451040608",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Kalton, Yitzchak",
+    "email": "agoldofsky@gmail.com",
+    "phone": "(516) 361-8167",
+    "class": "6K",
+    "barcode": "1118451040609",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Kapnick, Avraham Refael",
+    "email": "Esskapnick@gmail.com",
+    "phone": "(917) 620-2936",
+    "class": "6K",
+    "barcode": "1118451040610",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Korn, Shai",
+    "email": "meemo44@gmail.com",
+    "phone": "(718) 986-1263",
+    "class": "6K",
+    "barcode": "1118451040611",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Lauer, Ezra Yitzchak",
+    "email": "shari.lauer@gmail.com",
+    "phone": "(516) 946-5416",
+    "class": "6K",
+    "barcode": "1118451040612",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Lipman, Shmuel Moshe",
+    "email": "allyssabrody217@gmail.com",
+    "phone": "(516) 567-1628",
+    "class": "6K",
+    "barcode": "1118451040613",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Nematnejad, Yisrael Menachem",
+    "email": "navaplawes@gmail.com",
+    "phone": "(516) 374-0541",
+    "class": "6K",
+    "barcode": "1118451040614",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Neufeld, Avi",
+    "email": "ziporagut@gmail.com",
+    "phone": "(917) 272-5076",
+    "class": "6K",
+    "barcode": "1118451040615",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Neuman, Yaacov",
+    "email": "tzipporahweinberg@yahoo.com",
+    "phone": "(516) 400-9528",
+    "class": "6K",
+    "barcode": "1118451040616",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Pinhasov, David",
+    "email": "elenaisacharov@gmail.com",
+    "phone": "(917) 912-2962",
+    "class": "6K",
+    "barcode": "1118451040617",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Rabinovitz, Yitzchak Daniel",
+    "email": "bethrabinovitz@gmail.com",
+    "phone": "(516) 643-5022",
+    "class": "6K",
+    "barcode": "1118451040618",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Schachter, Aaron",
+    "email": "faigie@gmail.com",
+    "phone": "(718) 715-0794",
+    "class": "6K",
+    "barcode": "1118451040619",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Schwartz, Yaakov",
+    "email": "dina.schwartzlcsw@gmail.com",
+    "phone": "(516) 512-4583",
+    "class": "6K",
+    "barcode": "1118451040620",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Siegel, Shmuel",
+    "email": "marissasiegel@gmail.com",
+    "phone": "(718) 969-4545",
+    "class": "6K",
+    "barcode": "1118451040621",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Yeamans, Akiva",
+    "email": "swachs@gmail.com",
+    "phone": "(215) 954-3433",
+    "class": "6K",
+    "barcode": "1118451040622",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Zelman, Yosef",
+    "email": "eliana.hollander@gmail.com",
+    "phone": "(646) 300-2002",
+    "class": "6K",
+    "barcode": "1118451040623",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Bender, Yehuda Elchanan",
+    "email": "suri@schreiberesq.com",
+    "phone": "(718) 868-3830",
+    "class": "6M",
+    "barcode": "1118451040624",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Bokow, Aron",
+    "email": "sbokow@cahe.edu",
+    "phone": "(718) 327-6353",
+    "class": "6M",
+    "barcode": "1118451040625",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Bryks, Yosef",
+    "email": "rachelbryks@gmail.com",
+    "phone": "(516) 986-8466",
+    "class": "6M",
+    "barcode": "1118451040626",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Edelstein, Yaakov",
+    "email": "shaindyedelstein@gmail.com",
+    "phone": "(516) 239-2329",
+    "class": "6M",
+    "barcode": "1118451040627",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Einhorn, Dovi",
+    "email": "seinhorn1@gmail.com",
+    "phone": "(516) 239-2363",
+    "class": "6M",
+    "barcode": "1118451040628",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Feigenbaum, Avi",
+    "email": "Dnwinter@gmail.com",
+    "phone": "(718) 471-5242",
+    "class": "6M",
+    "barcode": "1118451040629",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Friedman, Yehuda",
+    "email": "gittyu2000@yahoo.com",
+    "phone": "(718) 715-0490",
+    "class": "6M",
+    "barcode": "1118451040630",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Fruchthandler, Zevi",
+    "email": "estiackerman@gmail.com",
+    "phone": "(917) 608-5231",
+    "class": "6M",
+    "barcode": "1118451040631",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Grossman, Shalom",
+    "email": "tovakurcfeld@gmail.com",
+    "phone": "(917) 804-9493",
+    "class": "6M",
+    "barcode": "1118451040632",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Guttman, Yossi",
+    "email": "jackandjill@verizon.net",
+    "phone": "(516) 791-1367",
+    "class": "6M",
+    "barcode": "1118451040633",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Heinemann, Moshe",
+    "email": "deenee85@yahoo.com",
+    "phone": "(718) 327-4191",
+    "class": "6M",
+    "barcode": "1118451040634",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Herzka, Yaakov Yitzchok",
+    "email": "shaynaherzka@gmail.com",
+    "phone": "(718) 249-7882",
+    "class": "6M",
+    "barcode": "1118451040635",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Hochheiser, Noam",
+    "email": "fbrick@northwell.edu",
+    "phone": "(917) 679-8484",
+    "class": "6M",
+    "barcode": "1118451040636",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Jeger, Levi",
+    "email": "ilanag01@hotmail.com",
+    "phone": "(516) 510-9869",
+    "class": "6M",
+    "barcode": "1118451040637",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Kaufman, Tzvi Yackov",
+    "email": "bandsk@gmail.com",
+    "phone": "(718) 327-5517",
+    "class": "6M",
+    "barcode": "1118451040638",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Kaufman, Yisroel",
+    "email": "shoray18@gmail.com",
+    "phone": "(516) 404-0105",
+    "class": "6M",
+    "barcode": "1118451040639",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Kay, Noam",
+    "email": "jillkay5@yahoo.com",
+    "phone": "(718) 327-6879",
+    "class": "6M",
+    "barcode": "1118451040640",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Kranzler, Moishy",
+    "email": "nichamama1@aol.com",
+    "phone": "(718) 327-3172",
+    "class": "6M",
+    "barcode": "1118451040641",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Kreindler, Yehoshua",
+    "email": "shirakreindler@gmail.com",
+    "phone": "(347) 424-5197",
+    "class": "6M",
+    "barcode": "1118451040642",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Kugielsky, Eliyahu Meir",
+    "email": "nkugielsky@gmail.com",
+    "phone": "(845) 641-7855",
+    "class": "6M",
+    "barcode": "1118451040643",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Lopiansky, Nosson",
+    "email": "mlopiansky@gmail.com",
+    "phone": "(718) 327-4161",
+    "class": "6M",
+    "barcode": "1118451040644",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Milner, Tzvi Ephraim",
+    "email": "dose1120@aol.com",
+    "phone": "(516) 655-0506",
+    "class": "6M",
+    "barcode": "1118451040645",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Neufeld, Azi",
+    "email": "yoninaneufeld@gmail.com",
+    "phone": "(718) 327-3519",
+    "class": "6M",
+    "barcode": "1118451040646",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Ribowsky, Alexander",
+    "email": "rachelribowsky@gmail.com",
+    "phone": "(845) 521-9466",
+    "class": "6M",
+    "barcode": "1118451040647",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Roth, Aaron",
+    "email": "miriam1049@gmail.com",
+    "phone": "(516) 295-7950",
+    "class": "6M",
+    "barcode": "1118451040648",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Zachter, Eliyahu",
+    "email": "mindyz212@gmail.com",
+    "phone": "(718) 360-1911",
+    "class": "6M",
+    "barcode": "1118451040649",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Benderly, Netanel",
+    "email": "dab3383@aol.com",
+    "phone": "(718) 327-3090",
+    "class": "6W",
+    "barcode": "1118451040650",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Berger, Tzvi Yaakov",
+    "email": "Spiff613@aol.com",
+    "phone": "(718) 471-6835",
+    "class": "6W",
+    "barcode": "1118451040651",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Bornfreund, Dovid",
+    "email": "nategolds@gmail.com",
+    "phone": "(516) 650-0758",
+    "class": "6W",
+    "barcode": "1118451040652",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Cantres, Matthew Ari",
+    "email": "ynormatov@yahoo.com",
+    "phone": "(718) 644-8085",
+    "class": "6W",
+    "barcode": "1118451040653",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Cohen, Dov",
+    "email": "portnoy3@gmail.com",
+    "phone": "(347) 418-2198",
+    "class": "6W",
+    "barcode": "1118451040654",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Finkelman, Avrohom Eliezer",
+    "email": "kaps509@gmail.com",
+    "phone": "(248) 259-6335",
+    "class": "6W",
+    "barcode": "1118451040655",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Fischman, Gedalia",
+    "email": "fradi124@gmail.com",
+    "phone": "(718) 327-1570",
+    "class": "6W",
+    "barcode": "1118451040656",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Fogel, Bentzion Nachum",
+    "email": "pnina621@gmail.com",
+    "phone": "(718) 674-1217",
+    "class": "6W",
+    "barcode": "1118451040657",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Frishman, Yosef Chaim",
+    "email": "lisafrishmanslp@gmail.com",
+    "phone": "(718) 337-3689",
+    "class": "6W",
+    "barcode": "1118451040658",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Glatstein, Shlomo",
+    "email": "",
+    "phone": "(718) 793-0620",
+    "class": "6W",
+    "barcode": "1118451040659",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Goldberg, Azriel",
+    "email": "brachagoldberg1@gmail.com",
+    "phone": "(718) 868-0262",
+    "class": "6W",
+    "barcode": "1118451040660",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Gordon, Moshe",
+    "email": "Moshegordon30@gmail.com",
+    "phone": "9172856185",
+    "class": "6W",
+    "barcode": "1118451040661",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Green, Shloimi",
+    "email": "milkyway1089@hotmail.com",
+    "phone": "(347) 860-5596",
+    "class": "6W",
+    "barcode": "1118451040662",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Greenberg, Chaim",
+    "email": "STGreenberg4@gmail.com",
+    "phone": "(917) 439-9322",
+    "class": "6W",
+    "barcode": "1118451040663",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Grinberg, Avraham",
+    "email": "leahgrinberg@gmail.com",
+    "phone": "(718) 471-1697",
+    "class": "6W",
+    "barcode": "1118451040664",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Gross, Elazar Yehuda",
+    "email": "4mrs.gross@gmail.com",
+    "phone": "(516) 596-7756",
+    "class": "6W",
+    "barcode": "1118451040665",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Hildeshaim, Akiva Meir",
+    "email": "ShaniBesser@gmail.com",
+    "phone": "(516) 612-3426",
+    "class": "6W",
+    "barcode": "1118451040666",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Hoch, Aryeh",
+    "email": "adinahoch@gmail.com",
+    "phone": "(718) 578-7614",
+    "class": "6W",
+    "barcode": "1118451040667",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Oppen, Yehuda",
+    "email": "cgoppen@gmail.com",
+    "phone": "(917) 863-9035",
+    "class": "6W",
+    "barcode": "1118451040668",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Renov, Reuven",
+    "email": "rachelrenov@gmail.com",
+    "phone": "(718) 471-2147",
+    "class": "6W",
+    "barcode": "1118451040669",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Rosenberg, Tzvi",
+    "email": "sarasaxelrod@gmail.com",
+    "phone": "(516) 318-7126",
+    "class": "6W",
+    "barcode": "1118451040670",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Rosenblatt, Sruly",
+    "email": "ahuvarosenblatt@yahoo.com",
+    "phone": "(347) 619-5028",
+    "class": "6W",
+    "barcode": "1118451040671",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Rothman, Yaakov",
+    "email": "Btrflikis@aol.Com",
+    "phone": "(718) 337-2224",
+    "class": "6W",
+    "barcode": "1118451040672",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Saland, Akiva",
+    "email": "nmark1212@gmail.com",
+    "phone": "(516) 776-7453",
+    "class": "6W",
+    "barcode": "1118451040673",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Schwadel, Elchonon Aryeh",
+    "email": "shaindyschwadel@gmail.com",
+    "phone": "(718) 616-9015",
+    "class": "6W",
+    "barcode": "1118451040674",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Shlomovich, Avraham Yitzchak",
+    "email": "estandmosh@gmail.com",
+    "phone": "(718) 327-2876",
+    "class": "6W",
+    "barcode": "1118451040675",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Skolnick, Ahron Yosef",
+    "email": "brachasharfman@gmail.com",
+    "phone": "(718) 564-3043",
+    "class": "6W",
+    "barcode": "1118451040676",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Sonnenblick, Yehoshua",
+    "email": "devorahsonnenblick@yahoo.com",
+    "phone": "(561) 322-9454",
+    "class": "6W",
+    "barcode": "1118451040677",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Stadtmauer, Binyamin",
+    "email": "shani1019@aol.com",
+    "phone": "(718) 471-8150",
+    "class": "6W",
+    "barcode": "1118451040678",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Steg, Shimon",
+    "email": "",
+    "phone": "(718) 471-5319",
+    "class": "6W",
+    "barcode": "1118451040679",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Stern, Chaim Pinchas",
+    "email": "tovastern24@gmail.com",
+    "phone": "(267) 815-1427",
+    "class": "6W",
+    "barcode": "1118451040680",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Wiseman, Yitzchok",
+    "email": "SamanthaRachelWiseman@gmail.com",
+    "phone": "(718) 327-9473",
+    "class": "6W",
+    "barcode": "1118451040681",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Wollman, Yaakov Mordechai",
+    "email": "sarinateicher25@gmail.com",
+    "phone": "(347) 668-9328",
+    "class": "6W",
+    "barcode": "1118451040682",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Siegel, Shmuel",
+    "email": "",
+    "phone": "",
+    "class": "",
+    "barcode": "1118451040711",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Karr, Shalom Noach",
+    "email": "",
+    "phone": "",
+    "class": "",
+    "barcode": "1118451040719",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Berman, Yehoshua Zelig",
+    "email": "",
+    "phone": "",
+    "class": "",
+    "barcode": "1118451040725",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Kamin, Zalmen Ber",
+    "email": "",
+    "phone": "",
+    "class": "",
+    "barcode": "1118451040730",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Neuman, Yaacov",
+    "email": "",
+    "phone": "",
+    "class": "",
+    "barcode": "1118451040738",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Fisher, Yehuda Mei",
+    "email": "",
+    "phone": "",
+    "class": "",
+    "barcode": "1118451040739",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Zeidel, Shmuel Yehuda",
+    "email": "",
+    "phone": "",
+    "class": "",
+    "barcode": "1118451040742",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Zeidel, Shmuel Yehuda",
+    "email": "",
+    "phone": "",
+    "class": "",
+    "barcode": "1118451040741",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "Hochheiser, Noam",
+    "email": "",
+    "phone": "",
+    "class": "",
+    "barcode": "1118451040745",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "1118451040614",
+    "email": "",
+    "phone": "",
+    "class": "",
+    "barcode": "1118451040746",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "1118451040562",
+    "email": "",
+    "phone": "",
+    "class": "",
+    "barcode": "1118451040747",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "1118451040595",
+    "email": "",
+    "phone": "",
+    "class": "",
+    "barcode": "1118451040750",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "1118451040595",
+    "email": "",
+    "phone": "",
+    "class": "",
+    "barcode": "1118451040749",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "1118451040568",
+    "email": "",
+    "phone": "",
+    "class": "",
+    "barcode": "1118451040753",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "1118451040568",
+    "email": "",
+    "phone": "",
+    "class": "",
+    "barcode": "1118451040751",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "1118451040568",
+    "email": "",
+    "phone": "",
+    "class": "",
+    "barcode": "1118451040752",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "1118451040616",
+    "email": "",
+    "phone": "",
+    "class": "",
+    "barcode": "1118451040755",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "1118451040616",
+    "email": "",
+    "phone": "",
+    "class": "",
+    "barcode": "1118451040754",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "1118451040616",
+    "email": "",
+    "phone": "",
+    "class": "",
+    "barcode": "1118451040754",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "1118451040616",
+    "email": "",
+    "phone": "",
+    "class": "",
+    "barcode": "1118451040754",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "1118451040510",
+    "email": "",
+    "phone": "",
+    "class": "",
+    "barcode": "1118451040757",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "1118451040510",
+    "email": "",
+    "phone": "",
+    "class": "",
+    "barcode": "1118451040756",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "1118451040476",
+    "email": "",
+    "phone": "",
+    "class": "",
+    "barcode": "1118451040759",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "1118451040476",
+    "email": "",
+    "phone": "",
+    "class": "",
+    "barcode": "1118451040758",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "1118451040502",
+    "email": "",
+    "phone": "",
+    "class": "",
+    "barcode": "1118451040760",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "1118451040537",
+    "email": "",
+    "phone": "",
+    "class": "",
+    "barcode": "1118451040761",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "1118451040556",
+    "email": "",
+    "phone": "",
+    "class": "",
+    "barcode": "1118451040763",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "1118451040556",
+    "email": "",
+    "phone": "",
+    "class": "",
+    "barcode": "1118451040762",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "1118451040556",
+    "email": "",
+    "phone": "",
+    "class": "",
+    "barcode": "1118451040762",
+    "notes": "",
+    "checkedOutBooks": []
+  },
+  {
+    "name": "1118451040556",
+    "email": "",
+    "phone": "",
+    "class": "",
+    "barcode": "1118451040762",
+    "notes": "",
+    "checkedOutBooks": []
+  }
+]
