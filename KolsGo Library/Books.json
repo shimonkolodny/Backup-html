@@ -1,1 +1,28 @@
-[]
+[
+  {
+    "bookId": "1234",
+    "title": "1234",
+    "sortCharacter": "1234",
+    "primaryAuthor": "+",
+    "primaryAuthorRole": "(",
+    "secondaryAuthor": "+",
+    "secondaryAuthorRole": "+",
+    "publication": "+",
+    "date": "+",
+    "review": "+",
+    "rating": "+",
+    "comment": "J",
+    "privateComment": "j",
+    "summary": "j",
+    "media": "N",
+    "physicalDescription": "n",
+    "weight": "j",
+    "height": "j",
+    "thickness": "j",
+    "length": "j",
+    "dimensions": "j",
+    "barcode": "123",
+    "status": "available",
+    "dueDate": ""
+  }
+]
