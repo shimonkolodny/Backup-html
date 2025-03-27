@@ -1,1 +1,11 @@
-[]
+[
+  {
+    "isbn": "123",
+    "name": "Book",
+    "author": "Kolodny",
+    "barcode": "3",
+    "status": "available",
+    "dueDate": "",
+    "renewalsLeft": 3
+  }
+]
