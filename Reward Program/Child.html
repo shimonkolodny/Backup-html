@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Reward Programs (Child)</title>
+
+  <!-- Inline CSS -->
+  <style>
+    /********************************************
+     *           BASIC PAGE & CONTAINER
+     ********************************************/
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f9f9f9;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .container {
+      background: #ffffff;
+      border-radius: 20px;
+      padding: 30px;
+      width: 750px; /* Larger width for bigger calendar/store */
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    h1 {
+      margin-bottom: 5px;
+    }
+
+    /********************************************
+     *       TOP BAR: CREDITS DISPLAY, TABS
+     ********************************************/
+    .top-bar {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+    .credits-display {
+      font-weight: bold;
+    }
+    .nav-buttons {
+      display: flex;
+      gap: 10px;
+    }
+    .nav-buttons button {
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      padding: 10px 16px;
+      border-radius: 20px;
+      cursor: pointer;
+    }
+    .nav-buttons button:hover {
+      background-color: #0056b3;
+    }
+
+    /********************************************
+     *        SECTION SWITCHING (Calendar/Store)
+     ********************************************/
+    .section {
+      width: 100%;
+      margin-top: 20px;
+      display: none; /* Hidden by default, shown when active */
+    }
+    .section.active {
+      display: block;
+    }
+
+    /********************************************
+     *               CALENDAR
+     ********************************************/
+    #calendar {
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+      gap: 10px;
+    }
+    .day {
+      background-color: #e0f7fa;
+      border-radius: 12px;
+      padding: 20px;
+      cursor: pointer;
+      text-align: center;
+    }
+    /* Future days: gray and not clickable */
+    .future-day {
+      background-color: #dcdcdc;
+      cursor: not-allowed;
+      pointer-events: none;
+    }
+
+    /********************************************
+     *               STORE
+     ********************************************/
+    #store-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .store-item {
+      background-color: #e7ffe7;
+      border-radius: 12px;
+      padding: 15px;
+      width: 180px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .store-item h4 {
+      margin: 0 0 10px 0;
+      text-align: center;
+    }
+    .store-item p {
+      margin: 5px 0;
+    }
+    .store-item button {
+      background-color: #28a745;
+      color: #fff;
+      border-radius: 20px;
+      border: none;
+      padding: 8px 12px;
+      cursor: pointer;
+    }
+    .store-item button:hover {
+      background-color: #1e7e34;
+    }
+
+    /********************************************
+     *               MODALS
+     ********************************************/
+    .modal {
+      position: fixed;
+      background-color: rgba(0,0,0,0.4);
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .hidden {
+      display: none;
+    }
+    .modal-content {
+      background: white;
+      padding: 20px;
+      border-radius: 20px;
+      width: 400px;
+      max-height: 80vh;
+      overflow-y: auto;
+      position: relative;
+    }
+    .close {
+      position: absolute;
+      right: 15px;
+      top: 10px;
+      font-size: 18px;
+      cursor: pointer;
+    }
+
+    /********************************************
+     *             PROGRAM SELECTION
+     ********************************************/
+    .program-item {
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .program-item label {
+      margin-right: 8px;
+    }
+
+    /********************************************
+     *             REQUESTS VIEW
+     ********************************************/
+    #requests-modal .request-item {
+      border: 1px solid #ccc;
+      padding: 10px;
+      border-radius: 10px;
+      margin-bottom: 10px;
+    }
+
+    /********************************************
+     *       ASK FOR REWARD / ASK FOR CREDITS
+     ********************************************/
+    #ask-reward-modal input,
+    #request-credits-modal input,
+    #request-credits-modal textarea {
+      width: 100%;
+      margin: 10px 0;
+      border-radius: 10px;
+      border: 1px solid #ccc;
+      padding: 5px 10px;
+    }
+    #request-credits-modal textarea {
+      resize: none;
+      height: 60px;
+    }
+
+    button.rounded {
+      border-radius: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>My Rewards & Store</h1>
+
+    <!-- Top Bar -->
+    <div class="top-bar">
+      <div class="credits-display" id="child-credits-display">Credits: 0 (=$0.00)</div>
+      <div class="nav-buttons">
+        <button id="calendar-tab-btn">Calendar</button>
+        <button id="store-tab-btn">Store</button>
+        <button id="view-requests-btn">My Requests</button>
+        <button id="request-credits-btn">Request Credits</button>
+      </div>
+    </div>
+
+    <!-- Calendar Section -->
+    <div class="section active" id="calendar-section">
+      <div id="calendar"></div>
+    </div>
+
+    <!-- Store Section -->
+    <div class="section" id="store-section">
+      <h2>Available Items</h2>
+      <div id="store-list">
+        <!-- Items from Prizes.json will appear here -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal: Programs for a Day -->
+  <div id="program-modal" class="modal hidden">
+    <div class="modal-content">
+      <span class="close" id="close-program-modal">&times;</span>
+      <h2>Programs for <span id="selected-date"></span></h2>
+      <div id="program-list">
+        <!-- Program items will be injected here -->
+      </div>
+      <button class="rounded" id="submit-request">Submit Request</button>
+    </div>
+  </div>
+
+  <!-- Modal: Ask for Reward if none is set -->
+  <div id="ask-reward-modal" class="modal hidden">
+    <div class="modal-content">
+      <span class="close" id="close-ask-reward-modal">&times;</span>
+      <h3>This program has no reward. What reward would you like?</h3>
+      <input type="text" id="requested-reward" placeholder="Type desired reward" />
+      <button class="rounded" id="confirm-reward">Confirm</button>
+    </div>
+  </div>
+
+  <!-- Modal: View All Requests -->
+  <div id="requests-modal" class="modal hidden">
+    <div class="modal-content">
+      <span class="close" id="close-requests-modal">&times;</span>
+      <h2>My Requests</h2>
+      <div id="requests-list">
+        <!-- Dynamically populated -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal: Request Credits -->
+  <div id="request-credits-modal" class="modal hidden">
+    <div class="modal-content">
+      <span class="close" id="close-request-credits-modal">&times;</span>
+      <h2>Request Additional Credits</h2>
+      <label for="credit-amount">How many credits?</label>
+      <input type="number" id="credit-amount" min="1" />
+      <label for="credit-reason">Why do you deserve these credits?</label>
+      <textarea id="credit-reason"></textarea>
+      <button class="rounded" id="submit-credit-request-btn">Submit Request</button>
+    </div>
+  </div>
+
+  <!-- Inline JavaScript -->
+  <script>
+    /********************************************
+     *        CONFIGURATION & CONSTANTS
+     ********************************************/
+    const GITHUB_USERNAME = "shimonkolodny";
+    const GITHUB_REPO = "Backup-html";
+    const API_TOKEN = "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";
+
+    // Paths on GitHub
+    const REQUESTS_PATH = "Reward Program/Requests";
+    const PROGRAMS_PATH = "Reward Program/Programs";
+    const CREDIT_PATH   = "Reward Program/Credit.json";
+    const PRIZES_PATH   = "Reward Program/Prizes.json";
+
+    // Construct the API endpoints
+    const REQUESTS_URL = `https://api.github.com/repos/${GITHUB_USERNAME}/${GITHUB_REPO}/contents/${REQUESTS_PATH}`;
+    const PROGRAMS_URL = `https://api.github.com/repos/${GITHUB_USERNAME}/${GITHUB_REPO}/contents/${PROGRAMS_PATH}`;
+    const CREDIT_URL   = `https://api.github.com/repos/${GITHUB_USERNAME}/${GITHUB_REPO}/contents/${CREDIT_PATH}`;
+    const PRIZES_URL   = `https://api.github.com/repos/${GITHUB_USERNAME}/${GITHUB_REPO}/contents/${PRIZES_PATH}`;
+
+    /********************************************
+     *                STATE
+     ********************************************/
+    let selectedDay = null;
+    let programs = [];        // All programs from GitHub
+    let allRequests = [];     // All requests from GitHub
+    let childCredits = 0;     // Loaded from Credit.json
+    let prizes = [];          // Loaded from Prizes.json
+    let chosenPrograms = {};  // { programName: desiredReward }
+
+    /********************************************
+     *        GITHUB API HELPERS (fetch/put)
+     ********************************************/
+    // 1) Fetch existing content (JSON files) from GitHub
+    async function fetchGithubFile(fileUrl) {
+      try {
+        const response = await fetch(fileUrl, {
+          method: "GET",
+          headers: {
+            Authorization: `token ${API_TOKEN}`,
+            Accept: "application/vnd.github.v3+json",
+          }
+        });
+        if (!response.ok) {
+          throw new Error(`Error fetching ${fileUrl}. Status: ${response.status}`);
+        }
+        const data = await response.json();
+        // Data content is base64-encoded
+        const decodedContent = atob(data.content);
+        return {
+          sha: data.sha,
+          content: JSON.parse(decodedContent),
+        };
+      } catch (error) {
+        console.error(error);
+        return { sha: null, content: [] };
+      }
+    }
+
+    // 2) Update (PUT) a file on GitHub with new JSON
+    async function updateGithubFile(fileUrl, newContent, sha, commitMsg="Child Update") {
+      const base64Content = btoa(JSON.stringify(newContent, null, 2));
+
+      const body = {
+        message: commitMsg,
+        content: base64Content,
+        sha: sha
+      };
+
+      try {
+        const response = await fetch(fileUrl, {
+          method: "PUT",
+          headers: {
+            Authorization: `token ${API_TOKEN}`,
+            Accept: "application/vnd.github.v3+json",
+          },
+          body: JSON.stringify(body),
+        });
+        if (!response.ok) {
+          throw new Error(`Error updating file at ${fileUrl}. Status: ${response.status}`);
+        }
+        return await response.json();
+      } catch (error) {
+        console.error(error);
+      }
+    }
+
+    /********************************************
+     *        LOAD DATA: PROGRAMS, REQUESTS,
+     *        CREDIT, PRIZES
+     ********************************************/
+    async function loadData() {
+      // 1) Programs
+      const progData = await fetchGithubFile(PROGRAMS_URL);
+      programs = progData.content;
+
+      // 2) Requests
+      const reqData = await fetchGithubFile(REQUESTS_URL);
+      allRequests = reqData.content;
+
+      // 3) Credits
+      const creditData = await fetchGithubFile(CREDIT_URL);
+      if (creditData.content.childCredits !== undefined) {
+        childCredits = creditData.content.childCredits;
+      }
+
+      // 4) Prizes
+      const prizesData = await fetchGithubFile(PRIZES_URL);
+      prizes = prizesData.content;
+
+      // Check for any notifications from parent's acceptance/denial
+      await checkNotifications(reqData.sha);
+
+      // Display updated credits
+      updateCreditsDisplay();
+    }
+
+    /********************************************
+     *    CHECK NOTIFICATIONS (ACCEPT / DENIED)
+     ********************************************/
+    async function checkNotifications(requestsSha) {
+      let updated = false;
+      allRequests.forEach(req => {
+        // If request is not pending and child hasn't seen it yet
+        if (req.status !== "pending" && req.seenByChild === false) {
+          // Show a quick alert
+          let msg = `Your request (${req.type || "program"}) for `;
+          if (req.type === "store") {
+            msg += `buying "${req.itemName}" `;
+          } else if (req.type === "credit") {
+            msg += `${req.creditsRequested} credits `;
+          } else {
+            msg += `day ${req.day}/${req.month}/${req.year} `;
+          }
+          msg += `has been ${req.status}.`;
+          alert(msg);
+
+          req.seenByChild = true; // mark as seen
+          updated = true;
+        }
+      });
+
+      if (updated) {
+        // Update GitHub
+        await updateGithubFile(REQUESTS_URL, allRequests, requestsSha, "Child saw notifications");
+      }
+    }
+
+    /********************************************
+     *         CALENDAR SECTION (Child)
+     ********************************************/
+    function generateCalendar() {
+      const calendar = document.getElementById("calendar");
+      calendar.innerHTML = ""; // Clear if re-generating
+
+      const date = new Date();
+      const currentDay = date.getDate();
+      const currentMonth = date.getMonth(); // 0-based
+      const currentYear = date.getFullYear();
+      const daysInMonth = new Date(currentYear, currentMonth + 1, 0).getDate();
+
+      for (let day = 1; day <= daysInMonth; day++) {
+        const dayDiv = document.createElement("div");
+        dayDiv.classList.add("day");
+        dayDiv.innerText = day;
+
+        // Grayed out future days
+        if (day > currentDay) {
+          dayDiv.classList.add("future-day");
+        } else {
+          // Only add event listener if not future
+          dayDiv.addEventListener("click", () => {
+            selectedDay = day;
+            openProgramModal(day);
+          });
+        }
+
+        calendar.appendChild(dayDiv);
+      }
+    }
+
+    function openProgramModal(day) {
+      chosenPrograms = {};
+      document.getElementById("selected-date").innerText = day;
+      const modal = document.getElementById("program-modal");
+      const programList = document.getElementById("program-list");
+      programList.innerHTML = "";
+
+      const dateObj = new Date();
+      const currentMonth = dateObj.getMonth(); // 0-based
+      const currentYear = dateObj.getFullYear();
+      const checkDate = new Date(currentYear, currentMonth, day);
+
+      // Filter programs that cover the selected day
+      const filteredPrograms = programs.filter(p => {
+        const start = new Date(p.startDate);
+        const end = new Date(p.endDate);
+        return (checkDate >= start && checkDate <= end);
+      });
+
+      if (filteredPrograms.length === 0) {
+        programList.innerHTML = "<p>No programs set for this day.</p>";
+      } else {
+        filteredPrograms.forEach(p => {
+          const itemDiv = document.createElement("div");
+          itemDiv.classList.add("program-item");
+
+          const label = document.createElement("label");
+          label.textContent = p.name;
+
+          const checkbox = document.createElement("input");
+          checkbox.type = "checkbox";
+          checkbox.addEventListener("change", () => {
+            if (checkbox.checked) {
+              if (!p.reward) {
+                openAskRewardModal(p.name);
+              } else {
+                chosenPrograms[p.name] = p.reward;
+              }
+            } else {
+              delete chosenPrograms[p.name];
+            }
+          });
+
+          itemDiv.appendChild(label);
+          itemDiv.appendChild(checkbox);
+          programList.appendChild(itemDiv);
+        });
+      }
+
+      modal.classList.remove("hidden");
+    }
+
+    function openAskRewardModal(programName) {
+      const askModal = document.getElementById("ask-reward-modal");
+      askModal.classList.remove("hidden");
+
+      document.getElementById("confirm-reward").onclick = () => {
+        const userReward = document.getElementById("requested-reward").value.trim();
+        if (userReward) {
+          chosenPrograms[programName] = userReward;
+        }
+        document.getElementById("requested-reward").value = "";
+        askModal.classList.add("hidden");
+      };
+    }
+
+    async function submitProgramRequest() {
+      if (!selectedDay || Object.keys(chosenPrograms).length === 0) {
+        alert("No programs selected or invalid day.");
+        return;
+      }
+      const now = new Date();
+      // Fetch existing requests to get up-to-date content & SHA
+      const { sha, content: existingRequests } = await fetchGithubFile(REQUESTS_URL);
+
+      // Create new request object
+      const newRequest = {
+        type: "program",
+        day: selectedDay,
+        month: now.getMonth() + 1,
+        year: now.getFullYear(),
+        programs: chosenPrograms, // { programName: reward }
+        status: "pending",
+        seenByChild: true
+      };
+      existingRequests.push(newRequest);
+
+      // Update the requests file
+      await updateGithubFile(REQUESTS_URL, existingRequests, sha, "Child program request");
+
+      alert("Request sent to parents!");
+      closeModal("program-modal");
+    }
+
+    /********************************************
+     *           STORE SECTION (Child)
+     ********************************************/
+    function renderStore() {
+      const storeList = document.getElementById("store-list");
+      storeList.innerHTML = "";
+
+      // We'll filter out any items that are currently "pending" for purchase
+      const pendingStoreRequests = allRequests.filter(r => r.type === "store" && r.status === "pending");
+      const pendingItemNames = pendingStoreRequests.map(r => r.itemName);
+
+      if (prizes.length === 0) {
+        storeList.innerHTML = "<p>No items in the store yet.</p>";
+        return;
+      }
+
+      prizes.forEach(item => {
+        // If there's a pending request for this item, hide it from the child's store list
+        if (pendingItemNames.includes(item.name)) {
+          return;
+        }
+
+        const itemDiv = document.createElement("div");
+        itemDiv.classList.add("store-item");
+        itemDiv.innerHTML = `
+          <h4>${item.name}</h4>
+          <p>Cost: ${item.cost} credits ($${(item.cost / 100).toFixed(2)})</p>
+        `;
+
+        const buyBtn = document.createElement("button");
+        buyBtn.textContent = "Buy";
+        buyBtn.onclick = () => buyItem(item);
+        itemDiv.appendChild(buyBtn);
+
+        storeList.appendChild(itemDiv);
+      });
+    }
+
+    async function buyItem(item) {
+      // Create a "store" request. The parent's acceptance triggers credit deduction
+      // Temporarily remove/hide the item from the child's view
+      const { sha, content: existingRequests } = await fetchGithubFile(REQUESTS_URL);
+
+      const newRequest = {
+        type: "store",
+        itemName: item.name,
+        cost: item.cost,
+        status: "pending",
+        seenByChild: true
+      };
+      existingRequests.push(newRequest);
+
+      await updateGithubFile(REQUESTS_URL, existingRequests, sha, `Child requests store item: ${item.name}`);
+
+      alert(`Purchase request for "${item.name}" sent to parents.`);
+      renderStore(); // Re-render to hide the item
+    }
+
+    /********************************************
+     *        CHILD REQUESTS: VIEW ALL
+     ********************************************/
+    function openRequestsModal() {
+      const requestsModal = document.getElementById("requests-modal");
+      const requestsList = document.getElementById("requests-list");
+      requestsList.innerHTML = "";
+
+      if (allRequests.length === 0) {
+        requestsList.innerHTML = "<p>No requests yet.</p>";
+      } else {
+        // Child sees all requests they've made
+        // (Single child scenario, so display everything in the file)
+        allRequests.forEach(req => {
+          const itemDiv = document.createElement("div");
+          itemDiv.classList.add("request-item");
+
+          let detailText = "";
+          if (req.type === "program") {
+            detailText = `<p><strong>Date:</strong> ${req.day}/${req.month}/${req.year}</p>`;
+            let pText = "";
+            for (let [programName, reward] of Object.entries(req.programs)) {
+              pText += `<p>${programName} - Reward: ${reward}</p>`;
+            }
+            detailText += pText;
+          } else if (req.type === "store") {
+            detailText = `<p><strong>Store Item:</strong> ${req.itemName}</p>`;
+            detailText += `<p>Cost: ${req.cost} credits ($${(req.cost / 100).toFixed(2)})</p>`;
+          } else if (req.type === "credit") {
+            detailText = `<p>Requested +${req.creditsRequested} credits</p>`;
+            detailText += `<p>Reason: ${req.reason || "N/A"}</p>`;
+          }
+
+          itemDiv.innerHTML = `
+            <p><strong>Type:</strong> ${req.type}</p>
+            <p><strong>Status:</strong> ${req.status}</p>
+            ${detailText}
+          `;
+          requestsList.appendChild(itemDiv);
+        });
+      }
+
+      requestsModal.classList.remove("hidden");
+    }
+
+    /********************************************
+     *        REQUEST CREDITS (Child)
+     ********************************************/
+    function openRequestCreditsModal() {
+      document.getElementById("request-credits-modal").classList.remove("hidden");
+    }
+
+    async function submitCreditRequest() {
+      const creditAmount = parseInt(document.getElementById("credit-amount").value, 10);
+      const creditReason = document.getElementById("credit-reason").value.trim();
+
+      if (!creditAmount || creditAmount <= 0) {
+        alert("Please enter a valid credit amount.");
+        return;
+      }
+
+      // Add a new request with type='credit'
+      const { sha, content: existingRequests } = await fetchGithubFile(REQUESTS_URL);
+
+      const newRequest = {
+        type: "credit",
+        creditsRequested: creditAmount,
+        reason: creditReason,
+        status: "pending",
+        seenByChild: true
+      };
+      existingRequests.push(newRequest);
+
+      await updateGithubFile(REQUESTS_URL, existingRequests, sha, "Child requests credits");
+
+      alert("Credit request sent to parents.");
+      closeModal("request-credits-modal");
+    }
+
+    /********************************************
+     *            UPDATE UI: CREDITS
+     ********************************************/
+    function updateCreditsDisplay() {
+      const display = document.getElementById("child-credits-display");
+      display.textContent = `Credits: ${childCredits} (=$${(childCredits/100).toFixed(2)})`;
+    }
+
+    /********************************************
+     *     HELPER: CLOSE A GIVEN MODAL
+     ********************************************/
+    function closeModal(modalId) {
+      document.getElementById(modalId).classList.add("hidden");
+    }
+
+    /********************************************
+     *      SECTION TABS (CALENDAR / STORE)
+     ********************************************/
+    function showSection(sectionId) {
+      document.getElementById("calendar-section").classList.remove("active");
+      document.getElementById("store-section").classList.remove("active");
+
+      document.getElementById(sectionId).classList.add("active");
+    }
+
+    /********************************************
+     *          EVENT LISTENERS & INIT
+     ********************************************/
+    document.addEventListener("DOMContentLoaded", async () => {
+      // Load data
+      await loadData();
+
+      // Generate calendar
+      generateCalendar();
+
+      // Render store
+      renderStore();
+
+      // Tab switching
+      document.getElementById("calendar-tab-btn").addEventListener("click", () => showSection("calendar-section"));
+      document.getElementById("store-tab-btn").addEventListener("click", () => showSection("store-section"));
+
+      // Modals closing
+      document.getElementById("close-program-modal").addEventListener("click", () => {
+        closeModal("program-modal");
+      });
+      document.getElementById("close-ask-reward-modal").addEventListener("click", () => {
+        closeModal("ask-reward-modal");
+      });
+      document.getElementById("close-requests-modal").addEventListener("click", () => {
+        closeModal("requests-modal");
+      });
+      document.getElementById("close-request-credits-modal").addEventListener("click", () => {
+        closeModal("request-credits-modal");
+      });
+
+      // Buttons
+      document.getElementById("submit-request").addEventListener("click", submitProgramRequest);
+      document.getElementById("view-requests-btn").addEventListener("click", openRequestsModal);
+      document.getElementById("request-credits-btn").addEventListener("click", openRequestCreditsModal);
+      document.getElementById("submit-credit-request-btn").addEventListener("click", submitCreditRequest);
+    });
+  </script>
+</body>
+</html>
