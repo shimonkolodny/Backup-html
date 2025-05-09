@@ -1,1 +1,322 @@
-[]
+[
+  {
+    "name": "Shimmy Kolodny",
+    "condition": "music",
+    "question": 1,
+    "low": 6151,
+    "high": 6966,
+    "options": [
+      6345,
+      6465,
+      6440,
+      6635
+    ],
+    "chosen": 6345,
+    "correct": true,
+    "time": 7.4454000000953675
+  },
+  {
+    "name": "Shimmy Kolodny",
+    "condition": "music",
+    "question": 2,
+    "low": 7379,
+    "high": 7860,
+    "options": [
+      7547,
+      7691,
+      7607,
+      7684
+    ],
+    "chosen": 7547,
+    "correct": true,
+    "time": 3.997799999952316
+  },
+  {
+    "name": "Shimmy Kolodny",
+    "condition": "music",
+    "question": 3,
+    "low": 6827,
+    "high": 6828,
+    "options": [
+      6687,
+      6904,
+      6827,
+      6870
+    ],
+    "chosen": 6687,
+    "correct": false,
+    "time": 3.566100000143051
+  },
+  {
+    "name": "Shimmy Kolodny",
+    "condition": "music",
+    "question": 4,
+    "low": 4040,
+    "high": 4976,
+    "options": [
+      4404,
+      4319,
+      4453,
+      4407
+    ],
+    "chosen": 4404,
+    "correct": true,
+    "time": 3.4735999999046325
+  },
+  {
+    "name": "Shimmy Kolodny",
+    "condition": "music",
+    "question": 5,
+    "low": 1778,
+    "high": 1980,
+    "options": [
+      1668,
+      1867,
+      1891,
+      1742
+    ],
+    "chosen": 1668,
+    "correct": false,
+    "time": 4.198100000143051
+  },
+  {
+    "name": "Shimmy Kolodny",
+    "condition": "music",
+    "question": 6,
+    "low": 8347,
+    "high": 8822,
+    "options": [
+      8546,
+      8432,
+      8477,
+      8292
+    ],
+    "chosen": 8546,
+    "correct": true,
+    "time": 5.145799999952316
+  },
+  {
+    "name": "Shimmy Kolodny",
+    "condition": "music",
+    "question": 7,
+    "low": 3020,
+    "high": 3314,
+    "options": [
+      3434,
+      3293,
+      3271,
+      3321
+    ],
+    "chosen": 3321,
+    "correct": false,
+    "time": 6.726
+  },
+  {
+    "name": "Shimmy Kolodny",
+    "condition": "music",
+    "question": 8,
+    "low": 3443,
+    "high": 3759,
+    "options": [
+      3617,
+      3485,
+      3522,
+      3631
+    ],
+    "chosen": 3631,
+    "correct": true,
+    "time": 6.162
+  },
+  {
+    "name": "Shimmy Kolodny",
+    "condition": "music",
+    "question": 9,
+    "low": 8084,
+    "high": 8333,
+    "options": [
+      8000,
+      8140,
+      8066,
+      8053
+    ],
+    "chosen": 8140,
+    "correct": true,
+    "time": 4.533900000095367
+  },
+  {
+    "name": "Shimmy Kolodny",
+    "condition": "music",
+    "question": 10,
+    "low": 1582,
+    "high": 1672,
+    "options": [
+      1664,
+      1751,
+      1505,
+      1657
+    ],
+    "chosen": 1751,
+    "correct": false,
+    "time": 12.335799999952316
+  },
+  {
+    "name": "Shimmy Kolodny",
+    "condition": "no-music",
+    "question": 1,
+    "low": 9422,
+    "high": 9599,
+    "options": [
+      9488,
+      9454,
+      9604,
+      9302
+    ],
+    "chosen": 9488,
+    "correct": true,
+    "time": 5.7956999998092655
+  },
+  {
+    "name": "Shimmy Kolodny",
+    "condition": "no-music",
+    "question": 2,
+    "low": 5329,
+    "high": 5866,
+    "options": [
+      5465,
+      5527,
+      5637,
+      5320
+    ],
+    "chosen": 5465,
+    "correct": true,
+    "time": 5.866100000143051
+  },
+  {
+    "name": "Shimmy Kolodny",
+    "condition": "no-music",
+    "question": 3,
+    "low": 9245,
+    "high": 9815,
+    "options": [
+      9799,
+      9732,
+      9621,
+      9578
+    ],
+    "chosen": 9578,
+    "correct": true,
+    "time": 16.82989999985695
+  },
+  {
+    "name": "Shimmy Kolodny",
+    "condition": "no-music",
+    "question": 4,
+    "low": 7502,
+    "high": 7799,
+    "options": [
+      7542,
+      7654,
+      7668,
+      7725
+    ],
+    "chosen": 7542,
+    "correct": true,
+    "time": 5.225899999856948
+  },
+  {
+    "name": "Shimmy Kolodny",
+    "condition": "no-music",
+    "question": 5,
+    "low": 3058,
+    "high": 3909,
+    "options": [
+      3547,
+      3636,
+      3451,
+      3582
+    ],
+    "chosen": 3636,
+    "correct": true,
+    "time": 4.467700000047683
+  },
+  {
+    "name": "Shimmy Kolodny",
+    "condition": "no-music",
+    "question": 6,
+    "low": 1813,
+    "high": 1846,
+    "options": [
+      1841,
+      1665,
+      1648,
+      1811
+    ],
+    "chosen": 1841,
+    "correct": true,
+    "time": 9.401799999952317
+  },
+  {
+    "name": "Shimmy Kolodny",
+    "condition": "no-music",
+    "question": 7,
+    "low": 6403,
+    "high": 6472,
+    "options": [
+      6484,
+      6284,
+      6408,
+      6466
+    ],
+    "chosen": 6408,
+    "correct": true,
+    "time": 14.058
+  },
+  {
+    "name": "Shimmy Kolodny",
+    "condition": "no-music",
+    "question": 8,
+    "low": 9406,
+    "high": 9698,
+    "options": [
+      9250,
+      9316,
+      9249,
+      9439
+    ],
+    "chosen": 9439,
+    "correct": true,
+    "time": 10.823799999952316
+  },
+  {
+    "name": "Shimmy Kolodny",
+    "condition": "no-music",
+    "question": 9,
+    "low": 5269,
+    "high": 5919,
+    "options": [
+      5167,
+      5149,
+      5158,
+      5281
+    ],
+    "chosen": 5281,
+    "correct": true,
+    "time": 5.5159000000953675
+  },
+  {
+    "name": "Shimmy Kolodny",
+    "condition": "no-music",
+    "question": 10,
+    "low": 2260,
+    "high": 2467,
+    "options": [
+      2458,
+      2547,
+      2424,
+      2542
+    ],
+    "chosen": 2547,
+    "correct": false,
+    "time": 9.841600000143051
+  }
+]
