@@ -638,5 +638,325 @@
     "chosen": 7876,
     "correct": true,
     "time": 5.566
+  },
+  {
+    "name": "Mommy Kolodny",
+    "condition": "music",
+    "question": 1,
+    "low": 5790,
+    "high": 5913,
+    "options": [
+      5851,
+      5754,
+      5776,
+      5757
+    ],
+    "chosen": 5851,
+    "correct": true,
+    "time": 7.703300000011921
+  },
+  {
+    "name": "Mommy Kolodny",
+    "condition": "music",
+    "question": 2,
+    "low": 6235,
+    "high": 6384,
+    "options": [
+      6203,
+      6189,
+      6198,
+      6252
+    ],
+    "chosen": 6252,
+    "correct": true,
+    "time": 4.973200000017881
+  },
+  {
+    "name": "Mommy Kolodny",
+    "condition": "music",
+    "question": 3,
+    "low": 9506,
+    "high": 9665,
+    "options": [
+      9495,
+      9534,
+      9672,
+      9475
+    ],
+    "chosen": 9534,
+    "correct": true,
+    "time": 11.659199999988079
+  },
+  {
+    "name": "Mommy Kolodny",
+    "condition": "music",
+    "question": 4,
+    "low": 2678,
+    "high": 2858,
+    "options": [
+      2882,
+      2839,
+      2661,
+      2671
+    ],
+    "chosen": 2671,
+    "correct": false,
+    "time": 11.70790000000596
+  },
+  {
+    "name": "Mommy Kolodny",
+    "condition": "music",
+    "question": 5,
+    "low": 9584,
+    "high": 9733,
+    "options": [
+      9768,
+      9759,
+      9726,
+      9738
+    ],
+    "chosen": 9726,
+    "correct": true,
+    "time": 10.5425
+  },
+  {
+    "name": "Mommy Kolodny",
+    "condition": "music",
+    "question": 6,
+    "low": 5361,
+    "high": 5557,
+    "options": [
+      5331,
+      5330,
+      5410,
+      5359
+    ],
+    "chosen": 5410,
+    "correct": true,
+    "time": 13.16009999999404
+  },
+  {
+    "name": "Mommy Kolodny",
+    "condition": "music",
+    "question": 7,
+    "low": 1334,
+    "high": 1441,
+    "options": [
+      1423,
+      1307,
+      1285,
+      1309
+    ],
+    "chosen": 1423,
+    "correct": true,
+    "time": 5.873799999982118
+  },
+  {
+    "name": "Mommy Kolodny",
+    "condition": "music",
+    "question": 8,
+    "low": 1784,
+    "high": 1960,
+    "options": [
+      1750,
+      1745,
+      1780,
+      1959
+    ],
+    "chosen": 1959,
+    "correct": true,
+    "time": 8.270100000023842
+  },
+  {
+    "name": "Mommy Kolodny",
+    "condition": "music",
+    "question": 9,
+    "low": 7562,
+    "high": 7732,
+    "options": [
+      7664,
+      7555,
+      7554,
+      7762
+    ],
+    "chosen": 7664,
+    "correct": true,
+    "time": 8.98290000000596
+  },
+  {
+    "name": "Mommy Kolodny",
+    "condition": "music",
+    "question": 10,
+    "low": 4717,
+    "high": 4908,
+    "options": [
+      4806,
+      4944,
+      4704,
+      4685
+    ],
+    "chosen": 4806,
+    "correct": true,
+    "time": 9.41519999998808
+  },
+  {
+    "name": "Mommy Kolodny",
+    "condition": "no-music",
+    "question": 1,
+    "low": 8860,
+    "high": 8965,
+    "options": [
+      8991,
+      8906,
+      8835,
+      8967
+    ],
+    "chosen": 8906,
+    "correct": true,
+    "time": 5.662200000017881
+  },
+  {
+    "name": "Mommy Kolodny",
+    "condition": "no-music",
+    "question": 2,
+    "low": 8131,
+    "high": 8326,
+    "options": [
+      8352,
+      8152,
+      8362,
+      8337
+    ],
+    "chosen": 8352,
+    "correct": false,
+    "time": 7.54209999999404
+  },
+  {
+    "name": "Mommy Kolodny",
+    "condition": "no-music",
+    "question": 3,
+    "low": 7792,
+    "high": 7980,
+    "options": [
+      7790,
+      7981,
+      7963,
+      7775
+    ],
+    "chosen": 7963,
+    "correct": true,
+    "time": 7.31
+  },
+  {
+    "name": "Mommy Kolodny",
+    "condition": "no-music",
+    "question": 4,
+    "low": 3816,
+    "high": 3927,
+    "options": [
+      3965,
+      3774,
+      3835,
+      3931
+    ],
+    "chosen": 3835,
+    "correct": true,
+    "time": 5.512600000023842
+  },
+  {
+    "name": "Mommy Kolodny",
+    "condition": "no-music",
+    "question": 5,
+    "low": 1243,
+    "high": 1388,
+    "options": [
+      1342,
+      1428,
+      1213,
+      1210
+    ],
+    "chosen": 1342,
+    "correct": true,
+    "time": 5.957199999988079
+  },
+  {
+    "name": "Mommy Kolodny",
+    "condition": "no-music",
+    "question": 6,
+    "low": 9432,
+    "high": 9569,
+    "options": [
+      9478,
+      9614,
+      9396,
+      9416
+    ],
+    "chosen": 9478,
+    "correct": true,
+    "time": 6.253
+  },
+  {
+    "name": "Mommy Kolodny",
+    "condition": "no-music",
+    "question": 7,
+    "low": 5552,
+    "high": 5738,
+    "options": [
+      5533,
+      5744,
+      5770,
+      5673
+    ],
+    "chosen": 5673,
+    "correct": true,
+    "time": 9.316800000011922
+  },
+  {
+    "name": "Mommy Kolodny",
+    "condition": "no-music",
+    "question": 8,
+    "low": 8523,
+    "high": 8688,
+    "options": [
+      8707,
+      8631,
+      8479,
+      8475
+    ],
+    "chosen": 8631,
+    "correct": true,
+    "time": 10.279800000011921
+  },
+  {
+    "name": "Mommy Kolodny",
+    "condition": "no-music",
+    "question": 9,
+    "low": 7600,
+    "high": 7724,
+    "options": [
+      7692,
+      7551,
+      7599,
+      7739
+    ],
+    "chosen": 7692,
+    "correct": true,
+    "time": 9.358799999982118
+  },
+  {
+    "name": "Mommy Kolodny",
+    "condition": "no-music",
+    "question": 10,
+    "low": 2195,
+    "high": 2348,
+    "options": [
+      2377,
+      2196,
+      2374,
+      2385
+    ],
+    "chosen": 2196,
+    "correct": true,
+    "time": 9.740199999988079
   }
 ]
