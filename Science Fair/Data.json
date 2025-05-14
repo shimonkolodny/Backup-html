@@ -1278,5 +1278,325 @@
     "chosen": 8272,
     "correct": true,
     "time": 7.011
+  },
+  {
+    "name": "Menachem Bressler",
+    "condition": "music",
+    "question": 1,
+    "low": 6663,
+    "high": 6822,
+    "options": [
+      6865,
+      6857,
+      6736,
+      6855
+    ],
+    "chosen": 6857,
+    "correct": false,
+    "time": 14.853000000000007
+  },
+  {
+    "name": "Menachem Bressler",
+    "condition": "music",
+    "question": 2,
+    "low": 5584,
+    "high": 5725,
+    "options": [
+      5574,
+      5748,
+      5764,
+      5699
+    ],
+    "chosen": 5699,
+    "correct": true,
+    "time": 21.333
+  },
+  {
+    "name": "Menachem Bressler",
+    "condition": "music",
+    "question": 3,
+    "low": 7684,
+    "high": 7877,
+    "options": [
+      7914,
+      7828,
+      7902,
+      7920
+    ],
+    "chosen": 7828,
+    "correct": true,
+    "time": 11.451
+  },
+  {
+    "name": "Menachem Bressler",
+    "condition": "music",
+    "question": 4,
+    "low": 3069,
+    "high": 3176,
+    "options": [
+      3028,
+      3042,
+      3044,
+      3121
+    ],
+    "chosen": 3121,
+    "correct": true,
+    "time": 7.25
+  },
+  {
+    "name": "Menachem Bressler",
+    "condition": "music",
+    "question": 5,
+    "low": 2671,
+    "high": 2801,
+    "options": [
+      2829,
+      2628,
+      2744,
+      2836
+    ],
+    "chosen": 2744,
+    "correct": true,
+    "time": 13.385
+  },
+  {
+    "name": "Menachem Bressler",
+    "condition": "music",
+    "question": 6,
+    "low": 3740,
+    "high": 3855,
+    "options": [
+      3717,
+      3713,
+      3722,
+      3826
+    ],
+    "chosen": 3826,
+    "correct": true,
+    "time": 6.882
+  },
+  {
+    "name": "Menachem Bressler",
+    "condition": "music",
+    "question": 7,
+    "low": 4691,
+    "high": 4860,
+    "options": [
+      4735,
+      4674,
+      4863,
+      4896
+    ],
+    "chosen": 4735,
+    "correct": true,
+    "time": 8.933
+  },
+  {
+    "name": "Menachem Bressler",
+    "condition": "music",
+    "question": 8,
+    "low": 3489,
+    "high": 3631,
+    "options": [
+      3439,
+      3460,
+      3641,
+      3497
+    ],
+    "chosen": 3497,
+    "correct": true,
+    "time": 17.953
+  },
+  {
+    "name": "Menachem Bressler",
+    "condition": "music",
+    "question": 9,
+    "low": 2264,
+    "high": 2434,
+    "options": [
+      2256,
+      2219,
+      2475,
+      2391
+    ],
+    "chosen": 2391,
+    "correct": true,
+    "time": 9.781
+  },
+  {
+    "name": "Menachem Bressler",
+    "condition": "music",
+    "question": 10,
+    "low": 5810,
+    "high": 5943,
+    "options": [
+      5913,
+      5989,
+      5983,
+      5792
+    ],
+    "chosen": 5913,
+    "correct": true,
+    "time": 11.284
+  },
+  {
+    "name": "Menachem Bressler",
+    "condition": "no-music",
+    "question": 1,
+    "low": 2414,
+    "high": 2547,
+    "options": [
+      2412,
+      2551,
+      2469,
+      2391
+    ],
+    "chosen": 2469,
+    "correct": true,
+    "time": 22.749
+  },
+  {
+    "name": "Menachem Bressler",
+    "condition": "no-music",
+    "question": 2,
+    "low": 9325,
+    "high": 9446,
+    "options": [
+      9461,
+      9380,
+      9494,
+      9321
+    ],
+    "chosen": 9380,
+    "correct": true,
+    "time": 11.782000000000028
+  },
+  {
+    "name": "Menachem Bressler",
+    "condition": "no-music",
+    "question": 3,
+    "low": 7749,
+    "high": 7938,
+    "options": [
+      7719,
+      7728,
+      7951,
+      7888
+    ],
+    "chosen": 7888,
+    "correct": true,
+    "time": 6.165
+  },
+  {
+    "name": "Menachem Bressler",
+    "condition": "no-music",
+    "question": 4,
+    "low": 8806,
+    "high": 8926,
+    "options": [
+      8772,
+      8940,
+      8942,
+      8845
+    ],
+    "chosen": 8845,
+    "correct": true,
+    "time": 4.819
+  },
+  {
+    "name": "Menachem Bressler",
+    "condition": "no-music",
+    "question": 5,
+    "low": 9697,
+    "high": 9849,
+    "options": [
+      9853,
+      9877,
+      9777,
+      9856
+    ],
+    "chosen": 9777,
+    "correct": true,
+    "time": 10.883
+  },
+  {
+    "name": "Menachem Bressler",
+    "condition": "no-music",
+    "question": 6,
+    "low": 4568,
+    "high": 4711,
+    "options": [
+      4545,
+      4528,
+      4749,
+      4664
+    ],
+    "chosen": 4664,
+    "correct": true,
+    "time": 6.612
+  },
+  {
+    "name": "Menachem Bressler",
+    "condition": "no-music",
+    "question": 7,
+    "low": 1156,
+    "high": 1257,
+    "options": [
+      1112,
+      1159,
+      1274,
+      1265
+    ],
+    "chosen": 1159,
+    "correct": true,
+    "time": 3.067000000000029
+  },
+  {
+    "name": "Menachem Bressler",
+    "condition": "no-music",
+    "question": 8,
+    "low": 8079,
+    "high": 8250,
+    "options": [
+      8252,
+      8271,
+      8038,
+      8086
+    ],
+    "chosen": 8086,
+    "correct": true,
+    "time": 12.71699999999997
+  },
+  {
+    "name": "Menachem Bressler",
+    "condition": "no-music",
+    "question": 9,
+    "low": 4403,
+    "high": 4578,
+    "options": [
+      4380,
+      4398,
+      4566,
+      4358
+    ],
+    "chosen": 4566,
+    "correct": true,
+    "time": 7.731
+  },
+  {
+    "name": "Menachem Bressler",
+    "condition": "no-music",
+    "question": 10,
+    "low": 2001,
+    "high": 2106,
+    "options": [
+      2118,
+      2050,
+      2152,
+      2000
+    ],
+    "chosen": 2050,
+    "correct": true,
+    "time": 7.466
   }
 ]
