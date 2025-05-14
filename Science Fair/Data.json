@@ -1598,5 +1598,325 @@
     "chosen": 2050,
     "correct": true,
     "time": 7.466
+  },
+  {
+    "name": "Adam E",
+    "condition": "music",
+    "question": 1,
+    "low": 7510,
+    "high": 7663,
+    "options": [
+      7712,
+      7684,
+      7564,
+      7489
+    ],
+    "chosen": 7564,
+    "correct": true,
+    "time": 8.620000000000001
+  },
+  {
+    "name": "Adam E",
+    "condition": "music",
+    "question": 2,
+    "low": 3102,
+    "high": 3256,
+    "options": [
+      3274,
+      3273,
+      3060,
+      3206
+    ],
+    "chosen": 3206,
+    "correct": true,
+    "time": 6.450999999999996
+  },
+  {
+    "name": "Adam E",
+    "condition": "music",
+    "question": 3,
+    "low": 3704,
+    "high": 3864,
+    "options": [
+      3703,
+      3894,
+      3732,
+      3660
+    ],
+    "chosen": 3732,
+    "correct": true,
+    "time": 5.984
+  },
+  {
+    "name": "Adam E",
+    "condition": "music",
+    "question": 4,
+    "low": 5176,
+    "high": 5347,
+    "options": [
+      5363,
+      5352,
+      5329,
+      5377
+    ],
+    "chosen": 5329,
+    "correct": true,
+    "time": 7.068
+  },
+  {
+    "name": "Adam E",
+    "condition": "music",
+    "question": 5,
+    "low": 1079,
+    "high": 1237,
+    "options": [
+      1042,
+      1287,
+      1195,
+      1254
+    ],
+    "chosen": 1195,
+    "correct": true,
+    "time": 5.567
+  },
+  {
+    "name": "Adam E",
+    "condition": "music",
+    "question": 6,
+    "low": 8061,
+    "high": 8261,
+    "options": [
+      8058,
+      8292,
+      8244,
+      8300
+    ],
+    "chosen": 8244,
+    "correct": true,
+    "time": 7.135
+  },
+  {
+    "name": "Adam E",
+    "condition": "music",
+    "question": 7,
+    "low": 8520,
+    "high": 8638,
+    "options": [
+      8499,
+      8680,
+      8630,
+      8678
+    ],
+    "chosen": 8630,
+    "correct": true,
+    "time": 6.785000000000007
+  },
+  {
+    "name": "Adam E",
+    "condition": "music",
+    "question": 8,
+    "low": 2505,
+    "high": 2676,
+    "options": [
+      2711,
+      2466,
+      2484,
+      2626
+    ],
+    "chosen": 2626,
+    "correct": true,
+    "time": 6.582999999999993
+  },
+  {
+    "name": "Adam E",
+    "condition": "music",
+    "question": 9,
+    "low": 5715,
+    "high": 5816,
+    "options": [
+      5782,
+      5683,
+      5672,
+      5864
+    ],
+    "chosen": 5782,
+    "correct": true,
+    "time": 6.768
+  },
+  {
+    "name": "Adam E",
+    "condition": "music",
+    "question": 10,
+    "low": 8468,
+    "high": 8651,
+    "options": [
+      8685,
+      8422,
+      8669,
+      8549
+    ],
+    "chosen": 8549,
+    "correct": true,
+    "time": 7.635
+  },
+  {
+    "name": "Adam E",
+    "condition": "no-music",
+    "question": 1,
+    "low": 4528,
+    "high": 4650,
+    "options": [
+      4699,
+      4606,
+      4659,
+      4497
+    ],
+    "chosen": 4606,
+    "correct": true,
+    "time": 8.884
+  },
+  {
+    "name": "Adam E",
+    "condition": "no-music",
+    "question": 2,
+    "low": 8317,
+    "high": 8483,
+    "options": [
+      8493,
+      8393,
+      8274,
+      8271
+    ],
+    "chosen": 8393,
+    "correct": true,
+    "time": 7.768
+  },
+  {
+    "name": "Adam E",
+    "condition": "no-music",
+    "question": 3,
+    "low": 8728,
+    "high": 8876,
+    "options": [
+      8878,
+      8794,
+      8693,
+      8680
+    ],
+    "chosen": 8794,
+    "correct": true,
+    "time": 6.918
+  },
+  {
+    "name": "Adam E",
+    "condition": "no-music",
+    "question": 4,
+    "low": 1554,
+    "high": 1656,
+    "options": [
+      1508,
+      1680,
+      1514,
+      1603
+    ],
+    "chosen": 1603,
+    "correct": true,
+    "time": 4.933
+  },
+  {
+    "name": "Adam E",
+    "condition": "no-music",
+    "question": 5,
+    "low": 1243,
+    "high": 1391,
+    "options": [
+      1235,
+      1331,
+      1393,
+      1237
+    ],
+    "chosen": 1331,
+    "correct": true,
+    "time": 7.352
+  },
+  {
+    "name": "Adam E",
+    "condition": "no-music",
+    "question": 6,
+    "low": 7327,
+    "high": 7479,
+    "options": [
+      7370,
+      7503,
+      7322,
+      7507
+    ],
+    "chosen": 7370,
+    "correct": true,
+    "time": 5.333
+  },
+  {
+    "name": "Adam E",
+    "condition": "no-music",
+    "question": 7,
+    "low": 5061,
+    "high": 5186,
+    "options": [
+      5011,
+      5024,
+      5089,
+      5055
+    ],
+    "chosen": 5089,
+    "correct": true,
+    "time": 5.364000000000015
+  },
+  {
+    "name": "Adam E",
+    "condition": "no-music",
+    "question": 8,
+    "low": 6239,
+    "high": 6347,
+    "options": [
+      6334,
+      6374,
+      6204,
+      6385
+    ],
+    "chosen": 6334,
+    "correct": true,
+    "time": 4.287999999999985
+  },
+  {
+    "name": "Adam E",
+    "condition": "no-music",
+    "question": 9,
+    "low": 7430,
+    "high": 7565,
+    "options": [
+      7387,
+      7421,
+      7530,
+      7611
+    ],
+    "chosen": 7530,
+    "correct": true,
+    "time": 8.035000000000029
+  },
+  {
+    "name": "Adam E",
+    "condition": "no-music",
+    "question": 10,
+    "low": 4321,
+    "high": 4488,
+    "options": [
+      4524,
+      4316,
+      4379,
+      4511
+    ],
+    "chosen": 4511,
+    "correct": false,
+    "time": 4.649999999999971
   }
 ]
