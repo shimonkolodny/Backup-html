@@ -318,5 +318,325 @@
     "chosen": 6238,
     "correct": true,
     "time": 9.907299999952317
+  },
+  {
+    "name": "Nechama Bressler",
+    "condition": "music",
+    "question": 1,
+    "low": 4325,
+    "high": 4485,
+    "options": [
+      4490,
+      4534,
+      4380,
+      4277
+    ],
+    "chosen": 4380,
+    "correct": true,
+    "time": 23.378
+  },
+  {
+    "name": "Nechama Bressler",
+    "condition": "music",
+    "question": 2,
+    "low": 4284,
+    "high": 4411,
+    "options": [
+      4408,
+      4248,
+      4441,
+      4252
+    ],
+    "chosen": 4408,
+    "correct": true,
+    "time": 8.459
+  },
+  {
+    "name": "Nechama Bressler",
+    "condition": "music",
+    "question": 3,
+    "low": 6188,
+    "high": 6371,
+    "options": [
+      6173,
+      6377,
+      6410,
+      6263
+    ],
+    "chosen": 6263,
+    "correct": true,
+    "time": 8.609
+  },
+  {
+    "name": "Nechama Bressler",
+    "condition": "music",
+    "question": 4,
+    "low": 2483,
+    "high": 2665,
+    "options": [
+      2666,
+      2466,
+      2588,
+      2467
+    ],
+    "chosen": 2588,
+    "correct": true,
+    "time": 9.679
+  },
+  {
+    "name": "Nechama Bressler",
+    "condition": "music",
+    "question": 5,
+    "low": 7607,
+    "high": 7734,
+    "options": [
+      7583,
+      7568,
+      7696,
+      7589
+    ],
+    "chosen": 7696,
+    "correct": true,
+    "time": 10.212000000000014
+  },
+  {
+    "name": "Nechama Bressler",
+    "condition": "music",
+    "question": 6,
+    "low": 1377,
+    "high": 1479,
+    "options": [
+      1507,
+      1503,
+      1436,
+      1356
+    ],
+    "chosen": 1436,
+    "correct": true,
+    "time": 6.845999999999986
+  },
+  {
+    "name": "Nechama Bressler",
+    "condition": "music",
+    "question": 7,
+    "low": 5214,
+    "high": 5409,
+    "options": [
+      5418,
+      5174,
+      5169,
+      5316
+    ],
+    "chosen": 5316,
+    "correct": true,
+    "time": 11.328
+  },
+  {
+    "name": "Nechama Bressler",
+    "condition": "music",
+    "question": 8,
+    "low": 7630,
+    "high": 7817,
+    "options": [
+      7866,
+      7620,
+      7586,
+      7717
+    ],
+    "chosen": 7717,
+    "correct": true,
+    "time": 6.13
+  },
+  {
+    "name": "Nechama Bressler",
+    "condition": "music",
+    "question": 9,
+    "low": 8382,
+    "high": 8502,
+    "options": [
+      8514,
+      8529,
+      8368,
+      8392
+    ],
+    "chosen": 8392,
+    "correct": true,
+    "time": 12.979
+  },
+  {
+    "name": "Nechama Bressler",
+    "condition": "music",
+    "question": 10,
+    "low": 6283,
+    "high": 6444,
+    "options": [
+      6263,
+      6323,
+      6245,
+      6492
+    ],
+    "chosen": 6323,
+    "correct": true,
+    "time": 10.643
+  },
+  {
+    "name": "Nechama Bressler",
+    "condition": "no-music",
+    "question": 1,
+    "low": 9668,
+    "high": 9814,
+    "options": [
+      9663,
+      9838,
+      9843,
+      9699
+    ],
+    "chosen": 9699,
+    "correct": true,
+    "time": 18.920999999999985
+  },
+  {
+    "name": "Nechama Bressler",
+    "condition": "no-music",
+    "question": 2,
+    "low": 4523,
+    "high": 4636,
+    "options": [
+      4680,
+      4667,
+      4662,
+      4527
+    ],
+    "chosen": 4527,
+    "correct": true,
+    "time": 7.546
+  },
+  {
+    "name": "Nechama Bressler",
+    "condition": "no-music",
+    "question": 3,
+    "low": 2540,
+    "high": 2706,
+    "options": [
+      2722,
+      2534,
+      2537,
+      2598
+    ],
+    "chosen": 2598,
+    "correct": true,
+    "time": 5.263
+  },
+  {
+    "name": "Nechama Bressler",
+    "condition": "no-music",
+    "question": 4,
+    "low": 1078,
+    "high": 1242,
+    "options": [
+      1052,
+      1041,
+      1030,
+      1171
+    ],
+    "chosen": 1171,
+    "correct": true,
+    "time": 5.514
+  },
+  {
+    "name": "Nechama Bressler",
+    "condition": "no-music",
+    "question": 5,
+    "low": 8037,
+    "high": 8207,
+    "options": [
+      8234,
+      8023,
+      8165,
+      8026
+    ],
+    "chosen": 8165,
+    "correct": true,
+    "time": 7.213
+  },
+  {
+    "name": "Nechama Bressler",
+    "condition": "no-music",
+    "question": 6,
+    "low": 4713,
+    "high": 4851,
+    "options": [
+      4677,
+      4854,
+      4748,
+      4699
+    ],
+    "chosen": 4748,
+    "correct": true,
+    "time": 7.779
+  },
+  {
+    "name": "Nechama Bressler",
+    "condition": "no-music",
+    "question": 7,
+    "low": 9483,
+    "high": 9596,
+    "options": [
+      9533,
+      9643,
+      9481,
+      9624
+    ],
+    "chosen": 9533,
+    "correct": true,
+    "time": 8.034
+  },
+  {
+    "name": "Nechama Bressler",
+    "condition": "no-music",
+    "question": 8,
+    "low": 9458,
+    "high": 9632,
+    "options": [
+      9572,
+      9424,
+      9636,
+      9457
+    ],
+    "chosen": 9572,
+    "correct": true,
+    "time": 9.674
+  },
+  {
+    "name": "Nechama Bressler",
+    "condition": "no-music",
+    "question": 9,
+    "low": 2043,
+    "high": 2223,
+    "options": [
+      2150,
+      2256,
+      2026,
+      2226
+    ],
+    "chosen": 2150,
+    "correct": true,
+    "time": 5.446
+  },
+  {
+    "name": "Nechama Bressler",
+    "condition": "no-music",
+    "question": 10,
+    "low": 7847,
+    "high": 7991,
+    "options": [
+      7876,
+      7993,
+      7841,
+      7997
+    ],
+    "chosen": 7876,
+    "correct": true,
+    "time": 5.566
   }
 ]
