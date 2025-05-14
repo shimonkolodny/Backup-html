@@ -958,5 +958,325 @@
     "chosen": 2196,
     "correct": true,
     "time": 9.740199999988079
+  },
+  {
+    "name": "Naftoli Kolodny",
+    "condition": "music",
+    "question": 1,
+    "low": 8445,
+    "high": 8584,
+    "options": [
+      8628,
+      8555,
+      8423,
+      8634
+    ],
+    "chosen": 8555,
+    "correct": true,
+    "time": 7.028
+  },
+  {
+    "name": "Naftoli Kolodny",
+    "condition": "music",
+    "question": 2,
+    "low": 3427,
+    "high": 3576,
+    "options": [
+      3591,
+      3394,
+      3410,
+      3490
+    ],
+    "chosen": 3490,
+    "correct": true,
+    "time": 6.41
+  },
+  {
+    "name": "Naftoli Kolodny",
+    "condition": "music",
+    "question": 3,
+    "low": 8414,
+    "high": 8525,
+    "options": [
+      8373,
+      8540,
+      8554,
+      8491
+    ],
+    "chosen": 8491,
+    "correct": true,
+    "time": 5.789
+  },
+  {
+    "name": "Naftoli Kolodny",
+    "condition": "music",
+    "question": 4,
+    "low": 7134,
+    "high": 7321,
+    "options": [
+      7251,
+      7098,
+      7343,
+      7337
+    ],
+    "chosen": 7251,
+    "correct": true,
+    "time": 6.231
+  },
+  {
+    "name": "Naftoli Kolodny",
+    "condition": "music",
+    "question": 5,
+    "low": 1174,
+    "high": 1286,
+    "options": [
+      1297,
+      1126,
+      1271,
+      1163
+    ],
+    "chosen": 1271,
+    "correct": true,
+    "time": 4.674
+  },
+  {
+    "name": "Naftoli Kolodny",
+    "condition": "music",
+    "question": 6,
+    "low": 6598,
+    "high": 6703,
+    "options": [
+      6612,
+      6717,
+      6560,
+      6572
+    ],
+    "chosen": 6612,
+    "correct": true,
+    "time": 5.869
+  },
+  {
+    "name": "Naftoli Kolodny",
+    "condition": "music",
+    "question": 7,
+    "low": 1337,
+    "high": 1459,
+    "options": [
+      1345,
+      1299,
+      1480,
+      1502
+    ],
+    "chosen": 1345,
+    "correct": true,
+    "time": 8.704
+  },
+  {
+    "name": "Naftoli Kolodny",
+    "condition": "music",
+    "question": 8,
+    "low": 5393,
+    "high": 5556,
+    "options": [
+      5572,
+      5357,
+      5374,
+      5500
+    ],
+    "chosen": 5500,
+    "correct": true,
+    "time": 6.671
+  },
+  {
+    "name": "Naftoli Kolodny",
+    "condition": "music",
+    "question": 9,
+    "low": 5442,
+    "high": 5570,
+    "options": [
+      5588,
+      5502,
+      5596,
+      5590
+    ],
+    "chosen": 5502,
+    "correct": true,
+    "time": 4.388
+  },
+  {
+    "name": "Naftoli Kolodny",
+    "condition": "music",
+    "question": 10,
+    "low": 4187,
+    "high": 4331,
+    "options": [
+      4358,
+      4353,
+      4147,
+      4290
+    ],
+    "chosen": 4290,
+    "correct": true,
+    "time": 3.565
+  },
+  {
+    "name": "Naftoli Kolodny",
+    "condition": "no-music",
+    "question": 1,
+    "low": 9164,
+    "high": 9289,
+    "options": [
+      9152,
+      9245,
+      9158,
+      9146
+    ],
+    "chosen": 9245,
+    "correct": true,
+    "time": 4.383
+  },
+  {
+    "name": "Naftoli Kolodny",
+    "condition": "no-music",
+    "question": 2,
+    "low": 8356,
+    "high": 8486,
+    "options": [
+      8467,
+      8519,
+      8487,
+      8351
+    ],
+    "chosen": 8467,
+    "correct": true,
+    "time": 3.836
+  },
+  {
+    "name": "Naftoli Kolodny",
+    "condition": "no-music",
+    "question": 3,
+    "low": 6766,
+    "high": 6941,
+    "options": [
+      6734,
+      6787,
+      6737,
+      6749
+    ],
+    "chosen": 6787,
+    "correct": true,
+    "time": 3.888
+  },
+  {
+    "name": "Naftoli Kolodny",
+    "condition": "no-music",
+    "question": 4,
+    "low": 5288,
+    "high": 5457,
+    "options": [
+      5464,
+      5344,
+      5486,
+      5506
+    ],
+    "chosen": 5344,
+    "correct": true,
+    "time": 4.846
+  },
+  {
+    "name": "Naftoli Kolodny",
+    "condition": "no-music",
+    "question": 5,
+    "low": 6562,
+    "high": 6664,
+    "options": [
+      6690,
+      6615,
+      6533,
+      6534
+    ],
+    "chosen": 6615,
+    "correct": true,
+    "time": 4.161
+  },
+  {
+    "name": "Naftoli Kolodny",
+    "condition": "no-music",
+    "question": 6,
+    "low": 7276,
+    "high": 7410,
+    "options": [
+      7416,
+      7429,
+      7382,
+      7264
+    ],
+    "chosen": 7382,
+    "correct": true,
+    "time": 2.808
+  },
+  {
+    "name": "Naftoli Kolodny",
+    "condition": "no-music",
+    "question": 7,
+    "low": 4023,
+    "high": 4141,
+    "options": [
+      4169,
+      4147,
+      4049,
+      4151
+    ],
+    "chosen": 4049,
+    "correct": true,
+    "time": 2.551
+  },
+  {
+    "name": "Naftoli Kolodny",
+    "condition": "no-music",
+    "question": 8,
+    "low": 6325,
+    "high": 6472,
+    "options": [
+      6303,
+      6427,
+      6489,
+      6520
+    ],
+    "chosen": 6427,
+    "correct": true,
+    "time": 3.683
+  },
+  {
+    "name": "Naftoli Kolodny",
+    "condition": "no-music",
+    "question": 9,
+    "low": 6315,
+    "high": 6476,
+    "options": [
+      6337,
+      6302,
+      6314,
+      6498
+    ],
+    "chosen": 6337,
+    "correct": true,
+    "time": 3.707
+  },
+  {
+    "name": "Naftoli Kolodny",
+    "condition": "no-music",
+    "question": 10,
+    "low": 8227,
+    "high": 8401,
+    "options": [
+      8187,
+      8440,
+      8272,
+      8442
+    ],
+    "chosen": 8272,
+    "correct": true,
+    "time": 7.011
   }
 ]
