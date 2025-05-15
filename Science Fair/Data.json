@@ -1918,5 +1918,325 @@
     "chosen": 4511,
     "correct": false,
     "time": 4.649999999999971
+  },
+  {
+    "name": "Chaia Frishman",
+    "condition": "music",
+    "question": 1,
+    "low": 2482,
+    "high": 2611,
+    "options": [
+      2658,
+      2441,
+      2473,
+      2585
+    ],
+    "chosen": 2585,
+    "correct": true,
+    "time": 12.267
+  },
+  {
+    "name": "Chaia Frishman",
+    "condition": "music",
+    "question": 2,
+    "low": 9274,
+    "high": 9463,
+    "options": [
+      9499,
+      9263,
+      9381,
+      9483
+    ],
+    "chosen": 9381,
+    "correct": true,
+    "time": 9.319
+  },
+  {
+    "name": "Chaia Frishman",
+    "condition": "music",
+    "question": 3,
+    "low": 4553,
+    "high": 4688,
+    "options": [
+      4685,
+      4519,
+      4538,
+      4689
+    ],
+    "chosen": 4685,
+    "correct": true,
+    "time": 6.584
+  },
+  {
+    "name": "Chaia Frishman",
+    "condition": "music",
+    "question": 4,
+    "low": 8447,
+    "high": 8626,
+    "options": [
+      8399,
+      8426,
+      8675,
+      8603
+    ],
+    "chosen": 8603,
+    "correct": true,
+    "time": 7.069
+  },
+  {
+    "name": "Chaia Frishman",
+    "condition": "music",
+    "question": 5,
+    "low": 4653,
+    "high": 4789,
+    "options": [
+      4621,
+      4794,
+      4826,
+      4721
+    ],
+    "chosen": 4721,
+    "correct": true,
+    "time": 5.218
+  },
+  {
+    "name": "Chaia Frishman",
+    "condition": "music",
+    "question": 6,
+    "low": 8516,
+    "high": 8632,
+    "options": [
+      8511,
+      8658,
+      8644,
+      8581
+    ],
+    "chosen": 8581,
+    "correct": true,
+    "time": 19.187
+  },
+  {
+    "name": "Chaia Frishman",
+    "condition": "music",
+    "question": 7,
+    "low": 8498,
+    "high": 8675,
+    "options": [
+      8569,
+      8463,
+      8481,
+      8483
+    ],
+    "chosen": 8569,
+    "correct": true,
+    "time": 9.668
+  },
+  {
+    "name": "Chaia Frishman",
+    "condition": "music",
+    "question": 8,
+    "low": 6897,
+    "high": 6998,
+    "options": [
+      6976,
+      6999,
+      6854,
+      6864
+    ],
+    "chosen": 6976,
+    "correct": true,
+    "time": 5.702
+  },
+  {
+    "name": "Chaia Frishman",
+    "condition": "music",
+    "question": 9,
+    "low": 7358,
+    "high": 7532,
+    "options": [
+      7345,
+      7523,
+      7342,
+      7564
+    ],
+    "chosen": 7523,
+    "correct": true,
+    "time": 6.434
+  },
+  {
+    "name": "Chaia Frishman",
+    "condition": "music",
+    "question": 10,
+    "low": 3632,
+    "high": 3782,
+    "options": [
+      3585,
+      3622,
+      3620,
+      3749
+    ],
+    "chosen": 3749,
+    "correct": true,
+    "time": 6.785
+  },
+  {
+    "name": "Chaia Frishman",
+    "condition": "no-music",
+    "question": 1,
+    "low": 6622,
+    "high": 6812,
+    "options": [
+      6828,
+      6842,
+      6796,
+      6821
+    ],
+    "chosen": 6796,
+    "correct": true,
+    "time": 7.536
+  },
+  {
+    "name": "Chaia Frishman",
+    "condition": "no-music",
+    "question": 2,
+    "low": 3644,
+    "high": 3799,
+    "options": [
+      3803,
+      3652,
+      3805,
+      3638
+    ],
+    "chosen": 3652,
+    "correct": true,
+    "time": 8.185
+  },
+  {
+    "name": "Chaia Frishman",
+    "condition": "no-music",
+    "question": 3,
+    "low": 3157,
+    "high": 3348,
+    "options": [
+      3353,
+      3287,
+      3366,
+      3361
+    ],
+    "chosen": 3353,
+    "correct": false,
+    "time": 8.65
+  },
+  {
+    "name": "Chaia Frishman",
+    "condition": "no-music",
+    "question": 4,
+    "low": 7789,
+    "high": 7891,
+    "options": [
+      7752,
+      7743,
+      7901,
+      7827
+    ],
+    "chosen": 7743,
+    "correct": false,
+    "time": 5.903
+  },
+  {
+    "name": "Chaia Frishman",
+    "condition": "no-music",
+    "question": 5,
+    "low": 3045,
+    "high": 3238,
+    "options": [
+      3013,
+      3107,
+      3009,
+      3281
+    ],
+    "chosen": 3107,
+    "correct": true,
+    "time": 6.985000000000029
+  },
+  {
+    "name": "Chaia Frishman",
+    "condition": "no-music",
+    "question": 6,
+    "low": 5740,
+    "high": 5862,
+    "options": [
+      5705,
+      5875,
+      5801,
+      5891
+    ],
+    "chosen": 5801,
+    "correct": true,
+    "time": 3.633999999999971
+  },
+  {
+    "name": "Chaia Frishman",
+    "condition": "no-music",
+    "question": 7,
+    "low": 6452,
+    "high": 6643,
+    "options": [
+      6646,
+      6627,
+      6443,
+      6408
+    ],
+    "chosen": 6627,
+    "correct": true,
+    "time": 14.737
+  },
+  {
+    "name": "Chaia Frishman",
+    "condition": "no-music",
+    "question": 8,
+    "low": 6461,
+    "high": 6584,
+    "options": [
+      6515,
+      6605,
+      6601,
+      6444
+    ],
+    "chosen": 6515,
+    "correct": true,
+    "time": 5.784000000000029
+  },
+  {
+    "name": "Chaia Frishman",
+    "condition": "no-music",
+    "question": 9,
+    "low": 9384,
+    "high": 9520,
+    "options": [
+      9365,
+      9374,
+      9459,
+      9570
+    ],
+    "chosen": 9459,
+    "correct": true,
+    "time": 6.467999999999971
+  },
+  {
+    "name": "Chaia Frishman",
+    "condition": "no-music",
+    "question": 10,
+    "low": 6388,
+    "high": 6564,
+    "options": [
+      6609,
+      6585,
+      6443,
+      6345
+    ],
+    "chosen": 6443,
+    "correct": true,
+    "time": 8.102
   }
 ]
