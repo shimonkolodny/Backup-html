@@ -2238,5 +2238,325 @@
     "chosen": 6443,
     "correct": true,
     "time": 8.102
+  },
+  {
+    "name": "Zalmen Ber Kamin",
+    "condition": "music",
+    "question": 1,
+    "low": 1135,
+    "high": 1260,
+    "options": [
+      1265,
+      1108,
+      1254,
+      1269
+    ],
+    "chosen": 1254,
+    "correct": true,
+    "time": 10.35309999999404
+  },
+  {
+    "name": "Zalmen Ber Kamin",
+    "condition": "music",
+    "question": 2,
+    "low": 1422,
+    "high": 1597,
+    "options": [
+      1614,
+      1619,
+      1400,
+      1450
+    ],
+    "chosen": 1450,
+    "correct": true,
+    "time": 5.537700000017882
+  },
+  {
+    "name": "Zalmen Ber Kamin",
+    "condition": "music",
+    "question": 3,
+    "low": 7826,
+    "high": 7945,
+    "options": [
+      7804,
+      7910,
+      7960,
+      7981
+    ],
+    "chosen": 7960,
+    "correct": false,
+    "time": 14.928
+  },
+  {
+    "name": "Zalmen Ber Kamin",
+    "condition": "music",
+    "question": 4,
+    "low": 7545,
+    "high": 7688,
+    "options": [
+      7603,
+      7723,
+      7537,
+      7707
+    ],
+    "chosen": 7707,
+    "correct": false,
+    "time": 11.2385
+  },
+  {
+    "name": "Zalmen Ber Kamin",
+    "condition": "music",
+    "question": 5,
+    "low": 2501,
+    "high": 2673,
+    "options": [
+      2460,
+      2695,
+      2699,
+      2575
+    ],
+    "chosen": 2575,
+    "correct": true,
+    "time": 12.28540000000596
+  },
+  {
+    "name": "Zalmen Ber Kamin",
+    "condition": "music",
+    "question": 6,
+    "low": 1086,
+    "high": 1279,
+    "options": [
+      1051,
+      1320,
+      1283,
+      1237
+    ],
+    "chosen": 1237,
+    "correct": true,
+    "time": 11.1845
+  },
+  {
+    "name": "Zalmen Ber Kamin",
+    "condition": "music",
+    "question": 7,
+    "low": 8596,
+    "high": 8738,
+    "options": [
+      8752,
+      8620,
+      8776,
+      8786
+    ],
+    "chosen": 8620,
+    "correct": true,
+    "time": 9.157299999982119
+  },
+  {
+    "name": "Zalmen Ber Kamin",
+    "condition": "music",
+    "question": 8,
+    "low": 1521,
+    "high": 1703,
+    "options": [
+      1736,
+      1716,
+      1618,
+      1489
+    ],
+    "chosen": 1716,
+    "correct": false,
+    "time": 14.716100000023841
+  },
+  {
+    "name": "Zalmen Ber Kamin",
+    "condition": "music",
+    "question": 9,
+    "low": 3252,
+    "high": 3441,
+    "options": [
+      3219,
+      3376,
+      3212,
+      3246
+    ],
+    "chosen": 3376,
+    "correct": true,
+    "time": 12.114899999976158
+  },
+  {
+    "name": "Zalmen Ber Kamin",
+    "condition": "music",
+    "question": 10,
+    "low": 8235,
+    "high": 8364,
+    "options": [
+      8327,
+      8387,
+      8234,
+      8214
+    ],
+    "chosen": 8327,
+    "correct": true,
+    "time": 14.917299999982118
+  },
+  {
+    "name": "Zalmen Ber Kamin",
+    "condition": "no-music",
+    "question": 1,
+    "low": 2723,
+    "high": 2858,
+    "options": [
+      2895,
+      2905,
+      2700,
+      2783
+    ],
+    "chosen": 2783,
+    "correct": true,
+    "time": 7.563699999988079
+  },
+  {
+    "name": "Zalmen Ber Kamin",
+    "condition": "no-music",
+    "question": 2,
+    "low": 3368,
+    "high": 3563,
+    "options": [
+      3575,
+      3333,
+      3502,
+      3331
+    ],
+    "chosen": 3575,
+    "correct": false,
+    "time": 9.083
+  },
+  {
+    "name": "Zalmen Ber Kamin",
+    "condition": "no-music",
+    "question": 3,
+    "low": 2344,
+    "high": 2468,
+    "options": [
+      2322,
+      2295,
+      2517,
+      2366
+    ],
+    "chosen": 2366,
+    "correct": true,
+    "time": 7.845199999988079
+  },
+  {
+    "name": "Zalmen Ber Kamin",
+    "condition": "no-music",
+    "question": 4,
+    "low": 8468,
+    "high": 8585,
+    "options": [
+      8618,
+      8510,
+      8625,
+      8436
+    ],
+    "chosen": 8510,
+    "correct": true,
+    "time": 7.324100000023842
+  },
+  {
+    "name": "Zalmen Ber Kamin",
+    "condition": "no-music",
+    "question": 5,
+    "low": 4748,
+    "high": 4921,
+    "options": [
+      4936,
+      4707,
+      4956,
+      4854
+    ],
+    "chosen": 4854,
+    "correct": true,
+    "time": 8.1495
+  },
+  {
+    "name": "Zalmen Ber Kamin",
+    "condition": "no-music",
+    "question": 6,
+    "low": 9176,
+    "high": 9300,
+    "options": [
+      9251,
+      9151,
+      9336,
+      9170
+    ],
+    "chosen": 9251,
+    "correct": true,
+    "time": 11.644599999994039
+  },
+  {
+    "name": "Zalmen Ber Kamin",
+    "condition": "no-music",
+    "question": 7,
+    "low": 5743,
+    "high": 5929,
+    "options": [
+      5735,
+      5933,
+      5913,
+      5935
+    ],
+    "chosen": 5913,
+    "correct": true,
+    "time": 13.885199999988078
+  },
+  {
+    "name": "Zalmen Ber Kamin",
+    "condition": "no-music",
+    "question": 8,
+    "low": 5598,
+    "high": 5751,
+    "options": [
+      5795,
+      5662,
+      5571,
+      5778
+    ],
+    "chosen": 5662,
+    "correct": true,
+    "time": 19.160700000017883
+  },
+  {
+    "name": "Zalmen Ber Kamin",
+    "condition": "no-music",
+    "question": 9,
+    "low": 7314,
+    "high": 7509,
+    "options": [
+      7532,
+      7268,
+      7529,
+      7332
+    ],
+    "chosen": 7268,
+    "correct": false,
+    "time": 8.533399999976158
+  },
+  {
+    "name": "Zalmen Ber Kamin",
+    "condition": "no-music",
+    "question": 10,
+    "low": 8389,
+    "high": 8527,
+    "options": [
+      8512,
+      8382,
+      8575,
+      8364
+    ],
+    "chosen": 8512,
+    "correct": true,
+    "time": 13.3845
   }
 ]
