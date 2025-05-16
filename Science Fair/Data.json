@@ -2558,5 +2558,325 @@
     "chosen": 8512,
     "correct": true,
     "time": 13.3845
+  },
+  {
+    "name": "chanoch",
+    "condition": "music",
+    "question": 1,
+    "low": 1732,
+    "high": 1834,
+    "options": [
+      1802,
+      1724,
+      1693,
+      1849
+    ],
+    "chosen": 1802,
+    "correct": true,
+    "time": 2.978199999988079
+  },
+  {
+    "name": "chanoch",
+    "condition": "music",
+    "question": 2,
+    "low": 1162,
+    "high": 1305,
+    "options": [
+      1143,
+      1220,
+      1324,
+      1319
+    ],
+    "chosen": 1143,
+    "correct": false,
+    "time": 2.264
+  },
+  {
+    "name": "chanoch",
+    "condition": "music",
+    "question": 3,
+    "low": 8118,
+    "high": 8261,
+    "options": [
+      8262,
+      8183,
+      8075,
+      8302
+    ],
+    "chosen": 8183,
+    "correct": true,
+    "time": 5.30659999999404
+  },
+  {
+    "name": "chanoch",
+    "condition": "music",
+    "question": 4,
+    "low": 5253,
+    "high": 5394,
+    "options": [
+      5252,
+      5360,
+      5426,
+      5211
+    ],
+    "chosen": 5360,
+    "correct": true,
+    "time": 5.065300000011921
+  },
+  {
+    "name": "chanoch",
+    "condition": "music",
+    "question": 5,
+    "low": 3747,
+    "high": 3847,
+    "options": [
+      3896,
+      3746,
+      3765,
+      3856
+    ],
+    "chosen": 3746,
+    "correct": false,
+    "time": 2.3719000000059607
+  },
+  {
+    "name": "chanoch",
+    "condition": "music",
+    "question": 6,
+    "low": 6691,
+    "high": 6859,
+    "options": [
+      6677,
+      6881,
+      6676,
+      6833
+    ],
+    "chosen": 6833,
+    "correct": true,
+    "time": 12.7905
+  },
+  {
+    "name": "chanoch",
+    "condition": "music",
+    "question": 7,
+    "low": 9153,
+    "high": 9300,
+    "options": [
+      9121,
+      9138,
+      9106,
+      9285
+    ],
+    "chosen": 9285,
+    "correct": true,
+    "time": 4.444
+  },
+  {
+    "name": "chanoch",
+    "condition": "music",
+    "question": 8,
+    "low": 9402,
+    "high": 9552,
+    "options": [
+      9382,
+      9360,
+      9553,
+      9444
+    ],
+    "chosen": 9444,
+    "correct": true,
+    "time": 2.9080999999940396
+  },
+  {
+    "name": "chanoch",
+    "condition": "music",
+    "question": 9,
+    "low": 3249,
+    "high": 3424,
+    "options": [
+      3389,
+      3210,
+      3226,
+      3239
+    ],
+    "chosen": 3389,
+    "correct": true,
+    "time": 7.153800000011921
+  },
+  {
+    "name": "chanoch",
+    "condition": "music",
+    "question": 10,
+    "low": 9748,
+    "high": 9921,
+    "options": [
+      9699,
+      9705,
+      9854,
+      9747
+    ],
+    "chosen": 9854,
+    "correct": true,
+    "time": 5.1575
+  },
+  {
+    "name": "chanoch",
+    "condition": "no-music",
+    "question": 1,
+    "low": 7872,
+    "high": 7972,
+    "options": [
+      7933,
+      7833,
+      7981,
+      7869
+    ],
+    "chosen": 7869,
+    "correct": false,
+    "time": 3.874
+  },
+  {
+    "name": "chanoch",
+    "condition": "no-music",
+    "question": 2,
+    "low": 3227,
+    "high": 3362,
+    "options": [
+      3216,
+      3329,
+      3389,
+      3203
+    ],
+    "chosen": 3203,
+    "correct": false,
+    "time": 5.1655
+  },
+  {
+    "name": "chanoch",
+    "condition": "no-music",
+    "question": 3,
+    "low": 7340,
+    "high": 7453,
+    "options": [
+      7362,
+      7314,
+      7311,
+      7308
+    ],
+    "chosen": 7362,
+    "correct": true,
+    "time": 1.324
+  },
+  {
+    "name": "chanoch",
+    "condition": "no-music",
+    "question": 4,
+    "low": 2306,
+    "high": 2419,
+    "options": [
+      2463,
+      2384,
+      2427,
+      2460
+    ],
+    "chosen": 2384,
+    "correct": true,
+    "time": 2.9500999999940394
+  },
+  {
+    "name": "chanoch",
+    "condition": "no-music",
+    "question": 5,
+    "low": 4201,
+    "high": 4390,
+    "options": [
+      4419,
+      4173,
+      4375,
+      4199
+    ],
+    "chosen": 4375,
+    "correct": true,
+    "time": 3.5637000000178816
+  },
+  {
+    "name": "chanoch",
+    "condition": "no-music",
+    "question": 6,
+    "low": 8454,
+    "high": 8579,
+    "options": [
+      8610,
+      8545,
+      8589,
+      8618
+    ],
+    "chosen": 8545,
+    "correct": true,
+    "time": 3.858199999988079
+  },
+  {
+    "name": "chanoch",
+    "condition": "no-music",
+    "question": 7,
+    "low": 5741,
+    "high": 5858,
+    "options": [
+      5881,
+      5886,
+      5762,
+      5888
+    ],
+    "chosen": 5762,
+    "correct": true,
+    "time": 2.155800000011921
+  },
+  {
+    "name": "chanoch",
+    "condition": "no-music",
+    "question": 8,
+    "low": 6077,
+    "high": 6238,
+    "options": [
+      6125,
+      6057,
+      6038,
+      6069
+    ],
+    "chosen": 6125,
+    "correct": true,
+    "time": 3.256
+  },
+  {
+    "name": "chanoch",
+    "condition": "no-music",
+    "question": 9,
+    "low": 3047,
+    "high": 3246,
+    "options": [
+      3033,
+      3266,
+      3122,
+      3013
+    ],
+    "chosen": 3266,
+    "correct": false,
+    "time": 4.636
+  },
+  {
+    "name": "chanoch",
+    "condition": "no-music",
+    "question": 10,
+    "low": 8623,
+    "high": 8755,
+    "options": [
+      8648,
+      8764,
+      8582,
+      8579
+    ],
+    "chosen": 8648,
+    "correct": true,
+    "time": 4.264
   }
 ]
