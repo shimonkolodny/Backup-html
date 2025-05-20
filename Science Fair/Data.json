@@ -2878,5 +2878,325 @@
     "chosen": 8648,
     "correct": true,
     "time": 4.264
+  },
+  {
+    "name": "Leeby Kolodny",
+    "condition": "music",
+    "question": 1,
+    "low": 7240,
+    "high": 7398,
+    "options": [
+      7419,
+      7198,
+      7232,
+      7254
+    ],
+    "chosen": 7232,
+    "correct": false,
+    "time": 7.497
+  },
+  {
+    "name": "Leeby Kolodny",
+    "condition": "music",
+    "question": 2,
+    "low": 2238,
+    "high": 2363,
+    "options": [
+      2402,
+      2405,
+      2243,
+      2378
+    ],
+    "chosen": 2378,
+    "correct": false,
+    "time": 9.432
+  },
+  {
+    "name": "Leeby Kolodny",
+    "condition": "music",
+    "question": 3,
+    "low": 1054,
+    "high": 1213,
+    "options": [
+      1027,
+      1010,
+      1066,
+      1262
+    ],
+    "chosen": 1066,
+    "correct": true,
+    "time": 5.251899999976158
+  },
+  {
+    "name": "Leeby Kolodny",
+    "condition": "music",
+    "question": 4,
+    "low": 3004,
+    "high": 3132,
+    "options": [
+      3063,
+      3003,
+      3165,
+      3171
+    ],
+    "chosen": 3063,
+    "correct": true,
+    "time": 3.286100000023842
+  },
+  {
+    "name": "Leeby Kolodny",
+    "condition": "music",
+    "question": 5,
+    "low": 8225,
+    "high": 8389,
+    "options": [
+      8419,
+      8232,
+      8392,
+      8432
+    ],
+    "chosen": 8232,
+    "correct": true,
+    "time": 3.4176999999880793
+  },
+  {
+    "name": "Leeby Kolodny",
+    "condition": "music",
+    "question": 6,
+    "low": 1369,
+    "high": 1509,
+    "options": [
+      1542,
+      1378,
+      1538,
+      1330
+    ],
+    "chosen": 1378,
+    "correct": true,
+    "time": 7.067900000035762
+  },
+  {
+    "name": "Leeby Kolodny",
+    "condition": "music",
+    "question": 7,
+    "low": 5662,
+    "high": 5822,
+    "options": [
+      5769,
+      5855,
+      5863,
+      5862
+    ],
+    "chosen": 5769,
+    "correct": true,
+    "time": 18.9305
+  },
+  {
+    "name": "Leeby Kolodny",
+    "condition": "music",
+    "question": 8,
+    "low": 7233,
+    "high": 7342,
+    "options": [
+      7354,
+      7211,
+      7373,
+      7275
+    ],
+    "chosen": 7373,
+    "correct": false,
+    "time": 9.419100000023843
+  },
+  {
+    "name": "Leeby Kolodny",
+    "condition": "music",
+    "question": 9,
+    "low": 9836,
+    "high": 9967,
+    "options": [
+      9993,
+      9998,
+      9912,
+      9808
+    ],
+    "chosen": 9912,
+    "correct": true,
+    "time": 12.609699999988079
+  },
+  {
+    "name": "Leeby Kolodny",
+    "condition": "music",
+    "question": 10,
+    "low": 9714,
+    "high": 9866,
+    "options": [
+      9714,
+      9901,
+      9867,
+      9915
+    ],
+    "chosen": 9867,
+    "correct": false,
+    "time": 7.142
+  },
+  {
+    "name": "Leeby Kolodny",
+    "condition": "no-music",
+    "question": 1,
+    "low": 5732,
+    "high": 5914,
+    "options": [
+      5955,
+      5788,
+      5919,
+      5690
+    ],
+    "chosen": 5690,
+    "correct": false,
+    "time": 8.15430000001192
+  },
+  {
+    "name": "Leeby Kolodny",
+    "condition": "no-music",
+    "question": 2,
+    "low": 9203,
+    "high": 9335,
+    "options": [
+      9362,
+      9359,
+      9186,
+      9332
+    ],
+    "chosen": 9332,
+    "correct": true,
+    "time": 3.589300000011921
+  },
+  {
+    "name": "Leeby Kolodny",
+    "condition": "no-music",
+    "question": 3,
+    "low": 9423,
+    "high": 9594,
+    "options": [
+      9377,
+      9503,
+      9412,
+      9388
+    ],
+    "chosen": 9503,
+    "correct": true,
+    "time": 6.161900000035763
+  },
+  {
+    "name": "Leeby Kolodny",
+    "condition": "no-music",
+    "question": 4,
+    "low": 6646,
+    "high": 6752,
+    "options": [
+      6796,
+      6729,
+      6780,
+      6617
+    ],
+    "chosen": 6729,
+    "correct": true,
+    "time": 8.571899999976159
+  },
+  {
+    "name": "Leeby Kolodny",
+    "condition": "no-music",
+    "question": 5,
+    "low": 5145,
+    "high": 5259,
+    "options": [
+      5131,
+      5277,
+      5276,
+      5163
+    ],
+    "chosen": 5131,
+    "correct": false,
+    "time": 6.335699999988079
+  },
+  {
+    "name": "Leeby Kolodny",
+    "condition": "no-music",
+    "question": 6,
+    "low": 5515,
+    "high": 5639,
+    "options": [
+      5475,
+      5686,
+      5611,
+      5500
+    ],
+    "chosen": 5500,
+    "correct": false,
+    "time": 3.582100000023842
+  },
+  {
+    "name": "Leeby Kolodny",
+    "condition": "no-music",
+    "question": 7,
+    "low": 9534,
+    "high": 9707,
+    "options": [
+      9582,
+      9717,
+      9484,
+      9507
+    ],
+    "chosen": 9717,
+    "correct": false,
+    "time": 8.476
+  },
+  {
+    "name": "Leeby Kolodny",
+    "condition": "no-music",
+    "question": 8,
+    "low": 7437,
+    "high": 7621,
+    "options": [
+      7646,
+      7432,
+      7632,
+      7609
+    ],
+    "chosen": 7609,
+    "correct": true,
+    "time": 6.937899999976159
+  },
+  {
+    "name": "Leeby Kolodny",
+    "condition": "no-music",
+    "question": 9,
+    "low": 9460,
+    "high": 9625,
+    "options": [
+      9641,
+      9659,
+      9672,
+      9579
+    ],
+    "chosen": 9579,
+    "correct": true,
+    "time": 5.835800000011921
+  },
+  {
+    "name": "Leeby Kolodny",
+    "condition": "no-music",
+    "question": 10,
+    "low": 9163,
+    "high": 9362,
+    "options": [
+      9370,
+      9261,
+      9154,
+      9149
+    ],
+    "chosen": 9370,
+    "correct": false,
+    "time": 7.442100000023842
   }
 ]
