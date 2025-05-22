@@ -3198,5 +3198,325 @@
     "chosen": 9370,
     "correct": false,
     "time": 7.442100000023842
+  },
+  {
+    "name": "Yehuda Barasch",
+    "condition": "music",
+    "question": 1,
+    "low": 5281,
+    "high": 5438,
+    "options": [
+      5473,
+      5365,
+      5269,
+      5236
+    ],
+    "chosen": 5473,
+    "correct": false,
+    "time": 3.3355
+  },
+  {
+    "name": "Yehuda Barasch",
+    "condition": "music",
+    "question": 2,
+    "low": 5468,
+    "high": 5616,
+    "options": [
+      5591,
+      5644,
+      5656,
+      5426
+    ],
+    "chosen": 5591,
+    "correct": true,
+    "time": 7.293800000190735
+  },
+  {
+    "name": "Yehuda Barasch",
+    "condition": "music",
+    "question": 3,
+    "low": 4292,
+    "high": 4478,
+    "options": [
+      4254,
+      4319,
+      4510,
+      4507
+    ],
+    "chosen": 4319,
+    "correct": true,
+    "time": 3.8359000000953674
+  },
+  {
+    "name": "Yehuda Barasch",
+    "condition": "music",
+    "question": 4,
+    "low": 9150,
+    "high": 9254,
+    "options": [
+      9144,
+      9121,
+      9213,
+      9260
+    ],
+    "chosen": 9213,
+    "correct": true,
+    "time": 4.1939000000953675
+  },
+  {
+    "name": "Yehuda Barasch",
+    "condition": "music",
+    "question": 5,
+    "low": 6213,
+    "high": 6363,
+    "options": [
+      6177,
+      6401,
+      6297,
+      6370
+    ],
+    "chosen": 6297,
+    "correct": true,
+    "time": 4.952199999809265
+  },
+  {
+    "name": "Yehuda Barasch",
+    "condition": "music",
+    "question": 6,
+    "low": 6483,
+    "high": 6604,
+    "options": [
+      6606,
+      6518,
+      6653,
+      6470
+    ],
+    "chosen": 6518,
+    "correct": true,
+    "time": 3.5415999999046326
+  },
+  {
+    "name": "Yehuda Barasch",
+    "condition": "music",
+    "question": 7,
+    "low": 8393,
+    "high": 8566,
+    "options": [
+      8359,
+      8381,
+      8351,
+      8463
+    ],
+    "chosen": 8463,
+    "correct": true,
+    "time": 5.566300000190735
+  },
+  {
+    "name": "Yehuda Barasch",
+    "condition": "music",
+    "question": 8,
+    "low": 1702,
+    "high": 1858,
+    "options": [
+      1688,
+      1776,
+      1883,
+      1653
+    ],
+    "chosen": 1776,
+    "correct": true,
+    "time": 2.6579000000953674
+  },
+  {
+    "name": "Yehuda Barasch",
+    "condition": "music",
+    "question": 9,
+    "low": 8634,
+    "high": 8824,
+    "options": [
+      8866,
+      8871,
+      8596,
+      8733
+    ],
+    "chosen": 8733,
+    "correct": true,
+    "time": 4.937900000095367
+  },
+  {
+    "name": "Yehuda Barasch",
+    "condition": "music",
+    "question": 10,
+    "low": 1713,
+    "high": 1910,
+    "options": [
+      1697,
+      1862,
+      1701,
+      1703
+    ],
+    "chosen": 1862,
+    "correct": true,
+    "time": 5.649899999618531
+  },
+  {
+    "name": "Yehuda Barasch",
+    "condition": "no-music",
+    "question": 1,
+    "low": 4281,
+    "high": 4420,
+    "options": [
+      4468,
+      4443,
+      4448,
+      4396
+    ],
+    "chosen": 4396,
+    "correct": true,
+    "time": 8.548200000286103
+  },
+  {
+    "name": "Yehuda Barasch",
+    "condition": "no-music",
+    "question": 2,
+    "low": 1439,
+    "high": 1623,
+    "options": [
+      1414,
+      1639,
+      1613,
+      1419
+    ],
+    "chosen": 1613,
+    "correct": true,
+    "time": 6.58789999961853
+  },
+  {
+    "name": "Yehuda Barasch",
+    "condition": "no-music",
+    "question": 3,
+    "low": 1479,
+    "high": 1584,
+    "options": [
+      1538,
+      1445,
+      1478,
+      1467
+    ],
+    "chosen": 1538,
+    "correct": true,
+    "time": 6.124200000286102
+  },
+  {
+    "name": "Yehuda Barasch",
+    "condition": "no-music",
+    "question": 4,
+    "low": 2809,
+    "high": 2996,
+    "options": [
+      2998,
+      2999,
+      2807,
+      2940
+    ],
+    "chosen": 2940,
+    "correct": true,
+    "time": 5.735900000095367
+  },
+  {
+    "name": "Yehuda Barasch",
+    "condition": "no-music",
+    "question": 5,
+    "low": 3543,
+    "high": 3717,
+    "options": [
+      3540,
+      3493,
+      3495,
+      3548
+    ],
+    "chosen": 3548,
+    "correct": true,
+    "time": 5.9615999999046325
+  },
+  {
+    "name": "Yehuda Barasch",
+    "condition": "no-music",
+    "question": 6,
+    "low": 1791,
+    "high": 1924,
+    "options": [
+      1786,
+      1761,
+      1783,
+      1907
+    ],
+    "chosen": 1907,
+    "correct": true,
+    "time": 9.828299999713897
+  },
+  {
+    "name": "Yehuda Barasch",
+    "condition": "no-music",
+    "question": 7,
+    "low": 5577,
+    "high": 5708,
+    "options": [
+      5716,
+      5751,
+      5553,
+      5699
+    ],
+    "chosen": 5699,
+    "correct": true,
+    "time": 5.913700000286102
+  },
+  {
+    "name": "Yehuda Barasch",
+    "condition": "no-music",
+    "question": 8,
+    "low": 5392,
+    "high": 5540,
+    "options": [
+      5404,
+      5389,
+      5390,
+      5371
+    ],
+    "chosen": 5404,
+    "correct": true,
+    "time": 2.884299999713898
+  },
+  {
+    "name": "Yehuda Barasch",
+    "condition": "no-music",
+    "question": 9,
+    "low": 2221,
+    "high": 2323,
+    "options": [
+      2178,
+      2294,
+      2368,
+      2172
+    ],
+    "chosen": 2294,
+    "correct": true,
+    "time": 8.464
+  },
+  {
+    "name": "Yehuda Barasch",
+    "condition": "no-music",
+    "question": 10,
+    "low": 2817,
+    "high": 2954,
+    "options": [
+      2961,
+      2782,
+      2833,
+      2996
+    ],
+    "chosen": 2833,
+    "correct": true,
+    "time": 5.573900000095367
   }
 ]
