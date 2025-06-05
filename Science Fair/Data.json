@@ -3518,5 +3518,325 @@
     "chosen": 2833,
     "correct": true,
     "time": 5.573900000095367
+  },
+  {
+    "name": "Rabbi heller",
+    "condition": "music",
+    "question": 1,
+    "low": 2325,
+    "high": 2476,
+    "options": [
+      2303,
+      2387,
+      2323,
+      2504
+    ],
+    "chosen": 2387,
+    "correct": true,
+    "time": 15.149
+  },
+  {
+    "name": "Rabbi heller",
+    "condition": "music",
+    "question": 2,
+    "low": 8045,
+    "high": 8155,
+    "options": [
+      8184,
+      8187,
+      8091,
+      8009
+    ],
+    "chosen": 8091,
+    "correct": true,
+    "time": 10.116
+  },
+  {
+    "name": "Rabbi heller",
+    "condition": "music",
+    "question": 3,
+    "low": 6807,
+    "high": 6983,
+    "options": [
+      6989,
+      6773,
+      6998,
+      6906
+    ],
+    "chosen": 6989,
+    "correct": false,
+    "time": 9.364
+  },
+  {
+    "name": "Rabbi heller",
+    "condition": "music",
+    "question": 4,
+    "low": 9245,
+    "high": 9347,
+    "options": [
+      9384,
+      9209,
+      9313,
+      9374
+    ],
+    "chosen": 9313,
+    "correct": true,
+    "time": 26.46
+  },
+  {
+    "name": "Rabbi heller",
+    "condition": "music",
+    "question": 5,
+    "low": 9840,
+    "high": 9959,
+    "options": [
+      9991,
+      9883,
+      9816,
+      9982
+    ],
+    "chosen": 9883,
+    "correct": true,
+    "time": 11.315
+  },
+  {
+    "name": "Rabbi heller",
+    "condition": "music",
+    "question": 6,
+    "low": 3445,
+    "high": 3577,
+    "options": [
+      3455,
+      3407,
+      3432,
+      3410
+    ],
+    "chosen": 3432,
+    "correct": false,
+    "time": 8.416
+  },
+  {
+    "name": "Rabbi heller",
+    "condition": "music",
+    "question": 7,
+    "low": 5620,
+    "high": 5772,
+    "options": [
+      5819,
+      5774,
+      5600,
+      5651
+    ],
+    "chosen": 5651,
+    "correct": true,
+    "time": 9.863
+  },
+  {
+    "name": "Rabbi heller",
+    "condition": "music",
+    "question": 8,
+    "low": 3020,
+    "high": 3151,
+    "options": [
+      3046,
+      3011,
+      3003,
+      3189
+    ],
+    "chosen": 3046,
+    "correct": true,
+    "time": 10.450000000000015
+  },
+  {
+    "name": "Rabbi heller",
+    "condition": "music",
+    "question": 9,
+    "low": 3121,
+    "high": 3256,
+    "options": [
+      3144,
+      3105,
+      3081,
+      3262
+    ],
+    "chosen": 3144,
+    "correct": true,
+    "time": 11.399999999999986
+  },
+  {
+    "name": "Rabbi heller",
+    "condition": "music",
+    "question": 10,
+    "low": 3457,
+    "high": 3568,
+    "options": [
+      3447,
+      3430,
+      3508,
+      3578
+    ],
+    "chosen": 3508,
+    "correct": true,
+    "time": 10.683
+  },
+  {
+    "name": "Rabbi heller",
+    "condition": "no-music",
+    "question": 1,
+    "low": 3707,
+    "high": 3853,
+    "options": [
+      3699,
+      3766,
+      3878,
+      3657
+    ],
+    "chosen": 3766,
+    "correct": true,
+    "time": 8.983
+  },
+  {
+    "name": "Rabbi heller",
+    "condition": "no-music",
+    "question": 2,
+    "low": 3462,
+    "high": 3648,
+    "options": [
+      3652,
+      3680,
+      3693,
+      3462
+    ],
+    "chosen": 3462,
+    "correct": true,
+    "time": 4.037
+  },
+  {
+    "name": "Rabbi heller",
+    "condition": "no-music",
+    "question": 3,
+    "low": 8688,
+    "high": 8832,
+    "options": [
+      8878,
+      8867,
+      8770,
+      8871
+    ],
+    "chosen": 8770,
+    "correct": true,
+    "time": 26.936
+  },
+  {
+    "name": "Rabbi heller",
+    "condition": "no-music",
+    "question": 4,
+    "low": 9185,
+    "high": 9356,
+    "options": [
+      9144,
+      9327,
+      9362,
+      9371
+    ],
+    "chosen": 9327,
+    "correct": true,
+    "time": 9.251
+  },
+  {
+    "name": "Rabbi heller",
+    "condition": "no-music",
+    "question": 5,
+    "low": 8124,
+    "high": 8254,
+    "options": [
+      8146,
+      8089,
+      8274,
+      8119
+    ],
+    "chosen": 8146,
+    "correct": true,
+    "time": 14.919
+  },
+  {
+    "name": "Rabbi heller",
+    "condition": "no-music",
+    "question": 6,
+    "low": 8013,
+    "high": 8147,
+    "options": [
+      8150,
+      8186,
+      8112,
+      8005
+    ],
+    "chosen": 8112,
+    "correct": true,
+    "time": 10.286
+  },
+  {
+    "name": "Rabbi heller",
+    "condition": "no-music",
+    "question": 7,
+    "low": 7763,
+    "high": 7905,
+    "options": [
+      7737,
+      7733,
+      7910,
+      7764
+    ],
+    "chosen": 7764,
+    "correct": true,
+    "time": 9.81800000000003
+  },
+  {
+    "name": "Rabbi heller",
+    "condition": "no-music",
+    "question": 8,
+    "low": 1645,
+    "high": 1824,
+    "options": [
+      1601,
+      1828,
+      1757,
+      1599
+    ],
+    "chosen": 1601,
+    "correct": false,
+    "time": 19.78499999999997
+  },
+  {
+    "name": "Rabbi heller",
+    "condition": "no-music",
+    "question": 9,
+    "low": 2420,
+    "high": 2520,
+    "options": [
+      2541,
+      2431,
+      2562,
+      2379
+    ],
+    "chosen": 2431,
+    "correct": true,
+    "time": 10.684
+  },
+  {
+    "name": "Rabbi heller",
+    "condition": "no-music",
+    "question": 10,
+    "low": 6760,
+    "high": 6931,
+    "options": [
+      6716,
+      6955,
+      6796,
+      6723
+    ],
+    "chosen": 6796,
+    "correct": true,
+    "time": 13.621
   }
 ]
