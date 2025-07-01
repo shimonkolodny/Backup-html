@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ollama Chat Client</title>
+  <style>
+    body {
+      background: linear-gradient(to right, pink, lightgreen, lightblue);
+      font-family: sans-serif;
+      padding: 20px;
+      color: #333;
+    }
+    input[type="text"], select {
+      padding: 10px;
+      border-radius: 10px;
+      width: 60%;
+      border: 1px solid #aaa;
+      margin-right: 10px;
+    }
+    button {
+      padding: 10px 20px;
+      border-radius: 10px;
+      background-color: yellow;
+      border: none;
+      cursor: pointer;
+    }
+    #response, #status {
+      margin-top: 20px;
+      background: #fff;
+      padding: 15px;
+      border-radius: 10px;
+      min-height: 50px;
+      white-space: pre-wrap;
+    }
+    #config {
+      margin-bottom: 20px;
+      padding: 10px;
+      background: #eef;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Chat with Ollama (gemma:1b)</h1>
+
+  <div id="config">
+    <label for="serverInput">Server URL:</label>
+    <input type="text" id="serverInput" placeholder="http://your.server.ip:8000" />
+    <button onclick="saveServer()">Save</button>
+    <span id="configStatus"></span>
+  </div>
+
+  <input type="text" id="prompt" placeholder="Enter your prompt here" />
+  <button onclick="sendPrompt()">Send</button>
+
+  <div id="status">Waiting for configuration...</div>
+  <div id="response">Waiting for response...</div>
+
+  <script>
+    const input = document.getElementById('serverInput');
+    const configStatus = document.getElementById('configStatus');
+    let SERVER_URL = localStorage.getItem('OLLAMA_SERVER') || '';
+
+    function saveServer() {
+      const val = input.value.trim();
+      if (val) {
+        localStorage.setItem('OLLAMA_SERVER', val);
+        SERVER_URL = val;
+        configStatus.textContent = '✅ Saved';
+        checkConnection();
+      } else {
+        configStatus.textContent = '❌ Invalid URL';
+      }
+    }
+
+    async function checkConnection() {
+      const statusDiv = document.getElementById('status');
+      if (!SERVER_URL) {
+        statusDiv.textContent = 'Please configure the server URL.';
+        return;
+      }
+      try {
+        const res = await fetch(`${SERVER_URL}/ping`);
+        const data = await res.json();
+        statusDiv.textContent = `✅ ${data.status}`;
+      } catch (e) {
+        statusDiv.textContent = '❌ Cannot reach server: ' + e;
+      }
+    }
+
+    async function sendPrompt() {
+      const prompt = document.getElementById('prompt').value;
+      const responseDiv = document.getElementById('response');
+      responseDiv.textContent = 'Loading...';
+      if (!SERVER_URL) {
+        responseDiv.textContent = 'Configure server URL first.';
+        return;
+      }
+      if (!prompt) {
+        responseDiv.textContent = 'Enter a prompt.';
+        return;
+      }
+      try {
+        const res = await fetch(`${SERVER_URL}/chat`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ prompt })
+        });
+        const data = await res.json();
+        if (res.ok && data.response) responseDiv.textContent = data.response;
+        else if (data.error) responseDiv.textContent = 'Error: ' + data.error;
+        else responseDiv.textContent = 'Unexpected server response.';
+      } catch (e) {
+        responseDiv.textContent = 'Request failed: ' + e;
+      }
+    }
+
+    // Initialize
+    if (SERVER_URL) {
+      input.value = SERVER_URL;
+      saveServer();
+    } else {
+      document.getElementById('status').textContent = 'Please configure the server URL.';
+    }
+  </script>
+</body>
+</html>
