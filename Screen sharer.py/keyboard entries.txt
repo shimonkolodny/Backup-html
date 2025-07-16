@@ -1,2 +1,3 @@
 g(backspace)
 (ctrl_l)()(backspace)
+(ctrl_l)
