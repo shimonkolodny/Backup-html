@@ -1,3 +1,5 @@
 g(backspace)
 (ctrl_l)()(backspace)
 (ctrl_l)()(ctrl_l)()
+(cmd)v
+shimmy
