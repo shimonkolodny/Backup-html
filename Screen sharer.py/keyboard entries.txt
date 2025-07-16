@@ -1,5 +1,1 @@
-g(backspace)
-(ctrl_l)()(backspace)
-(ctrl_l)()(ctrl_l)()
-(cmd)v
-shimmyshimon10(enter)(ctrl_l)()(alt_l)(cmd)l
+
