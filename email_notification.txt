@@ -1,0 +1,26 @@
+Email would be sent to: shimonkolodny@gmail.com
+Subject: Disney/Pixar Movies Found - 3 new movies
+
+New Disney/Pixar movies found:
+
+Title: Snow White and the Seven Dwarfs (1937) - Public Domain Version
+Link: https://archive.org/details/snow_white_1937
+Description: Classic Disney animated film that may be in public domain in some regions
+Source: public_domain_list
+Found: 2025-07-15T16:13:08.565637
+--------------------------------------------------
+
+Title: Alice in Wonderland (1951) - Educational Version
+Link: https://archive.org/details/AliceInWonderland_disney_1951
+Description: Disney adaptation of Lewis Carroll classic
+Source: public_domain_list
+Found: 2025-07-15T16:13:08.565645
+--------------------------------------------------
+
+Title: Cinderella (1950) - Classic Animation
+Link: https://archive.org/details/cinderella_1950_disney
+Description: Disney version of the classic fairy tale
+Source: public_domain_list
+Found: 2025-07-15T16:13:08.565646
+--------------------------------------------------
+

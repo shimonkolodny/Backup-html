@@ -1,0 +1,37 @@
+# Ignore environment files containing sensitive information
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+*.log
+logs/
+scraper_log_*.log
+
+# Temporary files
+/tmp/
+*.tmp
+
+# Browser drivers
+chromedriver
+geckodriver
+*.exe
+
+# Email attachments
+attachments/
