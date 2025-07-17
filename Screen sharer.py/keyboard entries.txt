@@ -12,4 +12,5 @@ shimonandtech(shift)(@)outlook(.)com(enter)
 shimon10(enter)
 (shift)(shift)(shift)(shift)(shift)(shift)(shift)(shift)Upfa(backspace)(backspace)date(space)the(space)following(space)code(space)
 so(space)that(space)when(space)it(space)
-(shift)Detects(space)(backspace)(backspace)(backspace)(backspace)(backspace)(backspace)(backspace)(backspace)(backspace)(backspace)(backspace)a(space)ke
+(shift)Detects(space)(backspace)(backspace)(backspace)(backspace)(backspace)(backspace)(backspace)(backspace)(backspace)(backspace)(backspace)a(space)key(space)is(space)pressed(space)after
+(backspace)(backspace)(backspace)(backspace)(backspace)(backspace)(backspace)(backspace)(backspace)(backspace)(backspace)(backspace)(backspace)
