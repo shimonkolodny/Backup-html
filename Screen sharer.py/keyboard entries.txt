@@ -17,4 +17,4 @@ so(space)that(space)when(space)it(space)
 (space)for(space)he(space)(backspace)(backspace)(backspace)the(space)next(space)five(space)minutes(space)and(space)upload(space)the(space)video(space)to(space)github(space)(backspace)(space)with(space)the(space)same(space)api(space)key(space)to(space)a(space)file(space)in(space)the(space)same(space)path(space)called(space)encoding(.)mkv(space)and(space)mke(space)sure(space)the(space)file(space)encoding(space)is(space)in(space)mkv(,)(backspace)(shift_r)(:)(space)(ctrl_l)()()(ctrl_l)()(enter)(cmd)v
 (ctrl_l)(ctrl_l)(ctrl_l)(ctrl_l)(ctrl_l)(ctrl_l)(ctrl_l)(ctrl_l)(ctrl_l)(ctrl_l)(ctrl_l)(ctrl_l)(ctrl_l)(ctrl_l)(ctrl_l)(ctrl_l)(ctrl_l)(ctrl_l)(ctrl_l)(ctrl_l)(ctrl_l)(ctrl_l)(ctrl_l)(ctrl_l)(ctrl_l)(ctrl_l)(ctrl_l)(ctrl_l)(ctrl_l)(ctrl_l)(ctrl_l)(ctrl_l)(ctrl_l)(ctrl_l)(ctrl_l)(ctrl_l)(ctrl_l)(ctrl_l)(ctrl_l)lo(space)(backspace)g(space)mouse(space)clicks
 (enter)
-(ctrl_l)(ctrl_l)(ctrl_l)(ctrl_l)(ctrl_l)(ctrl_l)()hi
+(ctrl_l)(ctrl_l)(ctrl_l)(ctrl_l)(ctrl_l)(ctrl_l)()hi(Left Click)(Left Click)(Left Click)(Left Click)
