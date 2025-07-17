@@ -1,4 +1,5 @@
 
 (cmd)l
 (space)
-s
+smsco
+(down)(down)(down)(down)(down)(down)(down)(down)(down)(down)(down)(down)(down)(down)(up)(up)(up)(down)
