@@ -5,4 +5,4 @@ smsco
 (down)(down)(down)(down)(down)(down)(down)(down)(down)(down)(down)(down)(down)(down)(up)(up)(up)(down)(down)(down)(down)(down)(up)(enter)msco
 windo(backspace)(backspace)(backspace)(backspace)(backspace)(backspace)(backspace)(backspace)(backspace)(backspace)featur
 goodgreat(space)hi
-(shift)(shift)Ollam(space)
+(shift)(shift)Ollam(space)(backspace)a(space)(shift)Pull(space)(shift)Request(space)(shift)Fulfille
