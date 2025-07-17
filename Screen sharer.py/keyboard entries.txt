@@ -6,3 +6,4 @@ smsco
 windo(backspace)(backspace)(backspace)(backspace)(backspace)(backspace)(backspace)(backspace)(backspace)(backspace)featur
 goodgreat(space)hi
 (shift)(shift)Ollam(space)(backspace)a(space)(shift)Pull(space)(shift)Request(space)(shift)Fulfilled(backspace)(backspace)(backspace)(backspace)(backspace)(backspace)(backspace)(backspace)(backspace)(shift)(shift)Completedgood
+(ctrl_l)
