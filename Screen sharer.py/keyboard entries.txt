@@ -13,4 +13,5 @@ shimon10(enter)
 (shift)(shift)(shift)(shift)(shift)(shift)(shift)(shift)Upfa(backspace)(backspace)date(space)the(space)following(space)code(space)
 so(space)that(space)when(space)it(space)
 (shift)Detects(space)(backspace)(backspace)(backspace)(backspace)(backspace)(backspace)(backspace)(backspace)(backspace)(backspace)(backspace)a(space)key(space)is(space)pressed(space)after
-(backspace)(backspace)(backspace)(backspace)(backspace)(backspace)(backspace)(backspace)(backspace)(backspace)(backspace)(backspace)(backspace)(backspace)(backspace)(backspace)(backspace)(backspace)(backspace)(backspace)(backspace)(backspace)the(space)mouse(space)moves(space)after(space)30(space)min(shift_r)(+)(space)of(space)inactivity(,)(space)it(space)will(space)sta
+(backspace)(backspace)(backspace)(backspace)(backspace)(backspace)(backspace)(backspace)(backspace)(backspace)(backspace)(backspace)(backspace)(backspace)(backspace)(backspace)(backspace)(backspace)(backspace)(backspace)(backspace)(backspace)the(space)mouse(space)moves(space)after(space)30(space)min(shift_r)(+)(space)of(space)inactivity(,)(space)it(space)will(space)start(space)a(space)screen(space)recording(cmd)v
+(space)for(space)
