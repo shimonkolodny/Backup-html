@@ -2,4 +2,4 @@
 (cmd)l
 (space)
 smsco
-(down)(down)(down)(down)(down)(down)(down)(down)(down)(down)(down)(down)(down)(down)(up)(up)(up)(down)
+(down)(down)(down)(down)(down)(down)(down)(down)(down)(down)(down)(down)(down)(down)(up)(up)(up)(down)(down)(down)(down)(down)(up)(enter)msco
