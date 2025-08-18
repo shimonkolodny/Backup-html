@@ -4,3 +4,4 @@
 (backspace)
 (backspace)
 (backspace)(ctrl_l)()hi(backspace)(backspace)
+(ctrl_l)(ctrl_l)(ctrl_l)(ctrl_l)(ctrl_l)(ctrl_l)(ctrl_l)(ctrl_l)(ctrl_l)(ctrl_l)(ctrl_l)(ctrl_l)(ctrl_l)(ctrl_l)(ctrl_l)(ctrl_l)(ctrl_l)(ctrl_l)(ctrl_l)
