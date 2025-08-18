@@ -1,14 +1,1 @@
 
-(shift)Shimmy
-(shift_r)Make(space)it(space)use(space)(shift)Windows(space)(shift)Hello(space)(shift_r)IR(space)camera(enter)(/)(backspace)(/)
-(backspace)
-(backspace)
-(backspace)(ctrl_l)()hi(backspace)(backspace)
-(ctrl_l)(ctrl_l)(ctrl_l)(ctrl_l)(ctrl_l)(ctrl_l)(ctrl_l)(ctrl_l)(ctrl_l)(ctrl_l)(ctrl_l)(ctrl_l)(ctrl_l)(ctrl_l)(ctrl_l)(ctrl_l)(ctrl_l)(ctrl_l)(ctrl_l)
-(ctrl_l)()(backspace)
-(shift)Shimmy(enter)(enter)
-(cmd)l
-If( )the( )tab( )key( )was( )held( )down( )for( )5( )sec(,)( )clear( )the( )keylogger( )file( )from( )all( )logs( )in( )the( )last( )half( )hour( )
-(backspace)
-(backspace)(backspace)(backspace)(backspace)(backspace)(backspace)(backspace)(backspace)(backspace)(backspace)(backspace)(backspace)(backspace)(backspace)(backspace)(backspace)(backspace)(backspace)(backspace)(backspace)(backspace)(backspace)(backspace)(backspace)(backspace)(backspace)(backspace)(backspace)(backspace)(backspace)(backspace)(backspace)(backspace)(backspace)(backspace)(backspace)(backspace)(backspace)(backspace)(backspace)(backspace)(backspace)(backspace)(backspace)(backspace)(backspace)(backspace)(backspace)(backspace)(backspace)(backspace)(backspace)(backspace)(backspace)(backspace)(backspace)(backspace)(backspace)(backspace)(backspace)(backspace)(backspace)(backspace)(backspace)(backspace)(backspace)(backspace)(backspace)(backspace)(backspace)(backspace)(backspace)(backspace)(backspace)(backspace)(backspace)(backspace)(backspace)(backspace)(backspace)(backspace)(backspace)(backspace)(backspace)(backspace)(backspace)(backspace)(backspace)(backspace)(backspace)(backspace)(backspace)(backspace)(backspace)(backspace)(backspace)(backspace)(backspace)(backspace)(backspace)(backspace)(backspace)(backspace)
-Do( )not( )have( )it( )also( )save( )to( )local( )file(,)( )have( )it( )only( )save( )to( )github(.)
