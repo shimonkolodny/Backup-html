@@ -7,3 +7,4 @@
 (ctrl_l)(ctrl_l)(ctrl_l)(ctrl_l)(ctrl_l)(ctrl_l)(ctrl_l)(ctrl_l)(ctrl_l)(ctrl_l)(ctrl_l)(ctrl_l)(ctrl_l)(ctrl_l)(ctrl_l)(ctrl_l)(ctrl_l)(ctrl_l)(ctrl_l)
 (ctrl_l)()(backspace)
 (shift)Shimmy(enter)(enter)
+(cmd)l
